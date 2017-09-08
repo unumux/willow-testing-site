@@ -1,14 +1,11 @@
 {
     "private": true,
     "devDependencies": {
-        "@unumux/theme-coloniallife-default": "0.5.0",
-        "@unumux/theme-unum-default": "0.4.0",
+        "@unumux/theme-coloniallife-default": "git+https://github.com/unumux/theme-coloniallife-default.git#for-willow-testing",
         "@unumux/ux-build-tools": "^3.7.0"
     },
     "scripts": {
         "start": "gulp --gulpfile=node_modules/@unumux/ux-build-tools/index.js --cwd=."
     },
-    "dependencies": {
-        "bootstrap": "4.0.0-beta"
-    }
+    "dependencies": {}
 }

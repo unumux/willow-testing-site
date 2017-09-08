@@ -1,0 +1,12 @@
+	//add to new feature component folder
+	$component-feature-background-color: $theme-base-2 !default;
+	$component-feature-heading-color: $theme-text-accent !default;
+	$component-feature-box-shadow-color: rgba($theme-primary-4, 0.15) !default;
+
+	$component-feature-content-max-width: 600px !default;
+	$component-feature-content-min-height: 300px !default;
+	$component-feature-content-after-width-percent: 89% !default;
+	$component-feature-content-background-color: $theme-white !default;
+
+	$component-feature-shadow-border-color: $theme-white !default;
+	$component-feature-shadow-background-color: radial-gradient(circle, rgba($theme-base, 0.5) 0%, rgba($theme-base-2, 0.5) 12.52%, rgba($theme-base-3, 0.5) 52.01%, rgba($theme-base-4, 0.1) 100%) !default;

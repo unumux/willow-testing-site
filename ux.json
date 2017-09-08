@@ -1,0 +1,24 @@
+{
+    "scss": {
+        "src": [
+            "styles/**/*.scss",
+            "node_modules/@unumux/willow/_*.scss",
+            "node_modules/@unumux/willow/@(components|global-variables|base-elements|utilities)/_*.scss",
+            "node_modules/@unumux/willow/@(components|global-variables|base-elements|utilities)/**/_*.scss",
+            "node_modules/@unumux/@(theme-enterprise-default|theme-unum-default|theme-coloniallife-default)/_*.scss",            
+            "node_modules/@unumux/@(theme-enterprise-default|theme-unum-default|theme-coloniallife-default)/**/_*.scss"
+        ],
+        "dest": "styles"
+    },
+    "js": {
+        "src": "scripts/**/*.js",
+        "dest": "scripts",
+        "main": "scripts/site.js"
+    },
+    "watch": [
+        "index.html"
+    ],
+    "server": true,
+    "compileJs": true,
+    "proxy": false
+}

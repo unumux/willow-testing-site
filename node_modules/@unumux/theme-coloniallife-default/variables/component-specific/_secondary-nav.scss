@@ -1,0 +1,16 @@
+$component-secondary-nav-background-color: $theme-base !default;
+$component-secondary-nav-border: $component-border-width solid $theme-text-secondary !default;
+$component-secondary-nav-link-color: $theme-text-primary !default;
+$component-secondary-nav-link-color-hover: $theme-text-primary !default;
+$component-secondary-nav-link-color-focus: $theme-text-primary !default;
+$component-secondary-nav-link-color-visited: $theme-text-primary !default;
+$component-secondary-nav-link-color-active: $theme-text-primary !default;
+//Link background and text color for Hover and Active
+$component-secondary-nav-link-background-color: initial !default;
+$component-secondary-nav-link-background-color-hover: $theme-base-2 !default;
+$component-secondary-nav-link-background-color-active: $theme-base-3 !default;
+$component-secondary-nav-link-background-color-focus: initial !default;
+$component-secondary-nav-link-border-color-active: $theme-accent !default;
+
+$component-secondary-nav-heading-background-color: $theme-primary !default;
+$component-secondary-nav-heading-color: $theme-text-inverse !default;

@@ -1,9 +1,5 @@
-// @import "node_modules/@unumux/theme-coloniallife-default/styles";
-// 
-// @import "node_modules/@unumux/theme-unum-default/styles";
-
-@import "node_modules/@unumux/theme-unum-default/styles";
-@import "node_modules/@unumux/willow/styles";
+@import "./node_modules/@unumux/theme-unum-default/styles";
+@import "./node_modules/@unumux/willow/styles";
 
 .home-banner {
     background-image: url(http://fillmurray.com/400/400);

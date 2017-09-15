@@ -1,22 +1,25 @@
-@import "node_modules/@unumux/theme-coloniallife-default/styles";
+// @import "node_modules/@unumux/theme-coloniallife-default/styles";
 // 
 // @import "node_modules/@unumux/theme-unum-default/styles";
 
-// .home-banner {
-//     background-image: url(http://fillmurray.com/400/400);
-// }
+@import "node_modules/@unumux/theme-unum-default/styles";
+@import "node_modules/@unumux/willow/styles";
 
-// .constricted {
-//     background-color: lightgrey;
-//     margin: $space-l auto;
-//     padding: $space-inset-l;
+.home-banner {
+    background-image: url(http://fillmurray.com/400/400);
+}
+
+.constricted {
+    background-color: lightgrey;
+    margin: 24px auto;
+    padding: 24px;
     
-//     @media screen and (min-width: breakpoint(md, $grid-breakpoints)) {
-//         width: 50%;
-//     };
-// }
+    @media screen and (min-width: 992px) {
+        width: 50%;
+    };
+}
 
-// .table-container {
-//     margin-bottom: space(2);
-//     overflow: scroll;s
-// }
+.table-container {
+    margin-bottom: space(2);
+    overflow: scroll;
+}

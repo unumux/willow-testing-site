@@ -7,5 +7,7 @@
     "scripts": {
         "start": "gulp --gulpfile=node_modules/@unumux/ux-build-tools/index.js --cwd=."
     },
-    "dependencies": {}
+    "dependencies": {
+        "bootstrap": "4.0.0-beta"
+    }
 }

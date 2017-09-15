@@ -53,26 +53,35 @@
                     </div>
                 </div>
             </header>
-            <main class="willow-page-content" id="main" role="main">
-                <section class="willow-banner home-banner" role="region">
-                    <h1 class="willow-banner__heading">Heading Text</h1>
-                    <div class="willow-banner__content">
-                        <div class="willow-styling-context">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis nobis accusantium distinctio
-                                vero officiis reiciendis consectetur! Unde esse rem voluptates.</p>
-                        </div>
+            <section class="willow-banner home-banner" role="region">
+                <h1 class="willow-banner__heading">Heading Text</h1>
+                <div class="willow-banner__content">
+                    <div class="willow-styling-context">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis nobis accusantium distinctio vero
+                            officiis reiciendis consectetur! Unde esse rem voluptates.</p>
                     </div>
-                    <ul class="willow-banner__actions">
-                        <li class="willow-banner__action"><button class="willow-button willow-button--cta">Call To Action</button></li>
+                </div>
+                <ul class="willow-banner__actions">
+                    <li class="willow-banner__action"><button class="willow-button willow-button--cta">Call To Action</button></li>
+                </ul>
+            </section>
+            <nav class="willow-breadcrumbs" role="navigation" aria-label="breadcrumb">
+                <h1 class="willow-breadcrumbs__heading sr-only">You are here:</h1>
+                <ol class="willow-breadcrumbs__list">
+                    <li class="willow-breadcrumbs__item"><a class="willow-breadcrumbs__link" href="" aria-label="">Nav Item 1</a></li>
+                    <li class="willow-breadcrumbs__item"><a class="willow-breadcrumbs__link" href="" aria-label="">Nav Item 2</a></li>
+                    <li class="willow-breadcrumbs__item willow-breadcrumbs__item--active">Current Item</li>
+                </ol>
+            </nav>
+            <main class="willow-page-content" id="main" role="main">
+                <h1 class="willow-page-content__heading">Heading for content</h1>
+                <nav class="willow-secondary-nav" role="navigation" aria-label="secondary">
+                    <h1 class="willow-secondary-nav__heading">Page Secondary Menu</h1>
+                    <ul class="willow-secondary-nav__list">
+                        <li class="willow-secondary-nav__item"><a class="willow-secondary-nav__link" href="#" aria-label="">Item</a></li>
+                        <li class="willow-secondary-nav__item"><a class="willow-secondary-nav__link" href="#" aria-label="">Item</a></li>
+                        <li class="willow-secondary-nav__item"><a class="willow-secondary-nav__link" href="#" aria-label="">Item</a></li>
                     </ul>
-                </section>
-                <nav class="willow-breadcrumbs" role="navigation" aria-label="breadcrumb">
-                    <h1 class="willow-breadcrumbs__heading sr-only">You are here:</h1>
-                    <ol class="willow-breadcrumbs__list">
-                        <li class="willow-breadcrumbs__item"><a class="willow-breadcrumbs__link" href="" aria-label="">Nav Item 1</a></li>
-                        <li class="willow-breadcrumbs__item"><a class="willow-breadcrumbs__link" href="" aria-label="">Nav Item 2</a></li>
-                        <li class="willow-breadcrumbs__item willow-breadcrumbs__item--active">Current Item</li>
-                    </ol>
                 </nav>
                 <div class="willow-styling-context">
                     <h1>Heading Here</h1>
@@ -271,12 +280,171 @@
                         elitnam quo quis! Ipsam obcaecati soluta earum, ad et nisi unde.</p>
                 </div>
 
-                <form action="">
-                    <h1>Form Heading</h1>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis ut sapiente ex tenetur impedit sit neque ipsam quam ea animi.</p>
-                    <label for="1">Input:</label><input id="1" type="text">
-                    <textarea name="" id="" cols="30" rows="10"></textarea>
-                    <button class="willow-button willow-button--primary willow-button--inline">submit</button>
+                <form aria-labeledby="a1" action="" method="">
+                    <h1 id="a1">Form with all inputs</h1>
+                    <section class="willow-alert willow-alert--negative" role="alert">
+                        <h1 class="willow-alert__heading">Form Errors</h1>
+                        <div class="willow-alert__content">
+                            <div class="willow-styling-context">
+                                <ul>
+                                    <li>Error Number 1</li>
+                                    <li>Error Number 2</li>
+                                    <li>Error Number 3</li>
+                                    <li>Error Number 4</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </section>
+
+                    <label for="a">Input Type Text</label>
+                    <input type="text" id="a" placeholder="Placeholder">
+
+                    <label for="ad">Input Type Text Disabled</label>
+                    <input type="text" id="ad" placeholder="Placeholder" disabled>
+
+                    <div class="row">
+                        <div class="col-6">
+                            <label for="az">Half Input</label>
+                            <input type="text" id="az" placeholder="Placeholder">
+                        </div>
+                        <div class="col-6">
+                            <label for="ay">Half Input</label>
+                            <input type="text" id="ay" placeholder="Placeholder">
+                        </div>
+                    </div>
+
+                    <label for="b">Input Type Date</label>
+                    <input type="date" id="b" placeholder="Placeholder">
+
+                    <label for="bd">Input Type Date Disabled</label>
+                    <input type="date" id="bd" placeholder="Placeholder" disabled>
+
+                    <label for="c">Input Type Email</label>
+                    <input type="email" id="c" placeholder="Placeholder">
+
+                    <label for="cd">Input Type Email Disabled</label>
+                    <input type="email" id="cd" placeholder="Placeholder" disabled>
+
+                    <label for="d">Input Type File</label>
+                    <input type="file" id="d" placeholder="Placeholder">
+
+                    <label for="dd">Input Type File Disabled</label>
+                    <input type="file" id="dd" placeholder="Placeholder" disabled>
+
+                    <label for="e">Input Type Number</label>
+                    <input type="number" id="e" placeholder="Placeholder">
+
+                    <label for="ed">Input Type Number Disabled</label>
+                    <input type="number" id="ed" placeholder="Placeholder" disabled>
+
+                    <label for="f">Input Type Password</label>
+                    <input type="password" id="f" placeholder="Placeholder">
+
+                    <label for="fd">Input Type Password Disabled</label>
+                    <input type="password" id="fd" placeholder="Placeholder" disabled>
+
+                    <label for="g">Input Type Range</label>
+                    <input type="range" id="g" placeholder="Placeholder">
+
+                    <label for="gd">Input Type Range Disabled</label>
+                    <input type="range" id="gd" placeholder="Placeholder" disabled>
+
+                    <label for="h">Input Type Tel</label>
+                    <input title="Phone Number (Format: +99(99)9999-9999)" type="tel" id="h" placeholder="Placeholder" pattern="[\+]\d{2}[\(]\d{2}[\)]\d{4}[\-]\d{4}">
+
+                    <label for="hd">Input Type Tel Disabled</label>
+                    <input type="tel" id="hd" placeholder="Placeholder" disabled>
+
+                    <label for="i">Input Type Time</label>
+                    <input type="time" id="i" placeholder="Placeholder">
+
+                    <label for="id">Input Type Time Disabled</label>
+                    <input type="time" id="id" placeholder="Placeholder" disabled>
+
+                    <label for="j">Input Type URL</label>
+                    <input type="url" id="j" placeholder="Placeholder">
+
+                    <label for="jd">Input Type URL Disabled</label>
+                    <input type="url" id="jd" placeholder="Placeholder" disabled>
+
+                    <label for="k">Input Type Color</label>
+                    <input type="color" id="k" placeholder="Placeholder">
+
+                    <label for="kd">Input Type Color Disabled</label>
+                    <input type="color" id="kd" placeholder="Placeholder" disabled>
+
+                    <fieldset>
+                        <legend>Fieldset Title</legend>
+                        <label for="radio">Click me</label>
+                        <input type="radio" id="radio">
+                        <label for="radio2">Click me</label>
+                        <input type="radio" id="radio2">
+                        <label for="radio3">Click me</label>
+                        <input type="radio" id="radio3">
+                        <label for="j">Input Type URL</label>
+                        <input type="url" id="j" placeholder="Placeholder">
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Fieldset Title</legend>
+                        <label for="jz">Input Type URL</label>
+                        <input type="url" id="jz" placeholder="Placeholder">
+                        <label for="jy">Input Type URL</label>
+                        <input type="url" id="jy" placeholder="Placeholder">
+                        <label for="jx">Input Type URL</label>
+                        <input type="url" id="jx" placeholder="Placeholder">
+                    </fieldset>
+
+                    <label for="l">Input Type Checkbox</label>
+                    <input type="checkbox" id="l" name="" value="">
+
+                    <label for="ld">Input Type Checkbox Disabled</label>
+                    <input type="checkbox" id="ld" name="" value="" disabled>
+
+                    <label for="m">Input Type Radio</label>
+                    <input type="radio" id="m" name="" value="">
+
+                    <label for="md">Input Type Radio Disabled</label>
+                    <input type="radio" id="md" name="" value="" disabled>
+
+                    <label for="n">Select</label>
+                    <select name="" id="n">
+                        <option value="">Select an Option</option>
+                        <option value="1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod ex sint dolore esse provident assumenda deserunt, consequatur asperiores perspiciatis corrupti!</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                    </select>
+
+                    <label for="nd">Select Disabled</label>
+                    <select name="" id="nd" disabled>
+                        <option value="">Select an Option</option>
+                        <option value="1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod ex sint dolore esse provident assumenda deserunt, consequatur asperiores perspiciatis corrupti!</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                    </select>
+
+                    <label for="ne">Select with Option Groups</label>
+                    <select name="" id="ne">
+                        <option value="">Select an Option</option>
+                        <optgroup label="Group 1">
+                            <option value="1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod ex sint dolore esse provident assumenda deserunt, consequatur asperiores perspiciatis corrupti!</option>
+                        </optgroup>
+                        <optgroup label="Group 2">
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                        </optgroup>
+                    </select>
+
+                    <label for="o">Textarea</label>
+                    <textarea name="" id="o"></textarea>
+
+                    <label for="od">Textarea Disabled</label>
+                    <textarea name="" id="od" disabled></textarea>
+
+                    <section class="willow-alert willow-alert--positive" role="alert">
+                        <h1 class="willow-alert__heading">Form Successfully Submitted</h1>
+                    </section>
+                    <button type="submit" class="willow-button">Submit</button>
                 </form>
                 <div class="table-container">
                     <table>
@@ -562,6 +730,7 @@
                 </div>
                 <h1>Button Tags</h1>
                 <h2>Inline</h2>
+                <button class="willow-button--inline willow-button">Button Text</button>
                 <button class="willow-button--inline willow-button">Button Text</button>
                 <button class="willow-button--inline willow-button willow-button--primary">Primary Text</button>
                 <button class="willow-button--inline willow-button willow-button--positive">Positive Text</button>

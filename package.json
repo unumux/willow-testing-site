@@ -10,6 +10,7 @@
         "start": "gulp --gulpfile=node_modules/@unumux/ux-build-tools/index.js --cwd=."
     },
     "dependencies": {
-        "bootstrap": "4.0.0-beta"
+        "bootstrap": "4.0.0-beta",
+        "gulp-sourcemaps": "2.6.0"
     }
 }

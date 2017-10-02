@@ -12,8 +12,8 @@
             <div class="willow-skip-nav">
                 <a href="#main" class="willow-skip-nav__link" aria-label="skip to main content">Skip to Content</a>
             </div>
-            <section class="willow-global-alert" role="alert">
-                <button class="willow-global-alert__close">Button Text</button>
+            <section class="willow-global-alert willow-global-alert--negative" role="alert">
+                <button class="willow-global-alert__close">dismiss <span class="willow-icon willow-icon--close-inverse"></span></button>
                 <h1 class="willow-global-alert__heading">Heading Text</h1>
                 <div class="willow-global-alert__content">
                     <div class="willow-styling-context">
@@ -144,18 +144,11 @@
                         veritatis temporibus quos soluta velit alias quam eos pariatur saepe, reprehenderit ratione, in dolores!
                         Error fuga deleniti aut dolor quidem facilis accusantium atque enim totam ipsum quod, vero illum,
                         similique <sub>2</sub> nostrum accusamus ipsam nisi animi! Illum excepturi <sub>iste</sub>, perferendis.</p>
-                    <p><abbr title="Abbreviation!">Distinctio et</abbr>, doloremque aspernatur maxime sunt nam minima beatae
-                        rem maiores veritatis.
-                        <s>Quaerat veniam voluptatum laboriosam</s> doloremque eius ab aliquid, illo, fuga fugit ullam earum
-                        qui asperiores rerum labore? Totam sapiente commodi quia,
-                        <del>nam necessitatibus quos</del> eveniet nihil corrupti blanditiis fuga possimus voluptatum deleniti
-                        libero nisi quasi eaque ipsa, quisquam provident, facere eligendi inventore perferendis neque. Laudantium
-                        aspernatur,
-                        <blockquote>Iure voluptates quia, vel quis repellendus quo veritatis vero maiores dolore consequatur doloremque
-                            commodi expedita, eaque sint! Ipsa inventore adipisci, iusto, iure quod laboriosam autem voluptas
-                            dolor.
-                        </blockquote>
-                    </p>
+                    <p><abbr title="Abbreviation!">Distinctio et</abbr>, doloremque aspernatur maxime sunt nam minima beatae rem maiores veritatis. <s>Quaerat veniam voluptatum laboriosam</s> doloremque eius ab aliquid, illo, fuga fugit ullam earum qui asperiores rerum labore? Totam sapiente commodi quia, <del>nam necessitatibus quos</del> eveniet nihil corrupti blanditiis fuga possimus voluptatum deleniti libero nisi quasi eaque ipsa, quisquam provident, facere eligendi inventore perferendis neque. Laudantium aspernatur </p>
+                    <blockquote>Iure voluptates quia, vel quis repellendus quo veritatis vero maiores dolore consequatur doloremque
+                        commodi expedita, eaque sint! Ipsa inventore adipisci, iusto, iure quod laboriosam autem voluptas
+                        dolor.
+                    </blockquote>
                     <section class="willow-banner home-banner" role="region">
                         <h1 class="willow-banner__heading">Heading Text</h1>
                         <div class="willow-banner__content">
@@ -178,7 +171,22 @@
                         <li>List Item 2</li>
                         <li>List Item 3</li>
                         <li>List Item 4</li>
-                        <li>List Item 5</li>
+                        <li>List item with Sub ordered items
+                            <ol>
+                                <li>Sub item</li>
+                                <li>Sub item</li>
+                                <li>Sub item</li>
+                            </ol>
+                        </li>
+                        <li>List item</li>
+                        <li>List item with Sub items
+                            <ul>
+                                <li>Sub item</li>
+                                <li>Sub item</li>
+                                <li>Sub item</li>
+                            </ul>
+                        </li>
+                        <li>List item</li>
                     </ul>
 
                     <ul>
@@ -202,6 +210,21 @@
                         <li>List item</li>
                         <li>List item</li>
                         <li>List item</li>
+                        <li>List item with Sub ordered items
+                            <ol>
+                                <li>Sub item</li>
+                                <li>Sub item</li>
+                                <li>Sub item</li>
+                            </ol>
+                        </li>
+                        <li>List item</li>
+                        <li>List item with Sub items
+                            <ul>
+                                <li>Sub item</li>
+                                <li>Sub item</li>
+                                <li>Sub item</li>
+                            </ul>
+                        </li>
                         <li>List item</li>
                     </ol>
 
@@ -251,13 +274,13 @@
                         alias, corrupti fugiat. Excepturi perspiciatis esse totam. Dignissimos, quis. Aliquid facere molestiae
                         atque earum animi cupiditate, iusto, culpa reiciendis natus accusantium quidem dolorum ratione nulla
                         fugit vero eum, iste consectetur!</p>
-                    <hr>
+                    <!-- <hr> -->
                     <figure>
                         <img src="http://placekitten.com/g/200/200" title="figure and figcaption">
                         <figcaption>figcaption lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae quod libero officiis?
                             Reprehenderit, deserunt nihil. Lorem ipsum dolor sit amet consectetur adipisicing elit.</figcaption>
                     </figure>
-                    <hr>
+                    <!-- <hr> -->
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In, animi! Suscipit in aut nisi eius perspiciatis
                         aperiam ab, beatae consequatur.</p>
 
@@ -369,10 +392,6 @@
                         <input type="radio" id="radio">
                         <label for="radio2">Click me</label>
                         <input type="radio" id="radio2">
-                        <label for="radio3">Click me</label>
-                        <input type="radio" id="radio3">
-                        <label for="j">Input Type URL</label>
-                        <input type="url" id="j" placeholder="Placeholder">
                     </fieldset>
 
                     <fieldset>
@@ -381,8 +400,20 @@
                         <input type="url" id="jz" placeholder="Placeholder">
                         <label for="jy">Input Type URL</label>
                         <input type="url" id="jy" placeholder="Placeholder">
-                        <label for="jx">Input Type URL</label>
-                        <input type="url" id="jx" placeholder="Placeholder">
+                    </fieldset>
+                    
+                    <fieldset>
+                        <legend>Inputs wrapped in labels</legend>
+                        <label>Input Type Text
+                            <input type="text" placeholder="Placeholder">
+                        </label>
+                        <label>Radio
+                            <input type="radio">                        
+                        </label>
+                        <label>
+                            <input type="radio">
+                            Radio
+                        </label>
                     </fieldset>
 
                     <label for="l">Input Type Checkbox</label>

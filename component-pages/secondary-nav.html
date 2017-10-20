@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="../styles/styles.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="willow-skip-nav">
+            <a href="#main" class="willow-skip-nav__link" aria-label="skip to main content">Skip to Content</a>
+        </div>
+        <header class="willow-page-header" role="banner">
+            <div class="willow-page-header__branding"><a class="willow-logo-link" href="/" aria-label="go to home page"><img class="willow-logo-link__image" src="http://via.placeholder.com/150x150" alt=""></a>
+            </div>
+            <div class="willow-page-header__content-controls">
+                <a class="willow-page-header__content-open" aria-label="Open Menu" href="#">menu</a>
+                <a class="willow-page-header__content-close" aria-label="Close Menu" href="#">close</a>
+            </div>
+            <div class="willow-page-header__content">
+                <div class="willow-page-header__navigation">
+                    <nav class="willow-primary-nav" role="navigation" aria-label="primary">
+                        <h1 class="willow-primary-nav__heading sr-only">Site Primary Menu</h1>
+                        <ul class="willow-primary-nav__list">
+                            <li class="willow-primary-nav__item"><a class="willow-primary-nav__link" href="/">Home</a></li>
+                            <li class="willow-primary-nav__item"><a class="willow-primary-nav__link willow-primary-nav__link--active" href="/components.html">Components</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <main class="willow-page-content" id="main" role="main">
+            <h1 class="willow-page-content__heading">Willow Secondary Nav</h1>
+            <div class="willow-styling-context">
+                
+            </div>
+        </main>
+        <footer class="willow-page-footer" role="contentinfo">
+            <div class="willow-page-footer__branding"><a class="willow-logo-link" href="/" aria-label="go to home page"><img class="willow-logo-link__image" src="http://via.placeholder.com/150x150" alt=""></a></div>
+            <div class="willow-page-footer__navigation">
+                <nav class="willow-footer-nav" role="navigation" aria-label="footer">
+                    <h1 class="willow-footer-nav__heading sr-only">Site Footer Menu</h1>
+                    <ul class="willow-footer-nav__list">
+                        <li class="willow-footer-nav__item"><a class="willow-footer-nav__link" href="#" aria-label="">Menu Item 1</a></li>
+                        <li class="willow-footer-nav__item"><a class="willow-footer-nav__link" href="#" aria-label="">Menu Item 2</a></li>
+                        <li class="willow-footer-nav__item"><a class="willow-footer-nav__link" href="#" aria-label="">Menu Item 3</a></li>
+                        <li class="willow-footer-nav__item"><a class="willow-footer-nav__link" href="#" aria-label="">Menu Item 4</a></li>
+                        <li class="willow-footer-nav__item"><a class="willow-footer-nav__link" href="#" aria-label="">Menu Item 5</a></li>
+                        <li class="willow-footer-nav__item"><a class="willow-footer-nav__link" href="#" aria-label="">Menu Item 6</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <small class="willow-page-footer__copyright">Copyright lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, exercitationem.</small>
+        </footer>
+    </div>
+    <script src="scripts/site.min.js"></script>
+    <script>
+        var dialog = document.querySelector(".willow-dialog");
+        var modal = document.querySelector(".willow-modal");
+
+        var openDialog = function () {
+            dialog.setAttribute("data-dialog-close", "false");
+        }
+
+        var closeDialog = function () {
+            dialog.setAttribute("data-dialog-close", "true");
+        }
+
+        var openModal = function () {
+            modal.setAttribute("data-modal-close", "false");
+        }
+
+        var closeModal = function () {
+            modal.setAttribute("data-modal-close", "true");
+        }
+    </script>
+</body>
+</html>

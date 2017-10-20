@@ -1,5 +1,7 @@
-@import "./node_modules/@unumux/theme-unum-default/styles";
+@import "./node_modules/@unumux/theme-coloniallife-default/styles";
 @import "./node_modules/@unumux/willow/styles";
+
+@import "components/components";
 
 .home-banner {
     background-image: url(http://fillmurray.com/400/400);
@@ -18,12 +20,4 @@
 .table-container {
     // margin-bottom: space(2);
     overflow: scroll;
-}
-
-.willow-card__image {
-    background-image: url(http://fillmurray.com/200/300);
-}
-
-.willow-card__icon {
-    background-image: url(http://fillmurray.com/80/80);
 }

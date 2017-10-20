@@ -1,16 +1,17 @@
 {
     "private": true,
     "devDependencies": {
-        "@unumux/theme-coloniallife-default": "git+https://github.com/unumux/theme-coloniallife-default.git#develop",
-        "@unumux/theme-unum-default": "git+https://github.com/unumux/theme-unum-default.git#develop",
+        "@unumux/theme-coloniallife-default": "^0.7.0",
+        "@unumux/theme-unum-default": "^0.5.0",
         "@unumux/ux-build-tools": "^3.7.0",
-        "@unumux/willow": "git+https://github.com/unumux/willow.git#develop"
+        "@unumux/willow": "^0.3.0"
     },
     "scripts": {
         "start": "gulp --gulpfile=node_modules/@unumux/ux-build-tools/index.js --cwd=."
     },
     "dependencies": {
         "bootstrap": "4.0.0-beta",
-        "gulp-sourcemaps": "2.6.0"
+        "gulp-sourcemaps": "2.6.0",
+        "vue": "2.5.2"
     }
 }

@@ -41,13 +41,15 @@
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/@unumux/stylelint-config-unumux/-/stylelint-config-unumux-1.0.1.tgz#34a724c5fdf19482af5d54fc22f5162a972c3378"
 
-"@unumux/theme-coloniallife-default@git+https://github.com/unumux/theme-coloniallife-default.git#develop":
-  version "0.5.0"
-  resolved "git+https://github.com/unumux/theme-coloniallife-default.git#bc852bbb53d851bc550615676eb6ec57aa137d83"
+"@unumux/theme-coloniallife-default@^0.7.0":
+  version "0.7.1"
+  resolved "https://registry.yarnpkg.com/@unumux/theme-coloniallife-default/-/theme-coloniallife-default-0.7.1.tgz#0dbeccf1705537eae7d3a0a182202aace688de68"
+  dependencies:
+    "@unumux/willow" "^0.3.0"
 
-"@unumux/theme-unum-default@git+https://github.com/unumux/theme-unum-default.git#develop":
-  version "0.4.0"
-  resolved "git+https://github.com/unumux/theme-unum-default.git#bdb74c0c513ac63ab6f58083d7e535cee56dcfc2"
+"@unumux/theme-unum-default@^0.5.0":
+  version "0.5.0"
+  resolved "https://registry.yarnpkg.com/@unumux/theme-unum-default/-/theme-unum-default-0.5.0.tgz#18602cf691519c0fb287081901d6e633a2e1b707"
 
 "@unumux/ux-build-tools@^3.7.0":
   version "3.7.0"
@@ -97,9 +99,9 @@
     vinyl-source-stream "^1.1.0"
     watchify "^3.2.1"
 
-"@unumux/willow@git+https://github.com/unumux/willow.git#develop":
-  version "0.2.0"
-  resolved "git+https://github.com/unumux/willow.git#8d38dd4f813314ef536f8ab0b7179ac39776a86a"
+"@unumux/willow@^0.3.0":
+  version "0.3.0"
+  resolved "https://registry.yarnpkg.com/@unumux/willow/-/willow-0.3.0.tgz#021c0b96c47801127ad4f85b95e4733e2082a7fc"
   dependencies:
     bootstrap "4.0.0-beta"
     normalize.css "^4.0.0"
@@ -7941,6 +7943,10 @@ vm-browserify@~0.0.1:
   resolved "https://registry.yarnpkg.com/vm-browserify/-/vm-browserify-0.0.4.tgz#5d7ea45bbef9e4a6ff65f95438e0a87c357d5a73"
   dependencies:
     indexof "0.0.1"
+
+vue@2.5.2:
+  version "2.5.2"
+  resolved "https://registry.yarnpkg.com/vue/-/vue-2.5.2.tgz#fd367a87bae7535e47f9dc5c9ec3b496e5feb5a4"
 
 watchify@^3.2.1:
   version "3.9.0"

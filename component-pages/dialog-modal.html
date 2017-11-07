@@ -9,24 +9,18 @@
 
 <body>
     <div class="container">
-        <header class="willow-page-header component-page-header" role="banner">
-            <div class="willow-page-header__content">
-                <div class="willow-page-header__navigation">
-                    <nav class="home-nav">
-                        <h1 class="home-nav__heading sr-only">Single Link to Return to Component List Page</h1>
-                        <ul class="home-nav__list">
-                            <li class="home-nav__item">
-                                <a href="/willow-testing-site/components.html" class="home-nav__link" aria-label="Return to Component List Page">Back</a>
-                            </li>
-                        </ul>
-                    </nav>
-                </div>
-            </div>
-        </header>
+        <nav class="willow-breadcrumbs" role="navigation" aria-label="breadcrumb">
+            <h1 class="willow-breadcrumbs__heading sr-only">You are here:</h1>
+            <ol class="willow-breadcrumbs__list">
+                <li class="willow-breadcrumbs__item"><a class="willow-breadcrumbs__link" href="/willow-testing-site/" aria-label="">Home</a></li>                            
+                <li class="willow-breadcrumbs__item"><a class="willow-breadcrumbs__link" href="/willow-testing-site/components.html" aria-label="">Components</a></li>                            
+                <li class="willow-breadcrumbs__item willow-breadcrumbs__item--active">Dialog and Modal</li>
+            </ol>
+        </nav>
         <main class="willow-page-content" id="" role="main">
-            <h1 class="willow-page-content__heading">Dialog & Modal</h1>
-            <button class="willow-button" onclick="openDialog()">Open Dialog</button>
-            <button class="willow-button" onclick="openModal()">Open Modal</button>
+            <h1 class="willow-page-content__heading">Dialog and Modal</h1>
+            <button class="willow-button" id="openDialogButton">Open Dialog</button>
+            <button class="willow-button" id="openModalButton">Open Modal</button>
         </main>
             
         <div class="willow-dialog">
@@ -39,7 +33,7 @@
                     </div>
                 </div>
                 <ul class="willow-dialog__actions">
-                    <li class="willow-dialog__action"><button class="willow-button" onclick="closeDialog()">Close</button></li>
+                    <li class="willow-dialog__action"><button class="willow-button" id="closeDialogButton">Close</button></li>
                 </ul>
             </section>
         </div>
@@ -54,14 +48,14 @@
                     </div>
                 </div>
                 <ul class="willow-modal__actions">
-                    <li class="willow-modal__action"><button class="willow-button willow-button--negative" onclick="closeModal()">Close</button></li>
-                    <li class="willow-modal__action"><button class="willow-button willow-button--primary" onclick="closeModal()">Close</button></li>
+                    <li class="willow-modal__action"><button class="willow-button willow-button--negative" id="closeModalButton">Close</button></li>
+                    <li class="willow-modal__action"><button class="willow-button willow-button--primary" id="closeModalButton2">Close</button></li>
                 </ul>
             </section>
         </div>
     </div>
-    <script src="scripts/site.min.js"></script>
-    <script>
+    <script src="../scripts/site.min.js"></script>
+    <!-- <script>
         var dialog = document.querySelector(".willow-dialog");
         var modal = document.querySelector(".willow-modal");
 
@@ -80,6 +74,6 @@
         var closeModal = function () {
             modal.setAttribute("data-modal-close", "true");
         }
-    </script>
+    </script> -->
 </body>
 </html>

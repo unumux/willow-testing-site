@@ -9,20 +9,14 @@
 
     <body>
         <div class="container">
-            <header class="willow-page-header component-page-header" role="banner">
-                <div class="willow-page-header__content">
-                    <div class="willow-page-header__navigation">
-                        <nav class="home-nav">
-                            <h1 class="home-nav__heading sr-only">Single Link to Return to Component List Page</h1>
-                            <ul class="home-nav__list">
-                                <li class="home-nav__item">
-                                    <a href="/willow-testing-site/components.html" class="home-nav__link" aria-label="Return to Component List Page">Back</a>
-                                </li>
-                            </ul>
-                        </nav>
-                    </div>
-                </div>
-            </header>
+            <nav class="willow-breadcrumbs" role="navigation" aria-label="breadcrumb">
+                <h1 class="willow-breadcrumbs__heading sr-only">You are here:</h1>
+                <ol class="willow-breadcrumbs__list">
+                    <li class="willow-breadcrumbs__item"><a class="willow-breadcrumbs__link" href="/willow-testing-site/" aria-label="">Home</a></li>                            
+                    <li class="willow-breadcrumbs__item"><a class="willow-breadcrumbs__link" href="/willow-testing-site/components.html" aria-label="">Components</a></li>                            
+                    <li class="willow-breadcrumbs__item willow-breadcrumbs__item--active">Breadcrumbs</li>
+                </ol>
+            </nav>
             <main class="willow-page-content" id="" role="main">
                 <h1 class="willow-page-content__heading">Breadcrumbs</h1>
                 <nav class="willow-breadcrumbs" role="navigation" aria-label="breadcrumb">
@@ -37,6 +31,5 @@
                 </nav>
             </main>
         </div>
-        <script src="scripts/site.min.js"></script>
     </body>
 </html>

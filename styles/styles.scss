@@ -1,21 +1,9 @@
-@import "./node_modules/@unumux/theme-coloniallife-default/styles";
+$icons-folder: "../assets/icons";
+
+// @import "./node_modules/@unumux/theme-coloniallife-default/styles";
 @import "./node_modules/@unumux/willow/styles";
 
 @import "components/components";
-
-.home-banner {
-    background-image: url(http://fillmurray.com/400/400);
-}
-
-.constricted {
-    background-color: lightgrey;
-    margin: 24px auto;
-    padding: 24px;
-    
-    @media screen and (min-width: 992px) {
-        width: 50%;
-    };
-}
 
 .table-container {
     // margin-bottom: space(2);

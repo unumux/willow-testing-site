@@ -9,9 +9,24 @@
 
     <body>
         <div class="container">
-            <div class="willow-styling-context">
-                <h1>Made with <code>Button</code> Tags</h1>
-                <h2>Inline</h2>
+            <header class="willow-page-header component-page-header" role="banner">
+                <div class="willow-page-header__content">
+                    <div class="willow-page-header__navigation">
+                        <nav class="home-nav">
+                            <h1 class="home-nav__heading sr-only">Single Link to Return to Component List Page</h1>
+                            <ul class="home-nav__list">
+                                <li class="home-nav__item">
+                                    <a href="/components.html" class="home-nav__link" aria-label="Return to Component List Page">Back</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </header>
+            <main class="willow-page-content" id="" role="main">
+                <h1 class="willow-page-content__heading">Buttons</h1>
+                <h2>Made with <code>button</code> Tags</h2>
+                <h3>Inline</h3>
                 <button class="willow-button--inline willow-button">Default</button>
                 <button class="willow-button--inline willow-button willow-button--primary">Primary</button>
                 <button class="willow-button--inline willow-button willow-button--positive">Positive</button>
@@ -24,7 +39,7 @@
                     <button class="willow-button willow-button--inline willow-button--ghost-inverse">Ghost Alternate</button>
                 </div>
                 <button class="willow-button--inline willow-button" disabled>Disabled</button>
-                <h2>Block</h2>
+                <h3>Block</h3>
                 <button class="willow-button">Default</button>
                 <button class="willow-button willow-button--primary">Primary</button>
                 <button class="willow-button willow-button--positive">Positive</button>
@@ -38,8 +53,8 @@
                 </div>
                 <button class="willow-button" disabled>Disabled</button>
                 <hr>
-                <h1>Made with <code>Anchor</code> Tags</h1>
-                <h2>Inline</h2>
+                <h2>Made with <code>anchor</code> Tags</h2>
+                <h3>Inline</h3>
                 <a href="#" class="willow-button--inline willow-button" aria-label="">Default</a>
                 <a href="#" class="willow-button--inline willow-button willow-button--primary" aria-label="">Primary</a>
                 <a href="#" class="willow-button--inline willow-button willow-button--positive" aria-label="">Positive</a>
@@ -52,7 +67,7 @@
                     <a href="#" class="willow-button--inline willow-button willow-button--ghost-inverse" aria-label="">Ghost Alternate</a>
                 </div>
                 <a href="#" class="willow-button--inline willow-button" data-disabled="true" aria-disabled="true" aria-label="">Disabled</a>
-                <h2>Block</h2>
+                <h3>Block</h3>
                 <a href="#" class="willow-button" aria-label="">Button</a>
                 <a href="#" class="willow-button willow-button--primary" aria-label="">Primary</a>
                 <a href="#" class="willow-button willow-button--positive" aria-label="">Positive</a>
@@ -65,7 +80,7 @@
                     <a href="#" class="willow-button willow-button--ghost-inverse" aria-label="">Ghost Alternate</a>
                 </div>
                 <a href="#" class="willow-button" data-disabled="true" aria-disabled="true" aria-label="">Disabled</a>
-            </div>
+            </main>       
         </div>
         <script src="scripts/site.min.js"></script>
     </body>

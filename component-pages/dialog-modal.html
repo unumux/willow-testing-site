@@ -9,8 +9,26 @@
 
 <body>
     <div class="container">
-        <button class="willow-button willow-button--inline" onclick="openDialog()">Dialog</button>
-        <button class="willow-button willow-button--inline" onclick="openModal()">Modal</button>
+        <header class="willow-page-header component-page-header" role="banner">
+            <div class="willow-page-header__content">
+                <div class="willow-page-header__navigation">
+                    <nav class="home-nav">
+                        <h1 class="home-nav__heading sr-only">Single Link to Return to Component List Page</h1>
+                        <ul class="home-nav__list">
+                            <li class="home-nav__item">
+                                <a href="/components.html" class="home-nav__link" aria-label="Return to Component List Page">Back</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <main class="willow-page-content" id="" role="main">
+            <h1 class="willow-page-content__heading">Dialog & Modal</h1>
+            <button class="willow-button" onclick="openDialog()">Open Dialog</button>
+            <button class="willow-button" onclick="openModal()">Open Modal</button>
+        </main>
+            
         <div class="willow-dialog">
             <section class="willow-dialog__container" role="dialog">
                 <h1 class="willow-dialog__heading">Heading Text</h1>
@@ -21,8 +39,7 @@
                     </div>
                 </div>
                 <ul class="willow-dialog__actions">
-                    <li class="willow-dialog__action"><button class="willow-button" onclick="closeDialog()">Button</button></li>
-                    <li class="willow-dialog__action"><button class="willow-button" onclick="closeDialog()">Button</button></li>
+                    <li class="willow-dialog__action"><button class="willow-button" onclick="closeDialog()">Close</button></li>
                 </ul>
             </section>
         </div>
@@ -37,8 +54,8 @@
                     </div>
                 </div>
                 <ul class="willow-modal__actions">
-                    <li class="willow-modal__action"><button class="willow-button willow-button--negative" onclick="closeModal()">Negative</button></li>
-                    <li class="willow-modal__action"><button class="willow-button willow-button--primary" onclick="closeModal()">Primary</button></li>
+                    <li class="willow-modal__action"><button class="willow-button willow-button--negative" onclick="closeModal()">Close</button></li>
+                    <li class="willow-modal__action"><button class="willow-button willow-button--primary" onclick="closeModal()">Close</button></li>
                 </ul>
             </section>
         </div>

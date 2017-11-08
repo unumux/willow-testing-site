@@ -1,7 +1,13 @@
 $icons-folder: "../assets/icons";
 
-// @import "./node_modules/@unumux/theme-coloniallife-default/styles";
-@import "./node_modules/@unumux/willow/styles";
+@import "./node_modules/@unumux/theme-coloniallife-default/styles";
+// @import "./node_modules/@unumux/willow/styles";
+
+
+// @import "./node_modules/@unumux/willow/components/breadcrumbs/styles/breadcrumbs";
+@import "./node_modules/@unumux/willow/components/banner/styles/banner";
+
+
 
 @import "components/components";
 

@@ -106,6 +106,13 @@
     bootstrap "4.0.0-beta"
     normalize.css "^4.0.0"
 
+"@unumux/willow@git+https://github.com/unumux/willow.git#component-vertical-margins":
+  version "0.3.0"
+  resolved "git+https://github.com/unumux/willow.git#cb2f038466752abf0cbe954abb3ed6fd13cc305e"
+  dependencies:
+    bootstrap "4.0.0-beta"
+    normalize.css "^4.0.0"
+
 JSONStream@^0.8.4:
   version "0.8.4"
   resolved "https://registry.yarnpkg.com/JSONStream/-/JSONStream-0.8.4.tgz#91657dfe6ff857483066132b4618b62e8f4887bd"

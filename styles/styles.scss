@@ -1,24 +1,30 @@
 $icons-folder: "../assets/icons";
 
-// @import "./node_modules/@unumux/theme-coloniallife-default/styles";
+@import "./node_modules/@unumux/theme-coloniallife-default/styles";
 @import "./node_modules/@unumux/willow/styles";
 
+// @import "./node_modules/@unumux/willow/global/vendors/bootstrap-grid";
+// @import "./node_modules/@unumux/willow/global/base-elements/base-elements";
 
-// @import "./node_modules/@unumux/willow/components/inline-alert/styles/inline-alert";
-// @import "./node_modules/@unumux/willow/components/banner/banner";
-// @import "./node_modules/@unumux/willow/components/breadcrumbs/breadcrumbs";
+// @import "./node_modules/@unumux/willow/components/banner/styles/banner";
+// @import "./node_modules/@unumux/willow/components/breadcrumbs/styles/breadcrumbs";
 // @import "./node_modules/@unumux/willow/components/button/styles/button";
 // @import "./node_modules/@unumux/willow/components/cards/styles/card/card";
-// @import "./node_modules/@unumux/willow/components/cards/styles/layouts/card-grid";
-// @import "./node_modules/@unumux/willow/components/styling-context/styles/styling-context";
-// @import "./node_modules/@unumux/willow/components/skip-nav/styles/skip-nav";
-// @import "./node_modules/@unumux/willow/components/secondary-nav/styles/secondary-nav";
-// @import "./node_modules/@unumux/willow/components/primary-nav/styles/primary-nav";
-// @import "./node_modules/@unumux/willow/components/page-header/styles/page-header";
+// @import "./node_modules/@unumux/willow/components/cards/styles/layouts/card-grid/card-grid";
+// @import "./node_modules/@unumux/willow/components/dialog/styles/dialog";
+// @import "./node_modules/@unumux/willow/components/footer-nav/styles/footer-nav";
+// @import "./node_modules/@unumux/willow/components/global-alert/styles/global-alert";
+// @import "./node_modules/@unumux/willow/components/icons/styles/icons";
+// @import "./node_modules/@unumux/willow/components/inline-alert/styles/inline-alert";
 // @import "./node_modules/@unumux/willow/components/logo-link/styles/logo-link";
-// @import "./node_modules/@unumux/willow/components/page-footer/styles/page-footer";
+// @import "./node_modules/@unumux/willow/components/modal/styles/modal";
 // @import "./node_modules/@unumux/willow/components/page-content/styles/page-content";
-// @import "./node_modules/@unumux/willow/base-elements/base-elements";
+// @import "./node_modules/@unumux/willow/components/page-footer/styles/page-footer";
+// @import "./node_modules/@unumux/willow/components/page-header/styles/page-header";
+// @import "./node_modules/@unumux/willow/components/primary-nav/styles/primary-nav";
+// @import "./node_modules/@unumux/willow/components/secondary-nav/styles/secondary-nav";
+// @import "./node_modules/@unumux/willow/components/skip-nav/styles/skip-nav";
+// @import "./node_modules/@unumux/willow/components/styling-context/styles/styling-context";
 
 
 @import "components/components";
@@ -26,4 +32,11 @@ $icons-folder: "../assets/icons";
 .table-container {
     // margin-bottom: space(2);
     overflow: scroll;
+}
+
+.container--contrasted {
+    background-color: #777;
+    display: inline-block;
+    padding: 2rem;
+    margin-top: 1rem;
 }

@@ -83,12 +83,17 @@
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque officia, minus iusto voluptatibus enim.
                         <mark>Dolor reiciendis recusandae tempore explicabo corporis</mark>
                         doloribus vel sapiente officiis inventore? Fugit nihil veniam porro placeat enim obcaecati beatae.</p>
+                    <small>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Expedita quas unde porro exercitationem dolore libero modi, omnis quis mollitia perferendis atque a laborum placeat fugit! Ut mollitia molestiae perferendis magni!</small>
                     <p>Maiores soluta iure praesentium necessitatibus <time>1:00 pm</time> maiores veritatis. Quaerat veniam voluptatum laboriosam doloremque eius ab aliquid, illo, fuga fugit ullam earum qui asperiores rerum labore? Totam sapiente commodi quia, nam necessitatibus quos eveniet nihil corrupti blanditiis fuga possimus <ins>voluptatum deleniti libero nisi quasi eaque ipsa</ins>, quisquam provident, facere eligendi inventore perferendis neque. Laudantium aspernatur, iure voluptates quia, vel quis repellendus quo veritatis vero maiores dolore consequatur doloremque commodi expedita, eaque sint! <q>Ipsa inventore adipisci, iusto, iure quod laboriosam autem voluptas dolor.</q> Atque, natus laudantium impedit facere, aliquam qui tempora, ex sunt nobis magnam sequi dicta corporis! Ducimus <sup>1</sup> obcaecati vel asperiores aperiam <sup>deserunt placeat</sup> illo facere voluptatum veritatis temporibus quos soluta velit alias quam eos pariatur saepe, reprehenderit ratione, in dolores! Error fuga deleniti aut dolor quidem facilis accusantium atque enim totam ipsum quod, vero illum, similique <sub>2</sub> nostrum accusamus ipsam nisi animi! Illum excepturi <sub>iste</sub>, perferendis.</p>
+                    <hr>
+                    <h2>Heading Two</h2>
                     <p><abbr title="Abbreviation!">Distinctio et</abbr>, doloremque aspernatur maxime sunt nam minima beatae rem maiores veritatis. <s>Quaerat veniam voluptatum laboriosam</s> doloremque eius ab aliquid, illo, fuga fugit ullam earum qui asperiores rerum labore? Totam sapiente commodi quia, <del>nam necessitatibus quos</del> eveniet nihil corrupti blanditiis fuga possimus voluptatum deleniti libero nisi quasi eaque ipsa, quisquam provident, facere eligendi inventore perferendis neque. Laudantium aspernatur </p>
                     <blockquote>Iure voluptates quia, vel quis repellendus quo veritatis vero maiores dolore consequatur doloremque
                         commodi expedita, eaque sint! Ipsa inventore adipisci, iusto, iure quod laboriosam autem voluptas
                         dolor.
                     </blockquote>
+                    <hr>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio fuga perferendis cum laborum assumenda quia dignissimos saepe! Officiis sint laboriosam labore. Quas architecto placeat veniam minima ducimus sapiente corporis officia odit natus eum earum illo commodi, aut animi facere numquam, neque sed vero explicabo ullam, molestiae quo excepturi tempore? Repellendus!</p>
                     <section class="willow-banner" role="region">
                         <h1 class="willow-banner__heading">Heading Text</h1>
                         <div class="willow-banner__content">
@@ -105,6 +110,7 @@
                     <p>Atque, natus laudantium impedit facere, aliquam qui tempora, ex sunt nobis magnam sequi dicta corporis!
                         <dfn>Ducimus obcaecati vel asperiores aperiam deserunt placeat illo facere voluptatum veritatis temporibus quos soluta velit alias quam eos pariatur saepe, reprehenderit ratione, in dolores!</dfn>                        Error fuga deleniti aut dolor quidem facilis accusantium atque enim totam ipsum quod, vero illum,
                         similique nostrum accusamus ipsam nisi animi! Illum excepturi iste, perferendis.</p>
+                        <h2>Heading Two</h2>
                     <ul>
                         <li>List Item 1</li>
                         <li>List Item 2</li>
@@ -135,7 +141,7 @@
                         <li><a href="#">Link Item 4</a></li>
                         <li><a href="#">Link Item 5</a></li>
                     </ul>
-
+                    <h2>Heading Two</h2>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id asperiores quas quia porro architecto?
                         <a href="#">Doloribus fugiat ex quibusdam</a> nesciunt voluptatibus quam odio, nisi officiis nobis
                         minima quis repellat qui recusandae incidunt architecto eos vero tempora minus accusantium suscipit
@@ -191,6 +197,8 @@
                         error minima tenetur ad. Possimus eveniet temporibus nam quam! Quisquam tempora dolores optio nihil
                         ullam.
                     </p>
+                    <h2>Heading Two</h2>
+                    <h3>Heading Three</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum deleniti voluptatem ex, vel repudiandae
                         quam veniam deserunt, commodi a repellendus earum sequi eligendi asperiores sed culpa nobis maiores
                         laborum expedita quidem voluptates odio perferendis tempora possimus magnam? Praesentium itaque sunt
@@ -207,15 +215,31 @@
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In, animi! Suscipit in aut nisi eius perspiciatis
                         aperiam ab, beatae consequatur.</p>
 
-                    <pre>
-                <code>function consoleIt(it) { 
-                    console.log(it);
-                };</code>
-                </pre>
+                    <pre><code>$test1 = array( 
+    '11' => '11',
+    '22' => '22',
+    '33' => '33',
+    '44' => '44'
+);
+                        
+$test2 = array( 
+    '44' => '44',
+    '55' => '55',
+    '66' => '66',
+    '77' => '77'
+);
+                    
+                        
+function combineWithKeys($array1, $array2) {
+    foreach($array1 as $key=>$value) $array2[$key] = $value;
+    asort($array2);
+    return $array2;
+}</code></pre>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi dolor sit amet consectetur adipisicing
                         elitnam quo quis! Ipsam obcaecati soluta earum, ad et nisi unde.</p>
                 </div>
                 <hr>
+                <h2>Heading Two</h2>
                 <div class="table-container">
                     <table>
                         <thead>

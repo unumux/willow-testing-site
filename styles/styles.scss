@@ -1,11 +1,16 @@
 $icons-folder: "../assets/icons";
 
+///////// Entire Library Import (with Theme)
 @import "./node_modules/@unumux/theme-coloniallife-default/styles";
 @import "./node_modules/@unumux/willow/styles";
+//////// End Entire Library Import
 
+//////// Single Component Imports
+// // Grid to constrain content
 // @import "./node_modules/@unumux/willow/global/vendors/bootstrap-grid";
+// // Styling for plain elements
 // @import "./node_modules/@unumux/willow/global/base-elements/base-elements";
-
+// // Components
 // @import "./node_modules/@unumux/willow/components/banner/styles/banner";
 // @import "./node_modules/@unumux/willow/components/breadcrumbs/styles/breadcrumbs";
 // @import "./node_modules/@unumux/willow/components/button/styles/button";
@@ -25,22 +30,28 @@ $icons-folder: "../assets/icons";
 // @import "./node_modules/@unumux/willow/components/secondary-nav/styles/secondary-nav";
 // @import "./node_modules/@unumux/willow/components/skip-nav/styles/skip-nav";
 // @import "./node_modules/@unumux/willow/components/styling-context/styles/styling-context";
+// // removes extra margin from nested elements
+// // typically comes from willow/styles.scss - no way to singularly import that
+// :first-child {
+//     margin-top: 0;
+// }
+//////// End Single Component Imports
 
 
+//////// Start of Project Styles (Custom Components and Overrides)
+// imports project custom components or overrrides
 @import "components/components";
 
+// allows table to scroll horizontally when on narrow screen or when content overflows
 .table-container {
-    // margin-bottom: space(2);
     overflow: scroll;
 }
 
+// background color for icon demo page
 .container--contrasted {
     background-color: #777;
     display: inline-block;
     padding: 2rem;
     margin-top: 1rem;
 }
-
-// .willow-breadcrumbs {
-//     background-color: gold;
-// }
+//////// End Project Styles

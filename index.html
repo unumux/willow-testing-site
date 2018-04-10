@@ -1,39 +1,408 @@
 <!DOCTYPE html>
-    <html lang="en">
+<html lang="en">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0;">
-        <title>Title</title>
-        <link rel="stylesheet" href="styles/styles.min.css">
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0;">
+    <title>Title</title>
+    <link rel="stylesheet" href="styles/styles.min.css">
+</head>
 
-    <body>
-        <div class="container">
-            <div class="willow-skip-nav">
+<body>
+    <div class="willow-page-container">
+        <div class="willow-skip-nav">
+            <div class="container-fluid">
                 <a href="#main" class="willow-skip-nav__link" aria-label="skip to main content">Skip to Content</a>
             </div>
-            <header class="willow-page-header" role="banner">
-                <div class="willow-page-header__branding"><a class="willow-logo-link" href="/" aria-label="go to home page"><img class="willow-logo-link__image" src="https://via.placeholder.com/150x150" alt=""></a>
-                </div>
-                <div class="willow-page-header__content-controls">
-                    <a class="willow-page-header__content-open" aria-label="Open Menu" href="#">menu</a>
-                    <a class="willow-page-header__content-close" aria-label="Close Menu" href="#">close</a>
-                </div>
-                <div class="willow-page-header__content">
-                    <div class="willow-page-header__navigation">
-                        <nav class="willow-primary-nav" role="navigation" aria-label="primary">
-                            <h1 class="willow-primary-nav__heading sr-only">Site Primary Menu</h1>
-                            <ul class="willow-primary-nav__list">
-                                <li class="willow-primary-nav__item"><a class="willow-primary-nav__link willow-primary-nav__link--active" href="/">Home</a></li>
-                                <li class="willow-primary-nav__item"><a class="willow-primary-nav__link" href="/components.html">Components</a></li>
-                            </ul>
-                        </nav>
+        </div>
+        <header class="willow-page-header" role="banner">
+            <div class="container-fluid">
+                <div class="willow-page-header__container">
+                    <div class="willow-page-header__branding">
+                        <a class="willow-logo-link" href="/" aria-label="go to home page">
+                            <img class="willow-logo-link__image" src="https://via.placeholder.com/150x150" alt="">
+                        </a>
+                    </div>
+                    <div class="willow-page-header__content-controls">
+                        <a class="willow-page-header__content-open" aria-label="Open Menu" href="#">menu</a>
+                        <a class="willow-page-header__content-close" aria-label="Close Menu" href="#">close</a>
+                    </div>
+                    <div class="willow-page-header__content">
+                        <div class="willow-page-header__navigation">
+                            <nav class="willow-primary-nav" role="navigation" aria-label="primary">
+                                <h1 class="willow-primary-nav__heading sr-only">Site Primary Menu</h1>
+                                <ul class="willow-primary-nav__list">
+                                    <li class="willow-primary-nav__item">
+                                        <a class="willow-primary-nav__link willow-primary-nav__link--active" href="/">Home</a>
+                                    </li>
+                                    <li class="willow-primary-nav__item">
+                                        <a class="willow-primary-nav__link" href="/components.html">Components</a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
                     </div>
                 </div>
-            </header>
-            <section class="willow-banner" role="region">
-                <h1 class="willow-banner__heading">Heading Text</h1>
+            </div>
+        </header>
+        <main class="willow-page-content" id="main" role="main">
+            <section class="willow-banner extra-special" role="region">
+                <div class="container-fluid">
+                    <h1 class="willow-banner__heading">CTA Banner</h1>
+                    <div class="willow-banner__content">
+                        <div class="willow-styling-context">
+                            <p>I am full width because I am not contained by the bootstrap container-fluid element.</p>
+                        </div>
+                    </div>
+                    <ul class="willow-banner__actions">
+                        <li class="willow-banner__action">
+                            <button class="willow-button willow-button--cta">Call To Action Button</button>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <div class="container-fluid">
+                <div class="willow-styling-context">
+                    <h1>Page heading</h1>
+                    <h2>A subheading made from an h2 element</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime nam asperiores dolorum fugiat? Ratione
+                        eaque error laboriosam numquam dignissimos perferendis inventore sunt commodi. Tempore quae explicabo
+                        esse aut facere iusto eligendi dignissimos incidunt voluptatem. Dolorum quibusdam aut dolores sapiente
+                        asperiores ipsam quo fugit dignissimos, aliquid enim, numquam, molestias temporibus cum.</p>
+                </div>
+                <section class="willow-banner project-special-banner" role="region">
+                    <div class="container-fluid">
+                        <h1 class="willow-banner__heading">Second CTA Banner</h1>
+                        <div class="willow-banner__content">
+                            <div class="willow-styling-context">
+                                <p>I'm not full-width because I'm inside the bootstrap container-fluid element. My background color was customized by adding a class to my HTML & setting background-color to the $theme-primary-4 variable.</p>
+                            </div>
+                        </div>
+                        <ul class="willow-banner__actions">
+                            <li class="willow-banner__action">
+                                <button class="willow-button">Default Button</button>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+                <div class="willow-styling-context">
+                    <h3>Subheading made from an h3 element</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Praesentium aut nostrum reprehenderit libero
+                        molestias labore non minima optio sit facilis. Nobis, quae! Voluptatibus, veniam vel. Ex facere reiciendis
+                        maxime earum dolore repudiandae ullam laboriosam modi, temporibus provident repellat delectus quos
+                        hic inventore, nulla omnis quod velit, totam doloremque quibusdam vitae.</p>
+                    <h4>Subheading made from an h4 element</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et sunt debitis eius magnam aspernatur vel,
+                        iste eligendi tenetur. Ipsa ducimus minima dolorem placeat velit sunt dolores, animi culpa dicta
+                        possimus hic quo fugit dignissimos? Officia odio voluptatum, saepe nihil commodi eligendi neque nulla,
+                        distinctio excepturi molestiae ab, sit accusamus error!</p>
+                    <h5>Subheading made from an h5 element</h5>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum, nisi. Ratione magnam deserunt
+                        accusantium voluptate commodi officiis eveniet animi quae hic magni dolorum non tenetur ex
+                        autem, delectus eligendi voluptas, officia neque consequuntur ea itaque adipisci iste qui
+                        distinctio. Nostrum repellat amet minus sed, architecto tempora similique molestias dolorem
+                        hic?
+                    </p>
+                    <h6>Subheading made from an h6 element</h6>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat corporis suscipit rem assumenda
+                        inventore facilis tenetur ex itaque dolorem quam dolorum, placeat ratione beatae provident
+                        nisi quo, voluptate cum numquam. Molestiae itaque totam nobis repudiandae aspernatur, nihil
+                        architecto non recusandae odio, alias est ratione. Veniam dolor voluptatum molestias fugit
+                        nobis!
+                    </p>
+                    <h2>Column example</h2>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos labore asperiores perspiciatis.
+                                Totam necessitatibus iusto dolores temporibus, iure accusamus laudantium autem? Modi atque non rem
+                                veritatis amet! Adipisci sit earum molestiae placeat fugiat! Quasi, modi amet commodi neque doloribus
+                                repellendus numquam corrupti libero iste quaerat ipsam aliquam accusantium sint totam!</p>
+                        </div>
+                        <div class="col-md-6">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos labore asperiores perspiciatis.
+                                Totam necessitatibus iusto dolores temporibus, iure accusamus laudantium autem? Modi atque non rem
+                                veritatis amet! Adipisci sit earum molestiae placeat fugiat! Quasi, modi amet commodi neque doloribus
+                                repellendus numquam corrupti libero iste quaerat ipsam aliquam accusantium sint totam!</p>
+                        </div>
+                    </div>
+                    <h2>Element examples</h2>
+                    <p><code>a, mark, small</code>: Lorem ipsum dolor sit amet consectetur adipisicing elit. <a href="#">Doloribus fugiat ex quibusdam</a> nesciunt voluptatibus quam odio, nisi officiis nobis minima quis repellat qui recusandae incidunt architecto eos vero tempora minus accusantiu suscipit exercitationem excepturi doloremque nemo! <mark>Dolor reiciendis recusandae tempore explicabo corporis</mark> doloribus vel sapiente officiis inventore? Fugit nihil veniam porro placeat enim obcaecati beatae. Lorem ipsum, <small>dolor sit amet consectetur adipisicing elit. Expedita quas unde porro exercitationem dolore</small> libero modi, omnis quis mollitia perferendis atque a laborum placeat fugit!</p>
+                    <p><code>time, ins, hr</code>: Maiores soluta iure praesentium necessitatibus <time>1:00 pm</time> maiores veritatis. Quaerat veniam voluptatum laboriosam doloremque eius ab aliquid, illo, fuga fugit ullam earum qui asperiores rerum labore? Totam sapiente commodi quia, nam necessitatibus quos eveniet nihil corrupti blanditiis fuga possimus <ins>voluptatum deleniti libero nisi quasi eaque ipsa</ins>, quisquam provident, facere eligendi inventore perferendis neque.</p> 
+                    <hr>
+                    <p><code>q, sup, sub</code>: Laudantium aspernatur, iure voluptates quia, vel quis repellendus quo veritatis vero maiores dolore consequatur doloremque commodi expedita, eaque sint! <q>Ipsa inventore adipisci, iusto, iure quod laboriosam autem voluptas dolor.</q> Atque, natus laudantium impedit facere, aliquam qui tempora, ex sunt nobis magnam sequi dicta corporis! Ducimus <sup>1</sup> obcaecati vel asperiores aperiam <sup>deserunt placeat</sup> illo facere voluptatum veritatis temporibus quos soluta velit alias quam eos pariatur saepe, reprehenderit ratione, in dolores! Error fuga deleniti aut dolor quidem facilis accusantium atque enim totam ipsum quod, vero illum, similique <sub>2</sub> nostrum accusamus ipsam nisi animi! Illum excepturi <sub>iste</sub>, perferendis.</p>
+                    <p><code>abbr, s, del</code>: <abbr title="Abbreviation!">Distinctio et</abbr>, doloremque aspernatur maxime sunt nam minima beatae rem maiores veritatis. <s>Quaerat veniam voluptatum laboriosam</s> doloremque eius ab aliquid, illo, fuga fugit ullam earum qui asperiores rerum labore? Totam sapiente commodi quia, <del>nam necessitatibus quos</del> eveniet nihil corrupti blanditiis fuga possimus voluptatum deleniti libero nisi quasi eaque ipsa.</p>
+                    <p><code>blockquote, dfn</code>:</p>
+                    <blockquote><p>Iure voluptates quia, vel quis repellendus quo veritatis vero maiores dolore consequatur doloremque commodi expedita, eaque sint! Ipsa inventore adipisci, iusto, iure quod laboriosam autem voluptas dolor.</p></blockquote>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium aspernatur, iure voluptates quia, vel quis repellendus quo veritatis vero maiores dolore consequatur doloremque commodi expedita, eaque sint! <dfn>Ducimus obcaecati vel asperiores aperiam deserunt placeat illo facere voluptatum veritatis temporibus quos soluta velit alias quam eos pariatur saepe, reprehenderit ratione, in dolores!</dfn> Optio fuga perferendis cum laborum assumenda vero explicabo ullam, molestiae quo excepturi tempore? Repellendus!</p>
+                    <p><code>ul, ol</code>:</p>
+                    <ul>
+                        <li>List Item</li>
+                        <li><a href="#">Link Item</a></li>
+                        <li>List item with sub items (ordered)
+                            <ol>
+                                <li>Sub item</li>
+                                <li><a href="#">Sub Link Item</a></li>
+                                <li>Sub item</li>
+                            </ol>
+                        </li>
+                        <li>List item with sub items (unordered)
+                            <ul>
+                                <li>Sub item</li>
+                                <li><a href="#">Sub Link Item</a></li>
+                                <li>Sub item</li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                    <ol>
+                        <li>List item</li>
+                        <li><a href="#">Link item</a></li>
+                        <li>List item with sub items (ordered)
+                            <ol>
+                                <li>Sub item</li>
+                                <li><a href="#">Link item</a></li>
+                                <li>Sub item</li>
+                            </ol>
+                        </li>
+                        <li>List item with sub items (unordered)
+                            <ul>
+                                <li>Sub item</li>
+                                <li><a href="#">Link item</a></li>
+                                <li>Sub item</li>
+                            </ul>
+                        </li>
+                    </ol>
+                    <p><code>figure, figcaption</code>: Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum deleniti voluptatem ex, vel repudiandae quam veniam deserunt, commodi a repellendus earum sequi eligendi.</p>
+                    <figure>
+                        <img src="https://placekitten.com/g/200/200" title="figure and figcaption">
+                        <figcaption>figcaption lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae quod libero officiis?
+                            Reprehenderit, deserunt nihil. Lorem ipsum dolor sit amet consectetur adipisicing elit.</figcaption>
+                    </figure>
+                    
+                    <p><code>code, pre</code>: Lorem ipsum dolor sit amet <code>consectetur adipisicing</code> elit. In, animi! Suscipit in aut nisi eius perspiciatis aperiam ab, beatae consequatur.</p><pre><code>// pre and code 
+function sayGoodMorning(name) {
+    alert(`Good Morning ${name}`);
+}
+
+sayGoodMorning("Dave");
+</code></pre>
+                    <p><code>table</code>:</p>
+                    <div class="project-table-container">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th scope="col">Column Heading 1</th>
+                                    <th scope="col">Column Heading 2</th>
+                                    <th scope="col">Column Heading 3</th>
+                                    <th scope="col">Column Heading 4</th>
+                                    <th scope="col">Column Heading 5</th>
+                                    <th scope="col">Column Heading 6</th>
+                                    <th scope="col">Column Heading 7</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Item 1</td>
+                                    <td>Item 2</td>
+                                    <td>Item 3</td>
+                                    <td>Item 4</td>
+                                    <td>Item 5</td>
+                                    <td>Item 6</td>
+                                    <td>Item 7</td>
+                                </tr>
+                                <tr>
+                                    <td>Item 1</td>
+                                    <td>Item 2</td>
+                                    <td>Item 3</td>
+                                    <td>Item 4</td>
+                                    <td>Item 5</td>
+                                    <td>Item 6</td>
+                                    <td>Item 7</td>
+                                </tr>
+                                <tr>
+                                    <td>Item 1</td>
+                                    <td>Item 2</td>
+                                    <td>Item 3</td>
+                                    <td>Item 4</td>
+                                    <td>Item 5</td>
+                                    <td>Item 6</td>
+                                    <td>Item 7</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <p><code>form</code>:</p>
+                    <form action="" method="">
+                        <h1>Form with all inputs</h1>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Architecto ratione rem veritatis error quod magnam modi, quos nihil voluptatem consequuntur porro rerum quo, deserunt non aperiam perferendis amet ab repellendus.</p>
+                        <fieldset>
+                            <legend>Common Inputs</legend>
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <label for="exampleText">Input Type Text</label>
+                                    <input type="text" id="exampleText" placeholder="Placeholder">
+                                </div>
+                                <div class="col-sm-6">
+                                    <label for="exampleTextD">Input Type Text Disabled</label>
+                                    <input type="text" id="exampleTextD" placeholder="Placeholder" disabled>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <label for="exampleTextarea">Textarea</label>
+                                    <textarea name="" id="exampleTextarea"></textarea>
+                                </div>
+                                <div class="col-sm-6">
+                                    <label for="exampleTextareaD">Textarea Disabled</label>
+                                    <textarea name="" id="exampleTextareaD" disabled></textarea>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <label for="exampleSelect">Select</label>
+                                    <select name="" id="exampleSelect">
+                                        <option value="">Select an Option</option>
+                                        <option value="1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod ex sint dolore esse provident assumenda deserunt, consequatur asperiores perspiciatis corrupti!</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                    </select>
+                                </div>
+                                <div class="col-sm-6">
+                                    <label for="exampleSelectD">Select Disabled</label>
+                                    <select name="" id="exampleSelectD" disabled>
+                                        <option value="">Select an Option</option>
+                                        <option value="1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod ex sint dolore esse provident assumenda deserunt, consequatur asperiores perspiciatis corrupti!</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <label for="examplePassword">Input Type Password</label>
+                                    <input type="password" id="examplePassword" placeholder="Placeholder">
+                                </div>
+                                <div class="col-sm-6">
+                                    <label for="examplePasswordD">Input Type Password Disabled</label>
+                                    <input type="password" id="examplePasswordD" placeholder="Placeholder" disabled>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <label for="exampleDate">Input Type Date</label>
+                                    <input type="date" id="exampleDate" placeholder="Placeholder">
+                                </div>
+                                <div class="col-sm-6">
+                                    <label for="exampleDateD">Input Type Date Disabled</label>
+                                    <input type="date" id="exampleDateD" placeholder="Placeholder" disabled>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <label for="exampleTel">Input Type Tel</label>
+                                    <input type="tel" id="exampleTel" placeholder="Placeholder">
+                                </div>
+                                <div class="col-sm-6">
+                                    <label for="exampleTelD">Input Type Tel Disabled</label>
+                                    <input type="tel" id="exampleTelD" placeholder="Placeholder" disabled>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <label for="exampleNumber">Input Type Number</label>
+                                    <input type="number" id="exampleNumber" placeholder="Placeholder">
+                                </div>
+                                <div class="col-sm-6">
+                                    <label for="exampleNumberD">Input Type Number Disabled</label>
+                                    <input type="number" id="exampleNumberD" placeholder="Placeholder" disabled>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <fieldset>
+                                        <legend>Checkbox Question</legend>
+                                        <label for="exampleCheckbox">Checkbox Stacked</label>
+                                        <input type="checkbox" id="exampleCheckbox" name="" value="">
+                                        <label><input type="checkbox" name="" value="">Checkbox Left</label>
+                                        <label>Checkbox Right
+                                        <input type="checkbox" name="" value=""></label>
+                                        <label>Checkbox Disabled <input type="checkbox" name="" value="" disabled></label>
+                                    </fieldset>
+                                </div>
+                                <div class="col-sm-6">
+                                    <fieldset>
+                                        <legend>Radio Question</legend>
+                                        <label for="exampleRadio">Radio Stacked</label>
+                                        <input type="radio" id="exampleRadio" name="" value="">
+                                        <label><input type="radio" name="" value="">Radio Left</label>
+                                        <label>Radio Right<input type="radio" name="" value=""></label>
+                                        <label>Radio Disabled
+                                        <input type="radio" id="exampleRadioD" name="" value="" disabled></label>
+                                    </fieldset>
+                                </div>
+                            </div>
+                        </fieldset>
+                        <fieldset>
+                            <legend>More Inputs</legend>
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <label for="exampleFile">Input Type File</label>
+                                    <input type="file" id="exampleFile" placeholder="Placeholder">
+                                </div>
+                                <div class="col-sm-6">
+                                    <label for="exampleFileD">Input Type File Disabled</label>
+                                    <input type="file" id="exampleFileD" placeholder="Placeholder" disabled>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <label for="exampleRange">Input Type Range</label>
+                                    <input type="range" id="exampleRange" placeholder="Placeholder">
+                                </div>
+                                <div class="col-sm-6">
+                                    <label for="exampleRangeD">Input Type Range Disabled</label>
+                                    <input type="range" id="exampleRangeD" placeholder="Placeholder" disabled>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <label for="exampleTime">Input Type Time</label>
+                                    <input type="time" id="exampleTime" placeholder="Placeholder">
+                                </div>
+                                <div class="col-sm-6">
+                                    <label for="exampleTimeD">Input Type Time Disabled</label>
+                                    <input type="time" id="exampleTimeD" placeholder="Placeholder" disabled>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <label for="exampleURL">Input Type URL</label>
+                                    <input type="url" id="exampleURL" placeholder="Placeholder">
+                                </div>
+                                <div class="col-sm-6">
+                                    <label for="exampleURLD">Input Type URL Disabled</label>
+                                    <input type="url" id="exampleURLD" placeholder="Placeholder" disabled>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <label for="exampleColor">Input Type Color</label>
+                                    <input type="color" id="exampleColor" placeholder="Placeholder" >
+                                </div>
+                                <div class="col-sm-6">
+                                    <label for="exampleColorD">Input Type Color Disabled</label>
+                                    <input type="color" id="exampleColorD" placeholder="Placeholder" disabled>
+                                </div>
+                            </div>
+                        </fieldset>
+                        <button type="submit" class="willow-button">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </main>
+        <!-- <section class="willow-banner" role="region">
+            <div class="container-fluid">
+                <h1 class="willow-banner__heading">Inside of Main Element - First CTA Banner</h1>
                 <div class="willow-banner__content">
                     <div class="willow-styling-context">
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis nobis accusantium distinctio vero
@@ -41,264 +410,39 @@
                     </div>
                 </div>
                 <ul class="willow-banner__actions">
-                    <li class="willow-banner__action"><button class="willow-button willow-button--cta">Call To Action</button></li>
+                    <li class="willow-banner__action">
+                        <button class="willow-button willow-button--cta">Call To Action</button>
+                    </li>
                 </ul>
-            </section>
-            <main class="willow-page-content" id="main" role="main">
-                <h1 class="willow-page-content__heading">Heading for content</h1>
-                <h2>Subtitle for this page</h2>
-                <div class="willow-styling-context">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime nam asperiores dolorum fugiat? Ratione
-                        eaque error laboriosam numquam dignissimos perferendis inventore sunt commodi. Tempore quae explicabo
-                        esse aut facere iusto eligendi dignissimos incidunt voluptatem. Dolorum quibusdam aut dolores sapiente
-                        asperiores ipsam quo fugit dignissimos, aliquid enim, numquam, molestias temporibus cum.</p>
-                    <h2>Heading Two</h2>
-                    <h3>Subheading Three</h3>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Praesentium aut nostrum reprehenderit libero
-                        molestias labore non minima optio sit facilis. Nobis, quae! Voluptatibus, veniam vel. Ex facere reiciendis
-                        maxime earum dolore repudiandae ullam laboriosam modi, temporibus provident repellat delectus quos
-                        hic inventore, nulla omnis quod velit, totam doloremque quibusdam vitae.</p>
-                    <h3>Heading Three</h3>
-                    <h4>Subheading Four</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et sunt debitis eius magnam aspernatur vel,
-                        iste eligendi tenetur. Ipsa ducimus minima dolorem placeat velit sunt dolores, animi culpa dicta
-                        possimus hic quo fugit dignissimos? Officia odio voluptatum, saepe nihil commodi eligendi neque nulla,
-                        distinctio excepturi molestiae ab, sit accusamus error!</p>
-                    <h4>Heading Four</h4>
-                    <h5>Subheading Five</h5>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum, nisi. Ratione magnam deserunt accusantium
-                        voluptate commodi officiis eveniet animi quae hic magni dolorum non tenetur ex autem, delectus eligendi
-                        voluptas, officia neque consequuntur ea itaque adipisci iste qui distinctio. Nostrum repellat amet
-                        minus sed, architecto tempora similique molestias dolorem hic?</p>
-                    <h5>Heading Five</h5>
-                    <h6>Subheading Six</h6>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat corporis suscipit rem assumenda inventore
-                        facilis tenetur ex itaque dolorem quam dolorum, placeat ratione beatae provident nisi quo, voluptate
-                        cum numquam. Molestiae itaque totam nobis repudiandae aspernatur, nihil architecto non recusandae
-                        odio, alias est ratione. Veniam dolor voluptatum molestias fugit nobis!</p>
-                    <h6>Heading Six</h6>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos labore asperiores perspiciatis.
-                        Totam necessitatibus iusto dolores temporibus, iure accusamus laudantium autem? Modi atque non rem
-                        veritatis amet! Adipisci sit earum molestiae placeat fugiat! Quasi, modi amet commodi neque doloribus
-                        repellendus numquam corrupti libero iste quaerat ipsam aliquam accusantium sint totam!</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque officia, minus iusto voluptatibus enim.
-                        <mark>Dolor reiciendis recusandae tempore explicabo corporis</mark>
-                        doloribus vel sapiente officiis inventore? Fugit nihil veniam porro placeat enim obcaecati beatae.</p>
-                    <small>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Expedita quas unde porro exercitationem dolore libero modi, omnis quis mollitia perferendis atque a laborum placeat fugit! Ut mollitia molestiae perferendis magni!</small>
-                    <p>Maiores soluta iure praesentium necessitatibus <time>1:00 pm</time> maiores veritatis. Quaerat veniam voluptatum laboriosam doloremque eius ab aliquid, illo, fuga fugit ullam earum qui asperiores rerum labore? Totam sapiente commodi quia, nam necessitatibus quos eveniet nihil corrupti blanditiis fuga possimus <ins>voluptatum deleniti libero nisi quasi eaque ipsa</ins>, quisquam provident, facere eligendi inventore perferendis neque. Laudantium aspernatur, iure voluptates quia, vel quis repellendus quo veritatis vero maiores dolore consequatur doloremque commodi expedita, eaque sint! <q>Ipsa inventore adipisci, iusto, iure quod laboriosam autem voluptas dolor.</q> Atque, natus laudantium impedit facere, aliquam qui tempora, ex sunt nobis magnam sequi dicta corporis! Ducimus <sup>1</sup> obcaecati vel asperiores aperiam <sup>deserunt placeat</sup> illo facere voluptatum veritatis temporibus quos soluta velit alias quam eos pariatur saepe, reprehenderit ratione, in dolores! Error fuga deleniti aut dolor quidem facilis accusantium atque enim totam ipsum quod, vero illum, similique <sub>2</sub> nostrum accusamus ipsam nisi animi! Illum excepturi <sub>iste</sub>, perferendis.</p>
-                    <hr>
-                    <h2>Heading Two</h2>
-                    <p><abbr title="Abbreviation!">Distinctio et</abbr>, doloremque aspernatur maxime sunt nam minima beatae rem maiores veritatis. <s>Quaerat veniam voluptatum laboriosam</s> doloremque eius ab aliquid, illo, fuga fugit ullam earum qui asperiores rerum labore? Totam sapiente commodi quia, <del>nam necessitatibus quos</del> eveniet nihil corrupti blanditiis fuga possimus voluptatum deleniti libero nisi quasi eaque ipsa, quisquam provident, facere eligendi inventore perferendis neque. Laudantium aspernatur </p>
-                    <blockquote>Iure voluptates quia, vel quis repellendus quo veritatis vero maiores dolore consequatur doloremque
-                        commodi expedita, eaque sint! Ipsa inventore adipisci, iusto, iure quod laboriosam autem voluptas
-                        dolor.
-                    </blockquote>
-                    <hr>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio fuga perferendis cum laborum assumenda quia dignissimos saepe! Officiis sint laboriosam labore. Quas architecto placeat veniam minima ducimus sapiente corporis officia odit natus eum earum illo commodi, aut animi facere numquam, neque sed vero explicabo ullam, molestiae quo excepturi tempore? Repellendus!</p>
-                    <section class="willow-banner" role="region">
-                        <h1 class="willow-banner__heading">Heading Text</h1>
-                        <div class="willow-banner__content">
-                            <div class="willow-styling-context">
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis nobis accusantium distinctio
-                                    vero officiis reiciendis consectetur! Unde esse rem voluptates.</p>
-                            </div>
-                        </div>
-                        <ul class="willow-banner__actions">
-                            <li class="willow-banner__action"><button class="willow-button willow-button--primary">Primary Action</button></li>
-                            <li class="willow-banner__action"><button class="willow-button">Default Action</button></li>
-                        </ul>
-                    </section>
-                    <p>Atque, natus laudantium impedit facere, aliquam qui tempora, ex sunt nobis magnam sequi dicta corporis!
-                        <dfn>Ducimus obcaecati vel asperiores aperiam deserunt placeat illo facere voluptatum veritatis temporibus quos soluta velit alias quam eos pariatur saepe, reprehenderit ratione, in dolores!</dfn>                        Error fuga deleniti aut dolor quidem facilis accusantium atque enim totam ipsum quod, vero illum,
-                        similique nostrum accusamus ipsam nisi animi! Illum excepturi iste, perferendis.</p>
-                        <h2>Heading Two</h2>
-                    <ul>
-                        <li>List Item 1</li>
-                        <li>List Item 2</li>
-                        <li>List Item 3</li>
-                        <li>List Item 4</li>
-                        <li>List item with Sub ordered items
-                            <ol>
-                                <li>Sub item</li>
-                                <li>Sub item</li>
-                                <li>Sub item</li>
-                            </ol>
-                        </li>
-                        <li>List item</li>
-                        <li>List item with Sub items
-                            <ul>
-                                <li>Sub item</li>
-                                <li>Sub item</li>
-                                <li>Sub item</li>
+            </div>
+        </section> -->
+        <footer class="willow-page-footer" role="contentinfo">
+            <div class="container-fluid">
+                <div class="willow-page-footer__container">
+                    <div class="willow-page-footer__branding">
+                        <a class="willow-logo-link" href="/" aria-label="go to home page">
+                            <img class="willow-logo-link__image" src="https://via.placeholder.com/150x150" alt="">
+                        </a>
+                    </div>
+                    <div class="willow-page-footer__navigation">
+                        <nav class="willow-footer-nav" role="navigation" aria-label="footer">
+                            <h1 class="willow-footer-nav__heading sr-only">Site Footer Menu</h1>
+                            <ul class="willow-footer-nav__list">
+                                <li class="willow-footer-nav__item">
+                                    <a class="willow-footer-nav__link" href="" aria-label="">Menu Item 1</a>
+                                </li>
+                                <li class="willow-footer-nav__item">
+                                    <a class="willow-footer-nav__link" href="" aria-label="">Menu Item 2</a>
+                                </li>
                             </ul>
-                        </li>
-                        <li>List item</li>
-                    </ul>
-
-                    <ul>
-                        <li><a href="#">Link Item 1</a></li>
-                        <li><a href="#">Link Item 2</a></li>
-                        <li><a href="#">Link Item 3</a></li>
-                        <li><a href="#">Link Item 4</a></li>
-                        <li><a href="#">Link Item 5</a></li>
-                    </ul>
-                    <h2>Heading Two</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id asperiores quas quia porro architecto?
-                        <a href="#">Doloribus fugiat ex quibusdam</a> nesciunt voluptatibus quam odio, nisi officiis nobis
-                        minima quis repellat qui recusandae incidunt architecto eos vero tempora minus accusantium suscipit
-                        exercitationem excepturi doloremque nemo! Consequatur perferendis laudantium aperiam voluptate minima
-                        ducimus. At dicta assumenda rem aliquam expedita incidunt nesciunt, veritatis dolore? Minus exercitationem
-                        dolore cupiditate totam perferendis sint doloribus vero, eveniet magni temporibus quas quasi debitis
-                        rerum quisquam doloremque nam ad tenetur autem iusto?</p>
-
-                    <ol>
-                        <li>List item</li>
-                        <li>List item</li>
-                        <li>List item</li>
-                        <li>List item</li>
-                        <li>List item with Sub ordered items
-                            <ol>
-                                <li>Sub item</li>
-                                <li>Sub item</li>
-                                <li>Sub item</li>
-                            </ol>
-                        </li>
-                        <li>List item</li>
-                        <li>List item with Sub items
-                            <ul>
-                                <li>Sub item</li>
-                                <li>Sub item</li>
-                                <li>Sub item</li>
-                            </ul>
-                        </li>
-                        <li>List item</li>
-                    </ol>
-
-                    <ol>
-                        <li><a href="#">Link item</a></li>
-                        <li><a href="#">Link item</a></li>
-                        <li><a href="#">Link item</a></li>
-                        <li><a href="#">Link item</a></li>
-                        <li><a href="#">Link item</a></li>
-                    </ol>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex neque optio voluptas ipsam incidunt dolorum,
-                        laudantium voluptatem recusandae quidem earum omnis autem! Alias, unde veritatis et vitae dolorum
-                        voluptate fugit tempore ducimus officia repudiandae similique atque blanditiis reprehenderit a soluta,
-                        obcaecati dolorem pariatur dignissimos eaque adipisci quia voluptas nostrum. Corrupti impedit laudantium
-                        ad voluptates ipsum. Aliquid incidunt neque est facere ipsum nisi nemo ex nesciunt perferendis similique
-                        libero commodi consequatur, soluta dolorem accusantium adipisci quas id voluptatem ea eos non modi.
-                        Temporibus, suscipit dicta? Ea optio sed eius provident debitis maxime nihil deleniti, ipsa reprehenderit
-                        dolor, nulla assumenda! Laborum, similique. Unde officia alias dignissimos quod molestiae laborum
-                        totam impedit culpa illum voluptatum repudiandae eius et ipsam vero hic nostrum optio placeat nam,
-                        voluptate ex fugiat possimus rem. Aliquam, nemo vel cupiditate exercitationem vitae laudantium debitis
-                        obcaecati laborum, molestiae aliquid autem nostrum iusto dolor repellendus nobis pariatur numquam
-                        eaque natus rerum. Aliquid obcaecati sint optio temporibus provident alias placeat nostrum. Illum
-                        asperiores, ratione dolorem omnis consectetur facilis. Doloribus, consectetur laudantium suscipit
-                        corrupti animi at atque vero nemo esse deleniti? Esse soluta repellendus eius quidem incidunt. Praesentium
-                        error minima tenetur ad. Possimus eveniet temporibus nam quam! Quisquam tempora dolores optio nihil
-                        ullam.
-                    </p>
-                    <h2>Heading Two</h2>
-                    <h3>Heading Three</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum deleniti voluptatem ex, vel repudiandae
-                        quam veniam deserunt, commodi a repellendus earum sequi eligendi asperiores sed culpa nobis maiores
-                        laborum expedita quidem voluptates odio perferendis tempora possimus magnam? Praesentium itaque sunt
-                        culpa velit accusantium rem vero in! Doloremque quos reiciendis quae neque, hic iste. Quam dolorum
-                        quos, quasi, totam dolor ipsum tempora nostrum laborum quis quibusdam ad aperiam et voluptates autem
-                        alias, corrupti fugiat. Excepturi perspiciatis esse totam. Dignissimos, quis. Aliquid facere molestiae
-                        atque earum animi cupiditate, iusto, culpa reiciendis natus accusantium quidem dolorum ratione nulla
-                        fugit vero eum, iste consectetur!</p>
-                    <figure>
-                        <img src="https://placekitten.com/g/200/200" title="figure and figcaption">
-                        <figcaption>figcaption lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae quod libero officiis?
-                            Reprehenderit, deserunt nihil. Lorem ipsum dolor sit amet consectetur adipisicing elit.</figcaption>
-                    </figure>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In, animi! Suscipit in aut nisi eius perspiciatis
-                        aperiam ab, beatae consequatur.</p>
-
-<pre><code>$test1 = array( 
-    '11' => '11',
-    '22' => '22',
-    '33' => '33',
-    '44' => '44'
-);
-                        
-$test2 = array( 
-    '44' => '44',
-    '55' => '55',
-    '66' => '66',
-    '77' => '77'
-);
-                    
-                        
-function combineWithKeys($array1, $array2) {
-    foreach($array1 as $key=>$value) $array2[$key] = $value;
-    asort($array2);
-    return $array2;
-}</code></pre>
-<pre>There was a man from Nantucket
-He forgot to bring a bucket
-Got lost at sea
-And hurt his knee
-All because of bad lucket
-</pre>
-                    <p>Lorem ipsum dolor sit amet <code>consectetur adipisicing</code> elit. Nisi dolor sit amet consectetur adipisicing
-                        elitnam quo quis! Ipsam obcaecati soluta earum, ad et nisi unde.</p>
+                        </nav>
+                    </div>
+                    <small class="willow-page-footer__copyright">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, voluptas.</small>
                 </div>
-                <hr>
-                <h2>Heading Two</h2>
-                <div class="table-container">
-                    <table>
-                        <thead>
-                            <tr>
-                                <th scope="col">Column Heading 1</th>
-                                <th scope="col">Column Heading 2</th>
-                                <th scope="col">Column Heading 3</th>
-                                <th scope="col">Column Heading 4</th>
-                                <th scope="col">Column Heading 5</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>Item 1</td>
-                                <td>Item 2</td>
-                                <td>Item 3</td>
-                                <td>Item 4</td>
-                                <td>Item 5</td>
-                            </tr>
-                            <tr>
-                                <td>Item 1</td>
-                                <td>Item 2</td>
-                                <td>Item 3</td>
-                                <td>Item 4</td>
-                                <td>Item 5</td>
-                            </tr>
-                            <tr>
-                                <td>Item 1</td>
-                                <td>Item 2</td>
-                                <td>Item 3</td>
-                                <td>Item 4</td>
-                                <td>Item 5</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-            </main>
-            <footer class="willow-page-footer" role="contentinfo">
-                <div class="willow-page-footer__branding"><a class="willow-logo-link" href="/" aria-label="go to home page"><img class="willow-logo-link__image" src="https://via.placeholder.com/150x150" alt=""></a></div>
-                <div class="willow-page-footer__navigation">
-                    <nav class="willow-footer-nav" role="navigation" aria-label="footer">
-                        <h1 class="willow-footer-nav__heading sr-only">Site Footer Menu</h1>
-                        <ul class="willow-footer-nav__list">
-                            <li class="willow-footer-nav__item"><a class="willow-footer-nav__link" href="/">Home</a></li>
-                            <li class="willow-footer-nav__item"><a class="willow-footer-nav__link" href="/components.html">Components</a></li>
-                            <li class="willow-footer-nav__item"><a class="willow-footer-nav__link" href="https://github.com/unumux/willow" aria-label="Willow Code Repository" target="_blank">Code</a></li>
-                        </ul>
-                    </nav>
-                </div>
-                <small class="willow-page-footer__copyright">Copyright lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, exercitationem.</small>
-            </footer>
-        </div>
-        <script src="scripts/site.min.js"></script>
-    </body>
+            </div>
+        </footer>
+    </div>
+    <script src="scripts/site.min.js"></script>
+</body>
+
 </html>

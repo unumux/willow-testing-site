@@ -1,50 +1,70 @@
+// Override any Willow Variables
+// ****************************************************
+// overrides the icons used for Willow components
+// not providing an override of this variable will produce broken icons
 $icons-folder: "../assets/icons";
-
-///////// Entire Library Import (with Theme)
-@import "./node_modules/@unumux/theme-coloniallife-default/styles";
+// End Overrides **************************************
+// Theme Import
+// ****************************************************
+// @import "./node_modules/@unumux/theme-coloniallife-default/styles";
+@import "./node_modules/@unumux/theme-unum-default/styles";
+// End Theme Import ************************************
+// Import ALL of Willow
+// ****************************************************
 @import "./node_modules/@unumux/willow/styles";
-//////// End Entire Library Import
-
-//////// Single Component Imports
-// // Grid to constrain content
-// @import "./node_modules/@unumux/willow/global/vendors/bootstrap-grid";
-// // Styling for plain elements
+// End Willow Import ************************************
+// Single Component Imports
+// ****************************************************
+// **Grid to constrain content**
+// @import "./node_modules/@unumux/willow/global/vendors/bootstrap";
+// **Styling for plain elements**
 // @import "./node_modules/@unumux/willow/global/base-elements/base-elements";
-// // Components
+// **Components**
 // @import "./node_modules/@unumux/willow/components/banner/styles/banner";
 // @import "./node_modules/@unumux/willow/components/breadcrumbs/styles/breadcrumbs";
 // @import "./node_modules/@unumux/willow/components/button/styles/button";
-// @import "./node_modules/@unumux/willow/components/cards/styles/card/card";
-// @import "./node_modules/@unumux/willow/components/cards/styles/layouts/card-grid/card-grid";
+// @import "./node_modules/@unumux/willow/components/card/styles/card";
 // @import "./node_modules/@unumux/willow/components/dialog/styles/dialog";
 // @import "./node_modules/@unumux/willow/components/footer-nav/styles/footer-nav";
 // @import "./node_modules/@unumux/willow/components/global-alert/styles/global-alert";
+// @import "./node_modules/@unumux/willow/components/grid/styles/grid";
 // @import "./node_modules/@unumux/willow/components/icons/styles/icons";
 // @import "./node_modules/@unumux/willow/components/inline-alert/styles/inline-alert";
 // @import "./node_modules/@unumux/willow/components/logo-link/styles/logo-link";
 // @import "./node_modules/@unumux/willow/components/modal/styles/modal";
+// @import "./node_modules/@unumux/willow/components/page-container/styles/page-container";
 // @import "./node_modules/@unumux/willow/components/page-content/styles/page-content";
 // @import "./node_modules/@unumux/willow/components/page-footer/styles/page-footer";
 // @import "./node_modules/@unumux/willow/components/page-header/styles/page-header";
 // @import "./node_modules/@unumux/willow/components/primary-nav/styles/primary-nav";
 // @import "./node_modules/@unumux/willow/components/secondary-nav/styles/secondary-nav";
 // @import "./node_modules/@unumux/willow/components/skip-nav/styles/skip-nav";
-// @import "./node_modules/@unumux/willow/components/styling-context/styles/styling-context";
-// // removes extra margin from nested elements
-// // typically comes from willow/styles.scss - no way to singularly import that
-// :first-child {
-//     margin-top: 0;
-// }
-//////// End Single Component Imports
-
-
-//////// Start of Project Styles (Custom Components and Overrides)
+// End Single Component ************************************************************************
+// Start of Project Styles (Custom Components and Overrides)
+// ******************************************************************************************
 // imports project custom components or overrrides
 @import "components/components";
 
-// allows table to scroll horizontally when on narrow screen or when content overflows
-.table-container {
-    overflow: scroll;
+code {
+    margin: $space-stack;
+}
+
+blockquote > p {
+    margin: 0;
+}
+
+form > h1 {
+    margin-top: 0;
+}
+
+.project-special-banner {
+    background-color: $theme-primary-4;
+    color: $theme-text-inverse;
+}
+
+// container to keep table from breaking page width but allow table scrolling
+.project-table-container {
+    overflow: auto;
 }
 
 // background color for icon demo page
@@ -54,4 +74,5 @@ $icons-folder: "../assets/icons";
     padding: 2rem;
     margin-top: 1rem;
 }
-//////// End Project Styles
+
+// End Project Styles **************************************************************************

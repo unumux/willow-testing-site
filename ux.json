@@ -3,24 +3,26 @@
         "src": [
             "styles/**/*.scss",
             "node_modules/@unumux/willow/_*.scss",
-            "node_modules/@unumux/willow/@(components|global-variables|base-elements|utilities)/_*.scss",
-            "node_modules/@unumux/willow/@(components|global-variables|base-elements|utilities)/**/_*.scss",
-            "node_modules/@unumux/@(theme-enterprise-default|theme-unum-default|theme-coloniallife-default)/_*.scss",            
-            "node_modules/@unumux/@(theme-enterprise-default|theme-unum-default|theme-coloniallife-default)/**/_*.scss"
+            "node_modules/@unumux/willow/@(components/global)/_*.scss",
+            "node_modules/@unumux/willow/components/**/styles/_*.scss",
+            "node_modules/@unumux/willow/global/**/_*.scss",
+            "node_modules/@unumux/willow/global/**/**/_*.scss",
+            "node_modules/@unumux/@(theme-unum-default|theme-coloniallife-default)/_*.scss",            
+            "node_modules/@unumux/@(theme-unum-default|theme-coloniallife-default)/**/_*.scss"
         ],
         "dest": "styles"
     },
     "js": {
         "src": "scripts/**/*.js",
-        "dest": "scripts",
-        "main": "scripts/site.js"
+        "dest": "scripts"
     },
     "watch": [
-        "index.html",
+        "component-pages/**/*.html",
+        "columns.html",
         "components.html",
-        "component-pages/*.html"
+        "index.html"
     ],
     "server": true,
-    "compileJs": true,
+    "compileJs": false,
     "proxy": false
 }

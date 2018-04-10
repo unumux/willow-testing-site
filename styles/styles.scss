@@ -68,11 +68,35 @@ form > h1 {
 }
 
 // background color for icon demo page
-.container--contrasted {
+.project-container--contrasted {
     background-color: #777;
     display: inline-block;
     padding: 2rem;
     margin-top: 1rem;
+}
+
+// styles for my custom stat component
+.project-stat {
+    background-color: $theme-primary;
+    color: $theme-text-inverse;
+    padding: $space-inset-l;
+    text-align: center;
+    margin-top: $space;
+
+    &--special {
+        background-color: $theme-accent-2;
+        color: $theme-text-tertiary;
+    }
+
+    &__highlight {
+        @include set-text-style($text-style-heading-1);
+        margin: 0;
+    }
+
+    &__label {
+        font-weight: 600;
+        margin: 0;
+    }
 }
 
 // End Project Styles **************************************************************************

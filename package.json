@@ -5,10 +5,10 @@
   },
   "devDependencies": {
     "@unumux/stylelint-config-unumux": "2.0.1",
-    "@unumux/theme-coloniallife-default": "git+http://github.com/unumux/theme-coloniallife-default.git/#willow-update-variables",
-    "@unumux/theme-unum-default": "git+http://github.com/unumux/theme-unum-default.git/#willow-update-variables",
+    "@unumux/theme-coloniallife-default": "^1.0.0",
+    "@unumux/theme-unum-default": "^1.0.0",
     "@unumux/ux-build-tools": "3.7.0",
-    "@unumux/willow": "git+http://github.com/unumux/willow.git/#develop",
+    "@unumux/willow": "^1.0.0",
     "stylelint": "9.2.0"
   }
 }

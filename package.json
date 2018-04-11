@@ -1,17 +1,14 @@
 {
-    "private": true,
-    "devDependencies": {
-        "@unumux/theme-coloniallife-default": "^0.7.0",
-        "@unumux/theme-unum-default": "^0.5.0",
-        "@unumux/ux-build-tools": "^3.7.0",
-        "@unumux/willow": "^0.3.0"
-    },
-    "scripts": {
-        "start": "gulp --gulpfile=node_modules/@unumux/ux-build-tools/index.js --cwd=."
-    },
-    "dependencies": {
-        "bootstrap": "4.0.0-beta",
-        "gulp-sourcemaps": "2.6.0",
-        "vue": "2.5.2"
-    }
+  "private": true,
+  "scripts": {
+    "start": "gulp --gulpfile=node_modules/@unumux/ux-build-tools/index.js --cwd=."
+  },
+  "devDependencies": {
+    "@unumux/stylelint-config-unumux": "2.0.1",
+    "@unumux/theme-coloniallife-default": "^1.0.0",
+    "@unumux/theme-unum-default": "^1.0.0",
+    "@unumux/ux-build-tools": "3.7.0",
+    "@unumux/willow": "^1.0.0",
+    "stylelint": "9.2.0"
+  }
 }

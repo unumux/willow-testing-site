@@ -1,11 +1,102 @@
+// Override any Willow Variables
+// ****************************************************
+// overrides the icons used for Willow components
+// not providing an override of this variable will produce broken icons
 $icons-folder: "../assets/icons";
-
-@import "./node_modules/@unumux/theme-coloniallife-default/styles";
+// End Overrides **************************************
+// Theme Import
+// ****************************************************
+// @import "./node_modules/@unumux/theme-coloniallife-default/styles";
+@import "./node_modules/@unumux/theme-unum-default/styles";
+// End Theme Import ************************************
+// Import ALL of Willow
+// ****************************************************
 @import "./node_modules/@unumux/willow/styles";
-
+// End Willow Import ************************************
+// Single Component Imports
+// ****************************************************
+// **Grid to constrain content**
+// @import "./node_modules/@unumux/willow/global/vendors/bootstrap";
+// **Styling for plain elements**
+// @import "./node_modules/@unumux/willow/global/base-elements/base-elements";
+// **Components**
+// @import "./node_modules/@unumux/willow/components/banner/styles/banner";
+// @import "./node_modules/@unumux/willow/components/breadcrumbs/styles/breadcrumbs";
+// @import "./node_modules/@unumux/willow/components/button/styles/button";
+// @import "./node_modules/@unumux/willow/components/card/styles/card";
+// @import "./node_modules/@unumux/willow/components/dialog/styles/dialog";
+// @import "./node_modules/@unumux/willow/components/footer-nav/styles/footer-nav";
+// @import "./node_modules/@unumux/willow/components/global-alert/styles/global-alert";
+// @import "./node_modules/@unumux/willow/components/grid/styles/grid";
+// @import "./node_modules/@unumux/willow/components/icons/styles/icons";
+// @import "./node_modules/@unumux/willow/components/inline-alert/styles/inline-alert";
+// @import "./node_modules/@unumux/willow/components/logo-link/styles/logo-link";
+// @import "./node_modules/@unumux/willow/components/modal/styles/modal";
+// @import "./node_modules/@unumux/willow/components/page-container/styles/page-container";
+// @import "./node_modules/@unumux/willow/components/page-content/styles/page-content";
+// @import "./node_modules/@unumux/willow/components/page-footer/styles/page-footer";
+// @import "./node_modules/@unumux/willow/components/page-header/styles/page-header";
+// @import "./node_modules/@unumux/willow/components/primary-nav/styles/primary-nav";
+// @import "./node_modules/@unumux/willow/components/secondary-nav/styles/secondary-nav";
+// @import "./node_modules/@unumux/willow/components/skip-nav/styles/skip-nav";
+// End Single Component ************************************************************************
+// Start of Project Styles (Custom Components and Overrides)
+// ******************************************************************************************
+// imports project custom components or overrrides
 @import "components/components";
 
-.table-container {
-    // margin-bottom: space(2);
-    overflow: scroll;
+code {
+    margin: $space-stack;
 }
+
+blockquote > p {
+    margin: 0;
+}
+
+form > h1 {
+    margin-top: 0;
+}
+
+.project-special-banner {
+    background-color: $theme-primary-4;
+    color: $theme-text-inverse;
+}
+
+// container to keep table from breaking page width but allow table scrolling
+.project-table-container {
+    overflow: auto;
+}
+
+// background color for icon demo page
+.project-container--contrasted {
+    background-color: #777;
+    display: inline-block;
+    padding: 2rem;
+    margin-top: 1rem;
+}
+
+// styles for my custom stat component
+.project-stat {
+    background-color: $theme-primary;
+    color: $theme-text-inverse;
+    padding: $space-inset-l;
+    text-align: center;
+    margin-top: $space;
+
+    &--special {
+        background-color: $theme-accent-2;
+        color: $theme-text-tertiary;
+    }
+
+    &__highlight {
+        @include set-text-style($text-style-heading-1);
+        margin: 0;
+    }
+
+    &__label {
+        font-weight: 600;
+        margin: 0;
+    }
+}
+
+// End Project Styles **************************************************************************

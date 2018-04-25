@@ -8,7 +8,7 @@
     "@unumux/theme-coloniallife-default": "^1.0.0",
     "@unumux/theme-unum-default": "^1.0.0",
     "@unumux/ux-build-tools": "3.7.0",
-    "@unumux/willow": "^1.0.0",
+    "@unumux/willow": "^1.0.2",
     "stylelint": "9.2.0"
   }
 }

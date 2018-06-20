@@ -17,7 +17,7 @@
         "dest": "scripts"
     },
     "watch": [
-        "component-pages/**/*.html",
+        "components/**/*.html",
         "columns.html",
         "components.html",
         "index.html"

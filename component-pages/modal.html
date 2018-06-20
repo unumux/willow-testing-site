@@ -50,42 +50,40 @@
                 <ol class="willow-breadcrumbs__list">
                     <li class="willow-breadcrumbs__item"><a class="willow-breadcrumbs__link" href="/willow-testing-site/" aria-label="">Home</a></li>                            
                     <li class="willow-breadcrumbs__item"><a class="willow-breadcrumbs__link" href="/willow-testing-site/components.html" aria-label="">Components</a></li>                            
-                    <li class="willow-breadcrumbs__item willow-breadcrumbs__item--active">Secondary Navigation</li>
+                    <li class="willow-breadcrumbs__item willow-breadcrumbs__item--active">Modal</li>
                 </ol>
             </div>
         </nav>
         <main class="willow-page-content" id="main" role="main">
             <div class="project-title">
                 <div class="container-fluid project-title__container">
-                    <h1 class="project-title__heading">Secondary Navigation</h1>
-                    <a class="project-title__action" href="https://github.com/unumux/willow/tree/master/components/secondary-nav" target="_blank">Documentation</a>
+                    <h1 class="project-title__heading">Modal</h1>
+                    <a class="project-title__action" href="https://github.com/unumux/willow/tree/master/components/modal" target="_blank">Documentation</a>
                 </div>
             </div>
             <div class="container-fluid">
                 <div class="willow-styling-context">
-                    <h2>With Heading</h2>
+                    <button class="willow-button willow-button--inline" id="openModalButton">Open Modal</button>
                 </div>
-                <nav class="willow-secondary-nav" role="navigation" aria-label="secondary">
-                    <h1 class="willow-secondary-nav__heading">With Visible Heading</h1>
-                    <ul class="willow-secondary-nav__list">
-                        <li class="willow-secondary-nav__item"><a class="willow-secondary-nav__link" href="#">Menu Item 1</a></li>
-                        <li class="willow-secondary-nav__item"><a class="willow-secondary-nav__link" href="#">Menu Item 2</a></li>
-                        <li class="willow-secondary-nav__item"><a class="willow-secondary-nav__link willow-secondary-nav__link--active" href="#">Menu Item 3</a></li>
-                    </ul>
-                </nav>
-                <div class="willow-styling-context">
-                    <h2>With Heading Hidden (sr-only)</h2>
-                </div>
-                <nav class="willow-secondary-nav" role="navigation" aria-label="secondary">
-                    <h1 class="willow-secondary-nav__heading sr-only">Page Secondary Menu</h1>
-                    <ul class="willow-secondary-nav__list">
-                        <li class="willow-secondary-nav__item"><a class="willow-secondary-nav__link" href="#">Menu Item 1</a></li>
-                        <li class="willow-secondary-nav__item"><a class="willow-secondary-nav__link willow-secondary-nav__link--active" href="#">Menu Item 2</a></li>
-                        <li class="willow-secondary-nav__item"><a class="willow-secondary-nav__link" href="#">Menu Item 3</a></li>
-                    </ul>
-                </nav>
             </div>
-        </main>        
+        </main>
+        <div class="willow-modal">
+            <section class="willow-modal__container" role="alertdialog">
+                <h1 class="willow-modal__heading">Modal</h1>
+                <div class="willow-modal__content">
+                    <div class="willow-styling-context">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam unde, porro ratione rerum
+                            ipsa modi fugit ullam nihil beatae. Facilis, voluptatem earum illo pariatur dolor natus
+                            eum obcaecati sit. Cum optio soluta iusto nam cupiditate asperiores ad odit laborum provident!</p>
+                    </div>
+                </div>
+                <ul class="willow-modal__actions">
+                    <li class="willow-modal__action"><button class="willow-button willow-button--negative" id="closeModalButton">Close</button></li>
+                    <li class="willow-modal__action"><button class="willow-button willow-button--primary" id="closeModalButton2">Close</button></li>
+                </ul>
+            </section>
+        </div>
     </div>
+    <script src="../scripts/site.min.js"></script>
 </body>
 </html>

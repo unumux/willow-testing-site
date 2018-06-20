@@ -7,7 +7,46 @@ $icons-folder: "../assets/icons";
 // Theme Import
 // ****************************************************
 // @import "./node_modules/@unumux/theme-coloniallife-default/styles";
+$color-blue-light: #4981B0;
+$color-blue: #015294;
+$color-blue-dark: #19629D;
+$color-blue-darker: #024882;
+
+$color-pool-dark: #2299a2;
+
+$theme-primary: $color-blue;
+$theme-primary-2: $color-blue-dark;
+$theme-primary-3: $color-blue-dark;
+$theme-primary-4: $color-blue-darker;
+
+$theme-action: $color-blue;
+$theme-action-2: $color-blue-dark;
+$theme-action-3: $color-blue-darker;
+
 @import "./node_modules/@unumux/theme-unum-default/styles";
+
+$list-style-type: disc;
+$component-banner-background-color: $color-neutral-darker;
+$component-banner-text-color: $theme-text-inverse;
+$component-border-color: $theme-base-3;
+$component-secondary-nav-border: $component-border-width solid
+$theme-base-3;
+$component-skip-nav-link-color: $theme-text-tertiary;
+$component-skip-nav-link-color-hover: $theme-text-tertiary;
+$component-skip-nav-link-color-active: $theme-text-tertiary;
+$component-skip-nav-link-color-visited: $theme-text-tertiary;
+
+$component-button-text-color: $theme-text-inverse;
+$component-button-text-color-visited: $theme-text-inverse;
+$component-button-text-color-hover: $theme-text-inverse;
+$component-button-text-color-active: $theme-text-inverse;
+$component-button-text-color-focus: $theme-text-inverse;
+
+$component-link-color: $color-blue-dark;
+$component-link-color-hover: $color-pool-dark;
+$component-link-color-focus: $color-pool-dark;
+$component-link-color-active: $color-pool-dark;
+$component-link-color-visited: $color-blue-dark;
 // End Theme Import ************************************
 // Import ALL of Willow
 // ****************************************************
@@ -73,30 +112,6 @@ form > h1 {
     display: inline-block;
     padding: 2rem;
     margin-top: 1rem;
-}
-
-// styles for my custom stat component
-.project-stat {
-    background-color: $theme-primary;
-    color: $theme-text-inverse;
-    padding: $space-inset-l;
-    text-align: center;
-    margin-top: $space;
-
-    &--special {
-        background-color: $theme-accent-2;
-        color: $theme-text-tertiary;
-    }
-
-    &__highlight {
-        @include set-text-style($text-style-heading-1);
-        margin: 0;
-    }
-
-    &__label {
-        font-weight: 600;
-        margin: 0;
-    }
 }
 
 // End Project Styles **************************************************************************

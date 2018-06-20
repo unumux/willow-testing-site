@@ -18,7 +18,7 @@
             <div class="container-fluid">
                 <div class="willow-page-header__container">
                     <div class="willow-page-header__branding">
-                        <a class="willow-logo-link" href="/" aria-label="go to home page">
+                        <a class="willow-logo-link" href="/willow-testing-site/" aria-label="go to home page">
                             <img class="willow-logo-link__image" src="https://via.placeholder.com/150x150" alt="">
                         </a>
                     </div>
@@ -50,16 +50,20 @@
                 <ol class="willow-breadcrumbs__list">
                     <li class="willow-breadcrumbs__item"><a class="willow-breadcrumbs__link" href="/willow-testing-site/" aria-label="">Home</a></li>                            
                     <li class="willow-breadcrumbs__item"><a class="willow-breadcrumbs__link" href="/willow-testing-site/components.html" aria-label="">Components</a></li>                            
-                    <li class="willow-breadcrumbs__item willow-breadcrumbs__item--active">Dialog and Modal</li>
+                    <li class="willow-breadcrumbs__item willow-breadcrumbs__item--active">Dialog</li>
                 </ol>
             </div>
         </nav>
         <main class="willow-page-content" id="main" role="main">
+            <div class="project-title">
+                <div class="container-fluid project-title__container">
+                    <h1 class="project-title__heading">Dialog</h1>
+                    <a class="project-title__action" href="https://github.com/unumux/willow/tree/master/components/dialog" target="_blank">Documentation</a>
+                </div>
+            </div>
             <div class="container-fluid">
                 <div class="willow-styling-context">
-                    <h1>Dialog and Modal</h1>
-                    <button class="willow-button" id="openDialogButton">Open Dialog</button>
-                    <button class="willow-button" id="openModalButton">Open Modal</button>
+                    <button class="willow-button willow-button--inline" id="openDialogButton">Open Dialog</button>
                 </div>
             </div>
         </main>
@@ -75,22 +79,6 @@
                 </div>
                 <ul class="willow-dialog__actions">
                     <li class="willow-dialog__action"><button class="willow-button" id="closeDialogButton">Close</button></li>
-                </ul>
-            </section>
-        </div>
-        <div class="willow-modal">
-            <section class="willow-modal__container" role="alertdialog">
-                <h1 class="willow-modal__heading">Modal</h1>
-                <div class="willow-modal__content">
-                    <div class="willow-styling-context">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam unde, porro ratione rerum
-                            ipsa modi fugit ullam nihil beatae. Facilis, voluptatem earum illo pariatur dolor natus
-                            eum obcaecati sit. Cum optio soluta iusto nam cupiditate asperiores ad odit laborum provident!</p>
-                    </div>
-                </div>
-                <ul class="willow-modal__actions">
-                    <li class="willow-modal__action"><button class="willow-button willow-button--negative" id="closeModalButton">Close</button></li>
-                    <li class="willow-modal__action"><button class="willow-button willow-button--primary" id="closeModalButton2">Close</button></li>
                 </ul>
             </section>
         </div>

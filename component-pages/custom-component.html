@@ -18,7 +18,7 @@
             <div class="container-fluid">
                 <div class="willow-page-header__container">
                     <div class="willow-page-header__branding">
-                        <a class="willow-logo-link" href="/" aria-label="go to home page">
+                        <a class="willow-logo-link" href="/willow-testing-site/" aria-label="go to home page">
                             <img class="willow-logo-link__image" src="https://via.placeholder.com/150x150" alt="">
                         </a>
                     </div>
@@ -59,11 +59,15 @@
             </div>
         </nav>
         <main class="willow-page-content" id="main" role="main">
+            <div class="project-title project-title--detailed">
+                <div class="container-fluid project-title__container">
+                    <h1 class="project-title__heading">Custom Component</h1>
+                    <p class="project-title__content">See the code below and/or Inspect the components with your browser's developer tools to see how we leveraged Willow to make this branded component.</p>
+                </div>
+            </div>
             <div class="container-fluid">
                 <div class="willow-styling-context">
-                    <h1>A page with a custom component</h1>
                     <h2>Project Stats</h2>
-                    <p>Inspect these to see how we leveraged Willow to quickly make components that were on brand.</p>
                 </div>
                 <div class="row">
                     <div class="col-sm-6">
@@ -83,6 +87,58 @@
                             <p class="project-stat__highlight">100%</p>
                             <p class="project-stat__label">of the people reading this know about it</p>
                         </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="willow-styling-context">
+                            <hr>
+                            <h2>component-pages/custom-component.html</h2><pre><code>
+&lt;div class="col-sm-6"&gt;
+    &lt;div class="project-stat"&gt;
+        &lt;p class="project-stat__highlight">46%&lt;/p&gt;
+        &lt;p class="project-stat__label">of our customers love pizza&lt;/p&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="col-sm-6"&gt;
+    &lt;div class="project-stat"&gt;
+        &lt;p class="project-stat__highlight">93%&lt;/p&gt;
+        &lt;p class="project-stat__label">of people are cool&lt;/p&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="col-12"&gt;
+    &lt;div class="project-stat project-stat--special"&gt;
+        &lt;p class="project-stat__highlight">100%&lt;/p&gt;
+        &lt;p class="project-stat__label">of the people reading this know about it&lt;/p&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+                            <hr>
+                            <h3>styles/components/stat/_stat.scss</h3><pre><code>
+$component-project-stat-background-color: $theme-primary;
+$component-project-stat-text-color: $theme-text-inverse;
+$component-project-stat-special-background-color: $theme-accent-2;
+$component-project-stat-special-text-color: $theme-text-tertiary;
+
+.project-stat {
+    background-color: $component-project-stat-background-color;
+    color: $component-project-stat-text-color;
+    padding: $space-inset-l;
+    text-align: center;
+    margin-top: $space;
+
+    &--special {
+        background-color: $component-project-stat-special-background-color;
+        color: $component-project-stat-special-text-color;
+    }
+
+    &__highlight {
+        @include set-text-style($text-style-heading-1);
+        margin: 0;
+    }
+
+    &__label {
+        font-weight: 600;
+        margin: 0;
+    }
+}</code></pre></div>
                     </div>
                 </div>
             </div>

@@ -1,0 +1,27 @@
+// styles for my custom page-title component
+$component-title-background-color: $theme-base-3;
+
+.project-title {
+    background-color: $component-title-background-color;
+
+    &__container {
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: $space-s;
+        padding-top: $space-s;
+
+        .project-title--detailed & {
+            display: block;
+        }
+    }
+
+    &__heading,
+    &__action {
+        margin: 0;
+    }
+
+    &__heading {
+        flex-grow: 1;
+    }
+}

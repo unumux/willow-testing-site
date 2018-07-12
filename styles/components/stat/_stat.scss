@@ -1,8 +1,8 @@
 // styles for my custom stat component
-$component-project-stat-background-color: $theme-primary;
-$component-project-stat-text-color: $theme-text-inverse;
-$component-project-stat-special-background-color: $theme-accent-2;
-$component-project-stat-special-text-color: $theme-text-tertiary;
+$component-project-stat-background-color: $color-dark;
+$component-project-stat-text-color: $color-light;
+$component-project-stat-special-background-color: $color-middle;
+$component-project-stat-special-text-color: $color-light;
 
 .project-stat {
     background-color: $component-project-stat-background-color;

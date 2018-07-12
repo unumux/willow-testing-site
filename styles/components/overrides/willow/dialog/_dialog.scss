@@ -1,0 +1,13 @@
+.willow-dialog {
+    @import "close";
+    @import "container";
+    @import "actions";
+    @import "heading";
+
+    .willow-styling-context {
+        form {
+            border-radius: 0;
+            padding: 0;
+        }
+    }
+}

@@ -64,12 +64,13 @@
             <div class="container-fluid">
                 <div class="willow-styling-context">
                     <button class="willow-button willow-button--inline" id="openDialogButton">Open Dialog</button>
+                    <button class="willow-button willow-button--inline" id="openComplexDialogButton">Open Custom Dialog</button>
                 </div>
             </div>
         </main>
-            
-        <div class="willow-dialog">
+        <div class="willow-dialog" id="dialog">
             <section class="willow-dialog__container" role="dialog">
+                <button class="willow-dialog__close"><span class="willow-icon willow-icon--close-inverse"></span></button>
                 <h1 class="willow-dialog__heading">Heading Text</h1>
                 <div class="willow-dialog__content">
                     <div class="willow-styling-context">
@@ -78,8 +79,53 @@
                     </div>
                 </div>
                 <ul class="willow-dialog__actions">
-                    <li class="willow-dialog__action"><button class="willow-button" id="closeDialogButton">Close</button></li>
+                    <li class="willow-dialog__action"><button class="willow-button" id="closeDialogButton">Diaglog Action</button></li>
                 </ul>
+            </section>
+        </div>
+        <div class="willow-dialog" id="complexDialog">
+            <section class="willow-dialog__container" role="dialog">
+                <button class="willow-dialog__close"><span class="willow-icon willow-icon--close-inverse"></span></button>
+                <h1 class="willow-dialog__heading">Heading Text</h1>
+                <div class="willow-dialog__content">
+                    <div class="willow-styling-context">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur quo dolore ipsa officia
+                            expedita tempora, fuga recusandae accusantium laboriosam repellat?</p>
+                        <form action="">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <label for="firstName">First Name</label><input type="text" id="firstName">
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="lastName">Last Name</label><input type="text" id="lastName">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <label for="email">Email Address</label><input type="email" id="email">
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="business">Business Name</label><input type="text" id="business">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <label for="phone">Phone Number</label><input type="text" id="phone">
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="employees">Number of employees</label>
+                                    <select name="employees" id="employees">
+                                        <option value="1">0 - 25</option>
+                                        <option value="2">26 - 100</option>
+                                        <option value="3">101 - 500</option>
+                                        <option value="4">500 +</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <button class="willow-button willow-button--primary willow-button--inline" id="closeComplexDialogButton">Form Action</button>
+                        </form>
+                    </div>
+                </div>
             </section>
         </div>
     </div>

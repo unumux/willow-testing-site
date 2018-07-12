@@ -1,0 +1,14 @@
+&__close {
+    border: none;
+    border-radius: 100%;
+    box-shadow: -3px 3px 10px $component-dialog-overlay-background-color;
+    font-weight: 600;
+    padding: $space-s $space;
+    position: absolute;
+    right: -$space;
+    top: -$space;
+
+    .willow-icon & {
+        vertical-align: top;
+    }
+}

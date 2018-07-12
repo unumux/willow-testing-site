@@ -13,6 +13,7 @@
         "dest": "styles"
     },
     "js": {
+        "main": "scripts/site.js",
         "src": "scripts/**/*.js",
         "dest": "scripts"
     },
@@ -23,6 +24,6 @@
         "index.html"
     ],
     "server": true,
-    "compileJs": false,
+    "compileJs": true,
     "proxy": false
 }

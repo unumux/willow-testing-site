@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="../styles/styles.min.css">
+</head>
+
+<body>
+    <!-- PAGE COMPONENT FOR SIZING CONTENT AREA -->
+    <div class="willow-page-container">
+
+        <!-- SKIP NAV COMPONENT -->
+        <div class="willow-skip-nav">
+            <a href="#main" class="willow-skip-nav__link" aria-label="skip to main content">Skip to main content</a>
+        </div>
+        <nav class="willow-breadcrumbs" role="navigation" aria-label="breadcrumb">
+            <div class="container-fluid">
+                <h1 class="willow-breadcrumbs__heading sr-only">You are here:</h1>
+                <ol class="willow-breadcrumbs__list">
+                    <li class="willow-breadcrumbs__item">
+                        <a class="willow-breadcrumbs__link" href="/" aria-label="">Home</a>
+                    </li>
+                    <li class="willow-breadcrumbs__item">
+                        <a class="willow-breadcrumbs__link" href="/example-pages.html" aria-label="">Example Pages</a>
+                    </li>
+                    <li class="willow-breadcrumbs__item willow-breadcrumbs__item--active">Landing Page</li>
+                </ol>
+            </div>
+        </nav>
+
+        <!-- PAGE HEADER COMPONENT -->
+        <header class="willow-page-header" role="banner">
+            <div class="container-fluid">
+                <div class="willow-page-header__container">
+
+                    <div class="willow-page-header__branding">
+                        <!-- LOGO LINK COMPONENT -->                
+                        <a class="willow-logo-link" href="/" aria-label="go to home page"><img class="willow-logo-link__image" src="http://via.placeholder.com/350x150" alt=""></a>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- PAGE CONTENT COMPONENT -->
+        <main class="willow-page-content flex-grow" id="main" role="main">
+            <div class="container-fluid">
+                <!-- TWO COLUMN CONTENT -->
+                <div class="row">
+                    <div class="col-md-6">
+                        <section role="region">
+                            <div>
+                                <h1>Example page content</h1>
+                                <h2>A webpage showing a landing page example in layout and content</h2>        
+                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure ullam id a amet in asperiores doloribus sequi, dolorem tempore:</p>
+                                <ul>
+                                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit</li>
+                                    <li>Vel quam eos dicta lorem ipsum dolor sit amet consectetur adipisicing elit</li>
+                                    <li>Minus mollitia, dicta aspernatur minima sunt unde repellendus excepturi similique</li>
+                                </ul>
+                                <p>Ullam nulla voluptates placeat? Voluptatibus, numquam assumenda pariatur voluptates distinctio velit vero quisquam.</p>
+                            </div>
+                        </section>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="project-rtf">
+                            <img src="http://via.placeholder.com/600x450" alt="" />
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- ONE COLUMN HEADING -->
+                <div class="row">
+                    <div class="col-12">
+                        <h1 class="project-centered">Take action with this</h1>
+                    </div>
+                </div>
+                <!-- TWO COLUMN FORM -->
+                <form action="">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <label for="best">What things are the best</label>
+                            <select id="best" type="text" required>
+                                <option value="1">option 1</option>
+                                <option value="2">option 2</option>
+                                <option value="3">option 3</option>
+                            </select>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="business">Business name</label><input id="business" type="text">
+                        </div>
+                        <div class="col-md-6">
+                            <label for="firstName">First name</label><input id="firstName" type="text">
+                        </div>
+                        <div class="col-md-6">
+                            <label for="lastName">Last name</label><input id="lastName" type="text">
+                        </div>
+                        <div class="col-md-6">
+                            <label for="email">Email address</label><input id="email" type="text">
+                        </div>
+                        <div class="col-md-6">
+                            <label for="phone">Phone</label><input id="phone" type="text">
+                        </div>
+                    </div>
+                    <div class="willow-button willow-button--primary willow-button--inline">submit</div>
+                </form>
+            </div>
+
+            <!-- BANNER COMPONENT -->
+            <section class="willow-banner" role="region">
+                <div class="container-fluid">
+                    <div class="willow-banner__icon project-landing-page-icon"></div>
+                    <h1 class="willow-banner__heading">Ready to read this banner?</h1>
+                    <div class="willow-banner__content">
+                        <div class="willow-styling-context">
+                            <p>Want to read more things like this banner?</p>
+                            <a href="#">Get started now</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-12">
+                        <h1 class="project-centered">More website and item resources</h1>
+                        <p class="project-centered">Stay informed about websites, banners and items now.</p>
+                    </div>
+                </div>
+                <!-- GRID COMPONENT (IN PAGE CONTENT) -->
+                <div class="willow-grid willow-grid--xl-3 willow-grid--lg-3">
+                    <div class="willow-grid__item">
+                        <!-- MY CARD - A COMPONENT UNIQUE TO THIS PROJECT (NOT FROM WILLOW LIBRARY) -->
+                        <article class="willow-card">
+                            <div class="willow-card__content">
+                                <h1 class="willow-card__heading">Card Heading</h1>
+                                <div class="willow-card__description">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit repellat amet animi aperiam delectus quo, cum, laudantium, rem autem temporibus sed, magni voluptates dolorem. Non odio reiciendis recusandae ab earum!</p>
+                                </div>
+                                <ul class="willow-card__actions">
+                                    <li class="willow-card__action"><a href="" class="willow-button">Button</a></li>
+                                </ul>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="willow-grid__item">
+                        <article class="willow-card">
+                            <div class="willow-card__content">
+                                <h1 class="willow-card__heading">Card Heading</h1>
+                                <div class="willow-card__description">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit repellat amet animi aperiam delectus quo, cum, laudantium, rem autem temporibus sed, magni voluptates dolorem. Non odio reiciendis recusandae ab earum!</p>
+                                </div>
+                                <ul class="willow-card__actions">
+                                    <li class="willow-card__action"><a href="" class="willow-button">Button</a></li>
+                                </ul>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="willow-grid__item">
+                        <article class="willow-card">
+                            <div class="willow-card__content">
+                                <h1 class="willow-card__heading">Card Heading</h1>
+                                <div class="willow-card__description">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit repellat amet animi aperiam delectus quo, cum, laudantium, rem autem temporibus sed, magni voluptates dolorem. Non odio reiciendis recusandae ab earum!</p>
+                                </div>
+                                <ul class="willow-card__actions">
+                                    <li class="willow-card__action"><a href="" class="willow-button">Button</a></li>
+                                </ul>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <small class="project-disclaimer project-centered">Items and websites are covered by the internet.</small>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <!-- PAGE FOOTER COMPONENT -->
+        <footer class="willow-page-footer" role="contentinfo">
+            <div class="container-fluid">
+                <div class="willow-page-footer__container">
+                    <div class="willow-page-footer__branding">
+                        <!-- LOGO LINK COMPONENT -->
+                        <a class="willow-logo-link" href="/" aria-label="go to home page"><img class="willow-logo-link__image" src="http://via.placeholder.com/350x150" alt=""></a>
+                    </div>
+                    <small class="willow-page-footer__copyright">© 2018 Copyright of websites and banners and other things will go here</small>
+                    <small class="willow-page-footer__copyright">Here is even more copyright specific test about trademarks and rules and legal things.</small>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="scripts/site.min.js"></script>
+</body>
+</html>

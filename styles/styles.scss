@@ -3,13 +3,26 @@
 // developers need to copy icons from willow into their project and then update the icon path variable
 // not providing an override of this variable will produce broken icons b/c node modules aren't available on the site
 $icons-folder: "../assets/icons";
+
+// temporary constant/base variables until Willow provides these
+$color-light: #fff;
+$color-middle: #777;
+$color-dark: #222;
+$color-positive: #61a044;
+$color-negative: #e75656;
+$color-warning: #ffaa00;
 // END OVERRIDES **************************************
+
+// OPTIONAL THEMES
+// ****************************************************
+// @import "./node_modules/@unumux/theme-unum-default/styles";
+// @import "./node_modules/@unumux/theme-coloniallife-default/styles";
+// END OPTIONAL THEMES **************************************
 
 // IMPORT ALL OF WILLOW
 // ****************************************************
 @import "./node_modules/@unumux/willow/styles";
 // END IMPORT ************************************
-
 // IMPORT SINGLE COMPONENTS - WILLOW AND BOOTSTRAP
 // Use this technique if you want to import portions of a library
 // ****************************************************
@@ -38,22 +51,20 @@ $icons-folder: "../assets/icons";
 // @import "./node_modules/@unumux/willow/components/secondary-nav/styles/secondary-nav";
 // @import "./node_modules/@unumux/willow/components/skip-nav/styles/skip-nav";
 // END SINGLE COMPONENT IMPORTS ************************************************************'
-
 // PROJECT STYLES
 // ******************************************************************************************
 // imports project custom components or overrrides
 @import "components/components";
-
 // missing from Willow's base styles
 code {
     margin: $space-stack;
 }
 
-blockquote > p {
+blockquote>p {
     margin: 0;
 }
 
-form > h1 {
+form>h1 {
     margin-top: 0;
 }
 

@@ -66,12 +66,13 @@ themes.forEach(theme => {
         localStorage.setItem("selectedStylesheet", stylesheetName);
         var selectedTheme = localStorage.getItem("selectedStylesheet");
 
-        document.querySelector("body").getAttribute("data-subpage") ?
-            swapTheme(`styles/${stylesheetName}.min.css`)
-            : swapTheme(`../styles/${stylesheetName}.min.css`)
+        document.querySelector("body").getAttribute("data-subpage") !== null ?
+            swapTheme(`../styles/${stylesheetName}.min.css`)
+            : swapTheme(`styles/${stylesheetName}.min.css`)
     })
 })
 
 let swapTheme = theme => {
+    console.log(theme);
     document.querySelector("#stylesheet").setAttribute("href", theme);
 }

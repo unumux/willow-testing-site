@@ -82,3 +82,33 @@
         margin: 0;
     }
 }
+
+.project-intro {
+    &__heading {
+        @include set-text-style($text-style-heading-4);
+        
+        margin: $space-stack-s;
+    }
+    
+    &__theme-selector {
+        margin: $space-stack-s;
+        
+        fieldset {
+            margin: 0;
+        }
+        
+        // legend,
+        // label {
+        //     @include set-text-style($text-style-content-2);
+        // }
+
+        // legend {
+        //     font-
+        // }
+    }
+
+    label {
+        display: inline;
+        margin: $space-inline;
+    }
+}

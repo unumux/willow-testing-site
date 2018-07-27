@@ -4,14 +4,26 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
-    <link rel="stylesheet" href="../styles/styles.min.css">
+    <link id="stylesheet" rel="stylesheet" href="../styles/styles.min.css">
 </head>
 
-<body>
+<body data-subpage>
     <div class="willow-page-container">
         <div class="willow-skip-nav">
             <div class="container-fluid">
                 <a href="#main" class="willow-skip-nav__link" aria-label="skip to main content">Skip to Content</a>
+            </div>
+        </div>
+        <div class="project-intro">
+            <div class="container-fluid">
+                <form class="project-intro__theme-selector" id="themeSelector">
+                    <fieldset>
+                        <legend>Change the theme</legend>
+                        <label for="greyRadio"><input type="radio" id="greyRadio" name="theme" checked data-stylesheet="styles"/> Greyscale Theme</label>
+                        <label for="unumRadio"><input type="radio" id="unumRadio" name="theme" data-stylesheet="unum"/> Unum Theme</label>
+                        <label for="colonialLifeRadio"><input type="radio" id="colonialLifeRadio" name="theme" data-stylesheet="coloniallife"/> Colonial Life Theme</label>
+                    </fieldset>
+                </form>
             </div>
         </div>
         <header class="willow-page-header" role="banner">
@@ -174,6 +186,8 @@
             </div>
         </main>
     </div>
+    <script src="../scripts/site.min.js"></script>
+
 </body>
 
 </html>

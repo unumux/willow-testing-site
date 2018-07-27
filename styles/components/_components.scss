@@ -96,19 +96,12 @@
         fieldset {
             margin: 0;
         }
-        
-        // legend,
-        // label {
-        //     @include set-text-style($text-style-content-2);
-        // }
-
-        // legend {
-        //     font-
-        // }
     }
 
     label {
-        display: inline;
-        margin: $space-inline;
+        @media screen and (min-width: breakpoint(md, $grid-breakpoints)) {
+            display: inline;
+            margin: $space-inline;
+        }
     }
 }

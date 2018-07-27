@@ -4,10 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
-    <link rel="stylesheet" href="../styles/styles.min.css">
+    <link id="stylesheet" rel="stylesheet" href="../styles/styles.min.css">
 </head>
 
-<body>
+<body data-subpage>
     <!-- PAGE COMPONENT FOR SIZING CONTENT AREA -->
     <div class="willow-page-container">
 
@@ -15,15 +15,27 @@
         <div class="willow-skip-nav">
             <a href="#main" class="willow-skip-nav__link" aria-label="skip to main content">Skip to main content</a>
         </div>
+        <div class="project-intro">
+            <div class="container-fluid">
+                <form class="project-intro__theme-selector" id="themeSelector">
+                    <fieldset>
+                        <legend>Change the theme</legend>
+                        <label for="greyRadio"><input type="radio" id="greyRadio" name="theme" checked data-stylesheet="styles"/> Greyscale Theme</label>
+                        <label for="unumRadio"><input type="radio" id="unumRadio" name="theme" data-stylesheet="unum"/> Unum Theme</label>
+                        <label for="colonialLifeRadio"><input type="radio" id="colonialLifeRadio" name="theme" data-stylesheet="coloniallife"/> Colonial Life Theme</label>
+                    </fieldset>
+                </form>
+            </div>
+        </div>
         <nav class="willow-breadcrumbs" role="navigation" aria-label="breadcrumb">
             <div class="container-fluid">
                 <h1 class="willow-breadcrumbs__heading sr-only">You are here:</h1>
                 <ol class="willow-breadcrumbs__list">
                     <li class="willow-breadcrumbs__item">
-                        <a class="willow-breadcrumbs__link" href="/willow-testing-site" aria-label="">Home</a>
+                        <a class="willow-breadcrumbs__link" href="/" aria-label="">Home</a>
                     </li>
                     <li class="willow-breadcrumbs__item">
-                        <a class="willow-breadcrumbs__link" href="/willow-testing-site/example-pages.html" aria-label="">Example Pages</a>
+                        <a class="willow-breadcrumbs__link" href="/example-pages.html" aria-label="">Example Pages</a>
                     </li>
                     <li class="willow-breadcrumbs__item willow-breadcrumbs__item--active">Landing Page</li>
                 </ol>
@@ -37,7 +49,7 @@
 
                     <div class="willow-page-header__branding">
                         <!-- LOGO LINK COMPONENT -->                
-                        <a class="willow-logo-link" href="/willow-testing-site/" aria-label="go to home page"><img class="willow-logo-link__image" src="http://via.placeholder.com/350x150" alt=""></a>
+                        <a class="willow-logo-link" href="/" aria-label="go to home page"><img class="willow-logo-link__image" src="http://via.placeholder.com/350x150" alt=""></a>
                     </div>
                 </div>
             </div>
@@ -185,7 +197,7 @@
                 <div class="willow-page-footer__container">
                     <div class="willow-page-footer__branding">
                         <!-- LOGO LINK COMPONENT -->
-                        <a class="willow-logo-link" href="/willow-testing-site/" aria-label="go to home page"><img class="willow-logo-link__image" src="http://via.placeholder.com/350x150" alt=""></a>
+                        <a class="willow-logo-link" href="/" aria-label="go to home page"><img class="willow-logo-link__image" src="http://via.placeholder.com/350x150" alt=""></a>
                     </div>
                     <small class="willow-page-footer__copyright">© 2018 Copyright of websites and banners and other things will go here</small>
                     <small class="willow-page-footer__copyright">Here is even more copyright specific test about trademarks and rules and legal things.</small>
@@ -193,6 +205,6 @@
             </div>
         </footer>
     </div>
-    <script src="scripts/site.min.js"></script>
+    <script src="../scripts/site.min.js"></script>
 </body>
 </html>

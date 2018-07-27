@@ -3,22 +3,34 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
-    <link rel="stylesheet" href="../styles/styles.min.css">
+    <title>Demo Website</title>
+    <link id="stylesheet" rel="stylesheet" href="../styles/styles.min.css">
 </head>
 
-<body>
+<body data-subpage>
     <div class="willow-page-container">
         <div class="willow-skip-nav">
             <div class="container-fluid">
                 <a href="#main" class="willow-skip-nav__link" aria-label="skip to main content">Skip to Content</a>
             </div>
         </div>
+        <div class="project-intro">
+            <div class="container-fluid">
+                <form class="project-intro__theme-selector" id="themeSelector">
+                    <fieldset>
+                        <legend>Change the theme</legend>
+                        <label for="greyRadio"><input type="radio" id="greyRadio" name="theme" checked data-stylesheet="styles"/> Greyscale Theme</label>
+                        <label for="unumRadio"><input type="radio" id="unumRadio" name="theme" data-stylesheet="unum"/> Unum Theme</label>
+                        <label for="colonialLifeRadio"><input type="radio" id="colonialLifeRadio" name="theme" data-stylesheet="coloniallife"/> Colonial Life Theme</label>
+                    </fieldset>
+                </form>
+            </div>
+        </div>
         <header class="willow-page-header" role="banner">
             <div class="container-fluid">
                 <div class="willow-page-header__container">
                     <div class="willow-page-header__branding">
-                        <a class="willow-logo-link" href="/willow-testing-site/" aria-label="go to home page">
+                        <a class="willow-logo-link" href="/" aria-label="go to home page">
                             <img class="willow-logo-link__image" src="https://via.placeholder.com/150x150" alt="">
                         </a>
                     </div>
@@ -32,13 +44,13 @@
                                 <h1 class="willow-primary-nav__heading sr-only">Site Primary Menu</h1>
                                 <ul class="willow-primary-nav__list">
                                     <li class="willow-primary-nav__item">
-                                        <a class="willow-primary-nav__link" href="/willow-testing-site/">Home</a>
+                                        <a class="willow-primary-nav__link" href="/">Home</a>
                                     </li>
                                     <li class="willow-primary-nav__item">
-                                        <a class="willow-primary-nav__link willow-primary-nav__link--active" href="/willow-testing-site/components.html">Components</a>
+                                        <a class="willow-primary-nav__link willow-primary-nav__link--active" href="/components.html">Components</a>
                                     </li>
                                     <li class="willow-primary-nav__item">
-                                        <a class="willow-primary-nav__link" href="/willow-testing-site/example-pages.html">Example Pages</a>
+                                        <a class="willow-primary-nav__link" href="/example-pages.html">Example Pages</a>
                                     </li>
                                 </ul>
                             </nav>
@@ -51,8 +63,8 @@
             <div class="container-fluid">
                 <h1 class="willow-breadcrumbs__heading sr-only">You are here:</h1>
                 <ol class="willow-breadcrumbs__list">
-                    <li class="willow-breadcrumbs__item"><a class="willow-breadcrumbs__link" href="/willow-testing-site/" aria-label="">Home</a></li>                            
-                    <li class="willow-breadcrumbs__item"><a class="willow-breadcrumbs__link" href="/willow-testing-site/components.html" aria-label="">Components</a></li>                            
+                    <li class="willow-breadcrumbs__item"><a class="willow-breadcrumbs__link" href="/" aria-label="">Home</a></li>                            
+                    <li class="willow-breadcrumbs__item"><a class="willow-breadcrumbs__link" href="/components.html" aria-label="">Components</a></li>                            
                     <li class="willow-breadcrumbs__item willow-breadcrumbs__item--active">Page Footer</li>
                 </ol>
             </div>
@@ -68,13 +80,13 @@
             <footer class="willow-page-footer" role="contentinfo">
                 <div class="container-fluid">
                     <div class="willow-page-footer__container">
-                        <div class="willow-page-footer__branding"><a class="willow-logo-link" href="/willow-testing-site/" aria-label="go to home page"><img class="willow-logo-link__image" src="https://via.placeholder.com/150x150" alt=""></a></div>
+                        <div class="willow-page-footer__branding"><a class="willow-logo-link" href="/" aria-label="go to home page"><img class="willow-logo-link__image" src="https://via.placeholder.com/150x150" alt=""></a></div>
                         <div class="willow-page-footer__navigation">
                             <nav class="willow-footer-nav" role="navigation" aria-label="footer">
                                 <h1 class="willow-footer-nav__heading sr-only">Site Footer Menu</h1>
                                 <ul class="willow-footer-nav__list">
-                                    <li class="willow-footer-nav__item"><a class="willow-footer-nav__link" href="/willow-testing-site/">Home</a></li>
-                                    <li class="willow-footer-nav__item"><a class="willow-footer-nav__link" href="/willow-testing-site/components.html">Components</a></li>
+                                    <li class="willow-footer-nav__item"><a class="willow-footer-nav__link" href="/">Home</a></li>
+                                    <li class="willow-footer-nav__item"><a class="willow-footer-nav__link" href="/components.html">Components</a></li>
                                     <li class="willow-footer-nav__item"><a class="willow-footer-nav__link" href="https://github.com/unumux/willow" aria-label="Willow Code Repository" target="_blank">Code</a></li>
                                 </ul>
                             </nav>
@@ -89,7 +101,7 @@
             <footer class="willow-page-footer" role="contentinfo">
                 <div class="container-fluid">
                     <div class="willow-page-footer__container">
-                        <div class="willow-page-footer__branding"><a class="willow-logo-link" href="/willow-testing-site/" aria-label="go to home page"><img class="willow-logo-link__image" src="https://via.placeholder.com/150x150" alt=""></a></div>
+                        <div class="willow-page-footer__branding"><a class="willow-logo-link" href="/" aria-label="go to home page"><img class="willow-logo-link__image" src="https://via.placeholder.com/150x150" alt=""></a></div>
                         <small class="willow-page-footer__copyright">Copyright lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, exercitationem.</small>
                     </div>
                 </div>
@@ -106,8 +118,8 @@
                             <nav class="willow-footer-nav" role="navigation" aria-label="footer">
                                 <h1 class="willow-footer-nav__heading sr-only">Site Footer Menu</h1>
                                 <ul class="willow-footer-nav__list">
-                                    <li class="willow-footer-nav__item"><a class="willow-footer-nav__link" href="/willow-testing-site/">Home</a></li>
-                                    <li class="willow-footer-nav__item"><a class="willow-footer-nav__link" href="/willow-testing-site/components.html">Components</a></li>
+                                    <li class="willow-footer-nav__item"><a class="willow-footer-nav__link" href="/">Home</a></li>
+                                    <li class="willow-footer-nav__item"><a class="willow-footer-nav__link" href="/components.html">Components</a></li>
                                     <li class="willow-footer-nav__item"><a class="willow-footer-nav__link" href="https://github.com/unumux/willow" aria-label="Willow Code Repository" target="_blank">Code</a></li>
                                 </ul>
                             </nav>
@@ -124,13 +136,13 @@
             <footer class="willow-page-footer" role="contentinfo">
                 <div class="container-fluid">
                     <div class="willow-page-footer__container">
-                        <div class="willow-page-footer__branding"><a class="willow-logo-link" href="/willow-testing-site/" aria-label="go to home page"><img class="willow-logo-link__image" src="https://via.placeholder.com/150x150" alt=""></a></div>
+                        <div class="willow-page-footer__branding"><a class="willow-logo-link" href="/" aria-label="go to home page"><img class="willow-logo-link__image" src="https://via.placeholder.com/150x150" alt=""></a></div>
                         <div class="willow-page-footer__navigation">
                             <nav class="willow-footer-nav" role="navigation" aria-label="footer">
                                 <h1 class="willow-footer-nav__heading sr-only">Site Footer Menu</h1>
                                 <ul class="willow-footer-nav__list">
-                                    <li class="willow-footer-nav__item"><a class="willow-footer-nav__link" href="/willow-testing-site/">Home</a></li>
-                                    <li class="willow-footer-nav__item"><a class="willow-footer-nav__link" href="/willow-testing-site/components.html">Components</a></li>
+                                    <li class="willow-footer-nav__item"><a class="willow-footer-nav__link" href="/">Home</a></li>
+                                    <li class="willow-footer-nav__item"><a class="willow-footer-nav__link" href="/components.html">Components</a></li>
                                     <li class="willow-footer-nav__item"><a class="willow-footer-nav__link" href="https://github.com/unumux/willow" aria-label="Willow Code Repository" target="_blank">Code</a></li>
                                 </ul>
                             </nav>
@@ -150,8 +162,8 @@
                             <nav class="willow-footer-nav" role="navigation" aria-label="footer">
                                 <h1 class="willow-footer-nav__heading sr-only">Site Footer Menu</h1>
                                 <ul class="willow-footer-nav__list">
-                                    <li class="willow-footer-nav__item"><a class="willow-footer-nav__link" href="/willow-testing-site/">Home</a></li>
-                                    <li class="willow-footer-nav__item"><a class="willow-footer-nav__link" href="/willow-testing-site/components.html">Components</a></li>
+                                    <li class="willow-footer-nav__item"><a class="willow-footer-nav__link" href="/">Home</a></li>
+                                    <li class="willow-footer-nav__item"><a class="willow-footer-nav__link" href="/components.html">Components</a></li>
                                     <li class="willow-footer-nav__item"><a class="willow-footer-nav__link" href="https://github.com/unumux/willow" aria-label="Willow Code Repository" target="_blank">Code</a></li>
                                 </ul>
                             </nav>
@@ -167,7 +179,7 @@
             <footer class="willow-page-footer" role="contentinfo">
                 <div class="container-fluid">
                     <div class="willow-page-footer__container">
-                        <div class="willow-page-footer__branding"><a class="willow-logo-link" href="/willow-testing-site/" aria-label="go to home page"><img class="willow-logo-link__image" src="https://via.placeholder.com/150x150" alt=""></a></div>
+                        <div class="willow-page-footer__branding"><a class="willow-logo-link" href="/" aria-label="go to home page"><img class="willow-logo-link__image" src="https://via.placeholder.com/150x150" alt=""></a></div>
                     </div>
                 </div>
             </footer>

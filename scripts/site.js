@@ -72,9 +72,9 @@ themeInputs.forEach(theme => {
         setThemeInSession(stylesheetName)
         matchSessionThemeToRadio(themeInputs, sessionStorage.getItem("selectedTheme")).checked = true
 
-        startLoading(bodyElement)
+        // startLoading(bodyElement)
         swapTheme(stylesheetElement, `/willow-testing-site/styles/${stylesheetName}.min.css`)
-        setTimeout(function() { stopLoading(bodyElement) }, 500)
+        // setTimeout(function() { stopLoading(bodyElement) }, 500)
 
         // if(bodyElement.dataset.subpage !== null && bodyElement.dataset.subpage !== undefined) {
         //     swapTheme(stylesheetElement, `../styles/${stylesheetName}.min.css`)
@@ -87,7 +87,7 @@ themeInputs.forEach(theme => {
 })
 
 window.onload = () => {
-    startLoading(bodyElement)
+    // startLoading(bodyElement)
 
     // for local session
     // stylesheetName = localStorage.getItem("selectedTheme")
@@ -102,7 +102,7 @@ window.onload = () => {
     }
         
     swapTheme(stylesheetElement, `/willow-testing-site/styles/${stylesheetName}.min.css`)
-    setTimeout(function() { stopLoading(bodyElement) }, 500)
+    // setTimeout(function() { stopLoading(bodyElement) }, 500)
 
     // if(bodyElement.dataset.subpage !== null) {
     //     swapTheme(stylesheetElement, `../styles/${stylesheetName}.min.css`)
@@ -117,13 +117,13 @@ const swapTheme = (el, theme) => {
     el.href = theme
 }
 
-const stopLoading = (el) => {
-    el.dataset.loading = false
-}
+// const stopLoading = (el) => {
+//     el.dataset.loading = false
+// }
 
-const startLoading = (el) => {
-    el.dataset.loading = true;
-}
+// const startLoading = (el) => {
+//     el.dataset.loading = true;
+// }
 
 const setThemeInSession = stylesheetName => {
     sessionStorage.setItem("selectedTheme", stylesheetName)

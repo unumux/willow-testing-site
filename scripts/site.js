@@ -73,7 +73,7 @@ themeInputs.forEach(theme => {
         matchSessionThemeToRadio(themeInputs, sessionStorage.getItem("selectedTheme")).checked = true
 
         // startLoading(bodyElement)
-        swapTheme(stylesheetElement, `/styles/${stylesheetName}.min.css`)
+        swapTheme(stylesheetElement, `/willow-testing-site/styles/${stylesheetName}.min.css`)
         // setTimeout(function() { stopLoading(bodyElement) }, 500)
 
         // if(bodyElement.dataset.subpage !== null && bodyElement.dataset.subpage !== undefined) {
@@ -101,7 +101,7 @@ window.onload = () => {
         matchSessionThemeToRadio(themeInputs, sessionStorage.getItem("selectedTheme")).checked = true
     }
         
-    swapTheme(stylesheetElement, `/styles/${stylesheetName}.min.css`)
+    swapTheme(stylesheetElement, `/willow-testing-site/styles/${stylesheetName}.min.css`)
     // setTimeout(function() { stopLoading(bodyElement) }, 500)
 
     // if(bodyElement.dataset.subpage !== null) {

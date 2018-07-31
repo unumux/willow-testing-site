@@ -73,14 +73,16 @@ themeInputs.forEach(theme => {
         matchSessionThemeToRadio(themeInputs, sessionStorage.getItem("selectedTheme")).checked = true
 
         startLoading(bodyElement)
+        swapTheme(stylesheetElement, `/willow-testing-site/styles/${stylesheetName}.min.css`)
+        setTimeout(function() { stopLoading(bodyElement) }, 500)
 
-        if(bodyElement.dataset.subpage !== null && bodyElement.dataset.subpage !== undefined) {
-            swapTheme(stylesheetElement, `../styles/${stylesheetName}.min.css`)
-            setTimeout(function() { stopLoading(bodyElement) }, 500)
-        } else {
-            swapTheme(stylesheetElement, `styles/${stylesheetName}.min.css`)
-            setTimeout(function() { stopLoading(bodyElement) }, 500)
-        }
+        // if(bodyElement.dataset.subpage !== null && bodyElement.dataset.subpage !== undefined) {
+        //     swapTheme(stylesheetElement, `../styles/${stylesheetName}.min.css`)
+        //     setTimeout(function() { stopLoading(bodyElement) }, 500)
+        // } else {
+        //     swapTheme(stylesheetElement, `styles/${stylesheetName}.min.css`)
+        //     setTimeout(function() { stopLoading(bodyElement) }, 500)
+        // }
     })
 })
 
@@ -99,13 +101,16 @@ window.onload = () => {
         matchSessionThemeToRadio(themeInputs, sessionStorage.getItem("selectedTheme")).checked = true
     }
         
-    if(bodyElement.dataset.subpage !== null) {
-        swapTheme(stylesheetElement, `../styles/${stylesheetName}.min.css`)
-        stopLoading(bodyElement)
-    } else {
-        swapTheme(stylesheetElement, `styles/${stylesheetName}.min.css`)
-        stopLoading(bodyElement)
-    }
+    swapTheme(stylesheetElement, `/willow-testing-site/styles/${stylesheetName}.min.css`)
+    setTimeout(function() { stopLoading(bodyElement) }, 500)
+
+    // if(bodyElement.dataset.subpage !== null) {
+    //     swapTheme(stylesheetElement, `../styles/${stylesheetName}.min.css`)
+    //     stopLoading(bodyElement)
+    // } else {
+    //     swapTheme(stylesheetElement, `styles/${stylesheetName}.min.css`)
+    //     stopLoading(bodyElement)
+    // }
 }
 
 const swapTheme = (el, theme) => {

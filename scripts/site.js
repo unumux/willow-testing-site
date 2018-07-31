@@ -74,7 +74,7 @@ themeInputs.forEach(theme => {
 
         startLoading(bodyElement)
 
-        if(bodyElement.dataset.subpage !== null) {
+        if(bodyElement.dataset.subpage !== null && bodyElement.dataset.subpage !== undefined) {
             swapTheme(stylesheetElement, `../styles/${stylesheetName}.min.css`)
             setTimeout(function() { stopLoading(bodyElement) }, 500)
         } else {

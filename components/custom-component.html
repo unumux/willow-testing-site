@@ -126,10 +126,23 @@
 &lt;/div&gt;</code></pre>
                             <hr>
                             <h3>styles/components/stat/_stat.scss</h3><pre><code>
+// Without a Theme
 $component-project-stat-background-color: $color-dark;
 $component-project-stat-text-color: $color-light;
 $component-project-stat-special-background-color: $color-middle;
 $component-project-stat-special-text-color: $color-light;
+
+// With the Unum Theme
+$component-project-stat-background-color: $theme-primary;
+$component-project-stat-text-color: $theme-text-inverse;
+$component-project-stat-special-background-color: $theme-accent;
+$component-project-stat-special-text-color: $theme-text-primary;
+
+// With the Colonial Life theme
+$component-project-stat-background-color: $theme-primary;
+$component-project-stat-text-color: $theme-text-inverse;
+$component-project-stat-special-background-color: $theme-accent;
+$component-project-stat-special-text-color: $theme-text-inverse;
 
 .project-stat {
     background-color: $component-project-stat-background-color;

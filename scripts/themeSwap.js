@@ -33,7 +33,7 @@ themeInputs.forEach(theme => {
         setThemeInSession(stylesheetName)
         matchSessionThemeToRadio(themeInputs, sessionStorage.getItem("selectedTheme")).checked = true
 
-        swapTheme(stylesheetElement, `/styles/${stylesheetName}.min.css`)
+        swapTheme(stylesheetElement, `/willow-testing-site/styles/${stylesheetName}.min.css`)
     })
 })
 
@@ -51,7 +51,7 @@ window.onload = () => {
         matchSessionThemeToRadio(themeInputs, sessionStorage.getItem("selectedTheme")).checked = true
     }
         
-    swapTheme(stylesheetElement, `/styles/${stylesheetName}.min.css`)
+    swapTheme(stylesheetElement, `/willow-testing-site/styles/${stylesheetName}.min.css`)
 }
 
 // Local Storage Setting

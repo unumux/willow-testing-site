@@ -1,0 +1,11 @@
+&__content-section {
+    background-color: $color-middle;
+    padding: $space-inset;
+    
+    @media screen and (min-width: breakpoint(lg, $grid-breakpoints)) {
+        display: flex;
+        flex-basis: 50%;
+        padding: $space-inset-l;
+        width: 50%;
+    }
+}

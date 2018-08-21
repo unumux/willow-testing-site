@@ -1,0 +1,11 @@
+&__image {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 300px;
+    
+    @media screen and (min-width: breakpoint(lg, $grid-breakpoints)) {
+        flex-basis: 50%;
+        width: 50%;
+    }
+}

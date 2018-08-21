@@ -1,0 +1,26 @@
+&__content {
+    @include compact;
+    
+    background-color: $color-light;
+    border-radius: $component-border-radius;
+    color: $color-dark;
+    margin-top: -$space-xxl;
+    padding: $space-inset;
+    
+    @media screen and (min-width: breakpoint(lg, $grid-breakpoints)) {
+        box-shadow: 5px 8px 12px 0 $color-dark;
+        margin-left: -$space-xxl;
+        margin-top: 0;
+        padding: $space-inset;
+        width: 98%;
+    }
+
+    h2 {
+        color: $color-middle;
+        margin: $space-stack-s;
+    }
+
+    p {
+        margin: $space-stack;
+    }
+}

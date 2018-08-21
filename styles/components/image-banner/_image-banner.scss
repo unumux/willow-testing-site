@@ -1,0 +1,15 @@
+.project-image-banner {
+    @extend .butter;
+    
+    display: flex;
+    flex-direction: column;
+
+    @media screen and (min-width: breakpoint(lg, $grid-breakpoints)) {
+        flex-direction: row;
+        min-height: 450px;
+    }
+    
+    @import "image";
+    @import "content-section";
+    @import "content";
+}

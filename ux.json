@@ -19,6 +19,7 @@
     },
     "watch": [
         "components/**/*.html",
+        "example-pages/*.html",
         "columns.html",
         "components.html",
         "index.html"

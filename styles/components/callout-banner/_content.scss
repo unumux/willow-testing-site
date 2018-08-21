@@ -1,0 +1,13 @@
+&__content {
+    @include compact;
+
+    a {
+        color: $color-light;
+    }
+
+    @media screen and (min-width: breakpoint(md, $grid-breakpoints)) {
+        flex-basis: 80%;
+        flex-direction: column;
+        margin: $space-inline-s;
+    }
+}

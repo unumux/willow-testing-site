@@ -81,4 +81,9 @@ blockquote > p {
 form > h1 {
     margin-top: 0;
 }
+
+.project-banner-inverse {
+    background-color: $color-light;
+    color: $color-dark;
+}
 // End Project Styles **************************************************************************

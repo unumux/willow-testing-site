@@ -1,0 +1,10 @@
+&__actions {
+    list-style-type: none;
+    padding: 0;
+    margin: $space-stack;
+    
+    @media screen and (min-width: breakpoint(md, $grid-breakpoints)) {
+        flex-basis: 20%;
+        margin: 0;
+    }
+}

@@ -1,0 +1,13 @@
+.project-callout-banner {
+    @extend .butter;
+
+    background-color: $color-dark;
+    color: $color-light;
+    margin: $space-stack-l;
+    padding: $space 0;
+    
+    @import "container";
+    @import "content";
+    @import "actions";
+    @import "action";
+}

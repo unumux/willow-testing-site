@@ -1,0 +1,7 @@
+&__container {
+    align-items: center;
+
+    @media screen and (min-width: breakpoint(md, $grid-breakpoints)) {
+        display: flex;
+    }
+}

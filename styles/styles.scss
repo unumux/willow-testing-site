@@ -15,7 +15,7 @@ $color-warning: #ffaa00;
 
 // OPTIONAL THEMES
 // ****************************************************
-@import "./node_modules/@unumux/theme-unum-default/styles";
+// @import "./node_modules/@unumux/theme-unum-default/styles";
 // @import "./node_modules/@unumux/theme-coloniallife-default/styles";
 // END OPTIONAL THEMES **************************************
 
@@ -25,8 +25,8 @@ $color-warning: #ffaa00;
 // put overrides here that use theme variables (space-inset and theme-base-3)
 // if NOT using a theme you can also override component variables here before the willow import but
 // you cannot set those variables equal to a theme variable
-$component-form-padding: $space-inset;
-$component-form-background-color: $theme-base-3;
+// $component-form-padding: $space-inset;
+// $component-form-background-color: $theme-base-3;
 // END OVERRIDES **************************************
 
 // IMPORT ALL OF WILLOW

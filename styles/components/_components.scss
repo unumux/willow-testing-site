@@ -85,10 +85,24 @@
 }
 
 .project-intro {
+    position: relative;
+
+    &[data-is-open = "true"] {
+        padding-bottom: $space;
+    }
+
+    &__container {
+        clear: both;
+
+        [data-is-open = "false"] & {
+            display: none;
+        }
+    }
+
     &__heading {
         @include set-text-style($text-style-heading-4);
         
-        margin: $space-stack-s;
+        margin: $space-stack-l;
     }
     
     &__theme-selector {
@@ -97,12 +111,34 @@
         fieldset {
             margin: 0;
         }
+
+        label {
+            @media screen and (min-width: breakpoint(md, $grid-breakpoints)) {
+                display: inline;
+                margin: $space-inline;
+            }
+        }
     }
 
-    label {
-        @media screen and (min-width: breakpoint(md, $grid-breakpoints)) {
-            display: inline;
-            margin: $space-inline;
+    &__control {
+        @include set-text-style($text-style-content-2);
+        
+        background-color: rgba(0, 0, 0, 0.5);
+        color: $color-light;
+        border-radius: 0 0 $component-border-radius $component-border-radius;
+        font-weight: 600;
+        margin: 0;
+        padding: $space-inset-squish-xs;
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+
+        &:hover,
+        &:active,
+        &:focus {
+            background-color: rgba(0, 0, 0, 0.75);
+            color: $color-light;
         }
     }
 }

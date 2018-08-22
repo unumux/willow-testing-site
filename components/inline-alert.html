@@ -2,37 +2,51 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">     
-<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
     <title>Demo Website</title>
     <link id="stylesheet" rel="stylesheet" href="../styles/styles.min.css">
 </head>
 
-<body data-subpage>
+<body>
     <div class="willow-page-container">
+        <!-- FOR DEMO SITE : THEME CHANGING COMPONENT -->
+        <div class="project-intro" id="section" data-is-open="false">
+            <div class="container-fluid">
+                <div class="project-intro__container">
+                    <h1 class="project-intro__heading">Demo Site</h1>
+                    <p>This site was built using the
+                        <a href="https://github.com/unumux/willow" target="_blank">Willow library</a> and includes custom components.
+                        <a href="https://github.com/unumux/willow-testing-site"
+                            target="_blank">Fork the Github repo</a> to play with the code.</p>
+                    <form class="project-intro__theme-selector" id="themeSelector">
+                        <fieldset>
+                            <legend>Change the theme</legend>
+                            <label for="greyRadio">
+                                <input type="radio" id="greyRadio" name="theme" checked data-stylesheet="styles" /> Greyscale Theme</label>
+                            <label for="unumRadio">
+                                <input type="radio" id="unumRadio" name="theme" data-stylesheet="unum" /> Unum Theme</label>
+                            <label for="colonialLifeRadio">
+                                <input type="radio" id="colonialLifeRadio" name="theme" data-stylesheet="coloniallife" /> Colonial Life Theme</label>
+                        </fieldset>
+                    </form>
+                </div>
+                <button class="willow-button willow-button--inline project-intro__control" id="sectionControl">Show Theme Controls</button>
+            </div>
+        </div>
+        <!-- END THEME CHANGING COMPONENT -->
+        <!-- SKIP NAV COMPONENT -->
         <div class="willow-skip-nav">
             <div class="container-fluid">
                 <a href="#main" class="willow-skip-nav__link" aria-label="skip to main content">Skip to Content</a>
             </div>
         </div>
-        <div class="project-intro">
-            <div class="container-fluid">
-                <h1 class="project-intro__heading">Demo Site</h1>
-                <p>This site was built using the <a href="https://github.com/unumux/willow" target="_blank">Willow library</a> and includes custom components. <a href="https://github.com/unumux/willow-testing-site" target="_blank">Fork the Github repo</a> to play with the code.</p>
-                <form class="project-intro__theme-selector" id="themeSelector">
-                    <fieldset>
-                        <legend>Change the theme</legend>
-                        <label for="greyRadio"><input type="radio" id="greyRadio" name="theme" checked data-stylesheet="styles"/> Greyscale Theme</label>
-                        <label for="unumRadio"><input type="radio" id="unumRadio" name="theme" data-stylesheet="unum"/> Unum Theme</label>
-                        <label for="colonialLifeRadio"><input type="radio" id="colonialLifeRadio" name="theme" data-stylesheet="coloniallife"/> Colonial Life Theme</label>
-                    </fieldset>
-                </form>
-            </div>
-        </div>
+        <!-- PAGE HEADER COMPONENT -->
         <header class="willow-page-header" role="banner">
             <div class="container-fluid">
                 <div class="willow-page-header__container">
                     <div class="willow-page-header__branding">
+                        <!-- LOGO LINK -->
                         <a class="willow-logo-link" href="/willow-testing-site/" aria-label="go to home page">
                             <img class="willow-logo-link__image" src="https://via.placeholder.com/150x150" alt="">
                         </a>
@@ -43,6 +57,7 @@
                     </div>
                     <div class="willow-page-header__content">
                         <div class="willow-page-header__navigation">
+                            <!-- PRIMARY NAV COMPONENT -->
                             <nav class="willow-primary-nav" role="navigation" aria-label="primary">
                                 <h1 class="willow-primary-nav__heading sr-only">Site Primary Menu</h1>
                                 <ul class="willow-primary-nav__list">
@@ -62,6 +77,7 @@
                 </div>
             </div>
         </header>
+        <!-- BREADCRUMB COMPONENT -->
         <nav class="willow-breadcrumbs" role="navigation" aria-label="breadcrumb">
             <div class="container-fluid">
                 <h1 class="willow-breadcrumbs__heading sr-only">You are here:</h1>
@@ -76,6 +92,7 @@
                 </ol>
             </div>
         </nav>
+        <!-- PAGE CONTENT COMPONENT -->
         <main class="willow-page-content" id="main" role="main">
             <div class="container-fluid">
                 <div class="willow-styling-context">
@@ -83,6 +100,7 @@
                     <a href="https://github.com/unumux/willow/tree/master/components/inline-alert" target="_blank">Documentation</a>
                     <h2>With Heading</h2>
                 </div>
+                <!-- INLINE ALERT COMPONENT -->
                 <section class="willow-alert" role="alert">
                     <h1 class="willow-alert__heading">Heading Text</h1>
                     <div class="willow-alert__content">
@@ -93,6 +111,7 @@
                         </div>
                     </div>
                 </section>
+                <!-- INLINE ALERT COMPONENT -->
                 <section class="willow-alert willow-alert--positive" role="alert">
                     <h1 class="willow-alert__heading">Heading Text</h1>
                     <div class="willow-alert__content">
@@ -103,6 +122,7 @@
                         </div>
                     </div>
                 </section>
+                <!-- INLINE ALERT COMPONENT -->
                 <section class="willow-alert willow-alert--warning" role="alert">
                     <h1 class="willow-alert__heading">Heading Text</h1>
                     <div class="willow-alert__content">
@@ -113,6 +133,7 @@
                         </div>
                     </div>
                 </section>
+                <!-- INLINE ALERT COMPONENT -->
                 <section class="willow-alert willow-alert--negative" role="alert">
                     <h1 class="willow-alert__heading">Heading Text</h1>
                     <div class="willow-alert__content">
@@ -126,6 +147,7 @@
                 <div class="willow-styling-context">
                     <h2>With Heading Hidden (sr-only)</h2>
                 </div>
+                <!-- INLINE ALERT COMPONENT -->
                 <section class="willow-alert" role="alert">
                     <h1 class="willow-alert__heading sr-only">Heading Text</h1>
                     <div class="willow-alert__content">
@@ -136,6 +158,7 @@
                         </div>
                     </div>
                 </section>
+                <!-- INLINE ALERT COMPONENT -->
                 <section class="willow-alert willow-alert--positive" role="alert">
                     <h1 class="willow-alert__heading sr-only">Heading Text</h1>
                     <div class="willow-alert__content">
@@ -146,6 +169,7 @@
                         </div>
                     </div>
                 </section>
+                <!-- INLINE ALERT COMPONENT -->
                 <section class="willow-alert willow-alert--warning" role="alert">
                     <h1 class="willow-alert__heading sr-only">Heading Text</h1>
                     <div class="willow-alert__content">
@@ -156,6 +180,7 @@
                         </div>
                     </div>
                 </section>
+                <!-- INLINE ALERT COMPONENT -->
                 <section class="willow-alert willow-alert--negative" role="alert">
                     <h1 class="willow-alert__heading sr-only">Heading Text</h1>
                     <div class="willow-alert__content">

@@ -22,7 +22,8 @@
         "example-pages/*.html",
         "columns.html",
         "components.html",
-        "index.html"
+        "index.html",
+        "example-pages.html"
     ],
     "server": true,
     "compileJs": true,

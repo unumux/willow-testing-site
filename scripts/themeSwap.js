@@ -6,7 +6,10 @@ let stylesheetName,
         document.querySelector("#colonialLifeRadio")
     ],
     stylesheetElement = document.querySelector("#stylesheet"),
-    bodyElement = document.querySelector("body")
+    bodyElement = document.querySelector("body"),
+    section = document.querySelector("#section"),
+    sectionControl = document.querySelector("#sectionControl");
+
 
 // Functions
 const swapTheme = (el, theme) => {
@@ -21,6 +24,14 @@ const matchSessionThemeToRadio = (inputs, sessionStorageTheme) => inputs.find(
     input => input.dataset.stylesheet == sessionStorageTheme
 )
 
+const setControlStateInSession = state => {
+    sessionStorage.setItem("controlIsOpen", state)
+}
+
+const setControlInnerHTML = text => {
+    sectionControl.innerHTML = text
+}
+
 // Actions
 // click events for radio buttons to change themes
 themeInputs.forEach(theme => {
@@ -33,7 +44,7 @@ themeInputs.forEach(theme => {
         setThemeInSession(stylesheetName)
         matchSessionThemeToRadio(themeInputs, sessionStorage.getItem("selectedTheme")).checked = true
 
-        swapTheme(stylesheetElement, `/styles/${stylesheetName}.min.css`)
+        swapTheme(stylesheetElement, `/willow-testing-site/styles/${stylesheetName}.min.css`)
     })
 })
 
@@ -51,9 +62,22 @@ window.onload = () => {
         matchSessionThemeToRadio(themeInputs, sessionStorage.getItem("selectedTheme")).checked = true
     }
         
-    swapTheme(stylesheetElement, `/styles/${stylesheetName}.min.css`)
-}
+    swapTheme(stylesheetElement, `/willow-testing-site/styles/${stylesheetName}.min.css`)
 
+    // set session storage for the theme controls being open or closed
+    if(!sessionStorage.getItem("controlIsOpen")) {
+        setControlStateInSession(false);
+    }
+    
+    if(sessionStorage.getItem("controlIsOpen") == "false") {
+        section.dataset.isOpen = false
+        setControlInnerHTML("Show Theme Controls")
+    } else {
+        section.dataset.isOpen = true
+        setControlInnerHTML("Hide Theme Controls")
+    }
+}
+console.log(sessionStorage)
 // Local Storage Setting
 // using sessionStorage instead for now
 // leaving localStorage code here in case we decide to switch back
@@ -67,6 +91,15 @@ window.onload = () => {
 
 // matchLocalToRadio(themeInputs, localStorage.getItem("selectedTheme")).checked = true
 
-let hideSection = () => {
-    document.querySelector("#section").dataset.isOpen = false;
-}
+
+document.querySelector("#sectionControl").addEventListener("click", () => {    
+    if(sessionStorage.getItem("controlIsOpen") == "true") {
+        setControlInnerHTML("Show Theme Controls")
+        setControlStateInSession(false)
+        section.dataset.isOpen = sessionStorage.getItem("controlIsOpen")
+    } else {
+        setControlInnerHTML("Hide Theme Controls")
+        setControlStateInSession(true)
+        section.dataset.isOpen = sessionStorage.getItem("controlIsOpen")
+    }
+})

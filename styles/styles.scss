@@ -19,16 +19,6 @@ $color-warning: #ffaa00;
 // @import "./node_modules/@unumux/theme-coloniallife-default/styles";
 // END OPTIONAL THEMES **************************************
 
-// OVERRIDE WILLOW COMPONENT VARIABLES USING VALUES FROM THEMES
-// ****************************************************
-// if using an above optional theme
-// put overrides here that use theme variables (space-inset and theme-base-3)
-// if NOT using a theme you can also override component variables here before the willow import but
-// you cannot set those variables equal to a theme variable
-// $component-form-padding: $space-inset;
-// $component-form-background-color: $theme-base-3;
-// END OVERRIDES **************************************
-
 // IMPORT ALL OF WILLOW
 // ****************************************************
 @import "./node_modules/@unumux/willow/styles";

@@ -2,8 +2,8 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">     
-<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
     <title>Demo Website</title>
     <link id="stylesheet" rel="stylesheet" href="../styles/styles.min.css">
 </head>
@@ -11,21 +11,28 @@
 <body>
     <div class="willow-page-container">
         <!-- FOR DEMO SITE : THEME CHANGING COMPONENT -->
-        <div class="project-intro" id="section" data-is-open="false">
+        <div class="project-demo-controls">
+            <div class="project-demo-controls__container">
+                <button class="project-demo-controls__control" id="themeOne" data-stylesheet="styles">
+                    <span class="project-key-symbol">1</span>Base Theme</button>
+                <button class="project-demo-controls__control" id="themeTwo" data-stylesheet="unum">
+                    <span class="project-key-symbol">2</span>Unum</button>
+                <button class="project-demo-controls__control" id="themeThree" data-stylesheet="coloniallife">
+                    <span class="project-key-symbol">3</span>Colonial Life</button>
+                <button class="project-demo-controls__control" id="introDisplay">
+                    <span class="project-info">?</span>
+                </button>
+            </div>
+        </div>
+        <div class="project-intro" id="demoIntro" data-is-open="false">
             <div class="container-fluid">
-                <div class="project-intro__container">
-                    <h1 class="project-intro__heading">Demo Site</h1>
-                    <p>This site was built using the <a href="https://github.com/unumux/willow" target="_blank">Willow library</a> and includes custom components. <a href="https://github.com/unumux/willow-testing-site" target="_blank">Fork the Github repo</a> to play with the code.</p>
-                    <form class="project-intro__theme-selector" id="themeSelector">
-                        <fieldset>
-                            <legend>Change the theme</legend>
-                            <label for="greyRadio"><input type="radio" id="greyRadio" name="theme" checked data-stylesheet="styles"/> Greyscale Theme</label>
-                            <label for="unumRadio"><input type="radio" id="unumRadio" name="theme" data-stylesheet="unum"/> Unum Theme</label>
-                            <label for="colonialLifeRadio"><input type="radio" id="colonialLifeRadio" name="theme" data-stylesheet="coloniallife"/> Colonial Life Theme</label>
-                        </fieldset>
-                    </form>
-                </div>
-                <button class="willow-button willow-button--inline project-intro__control" id="sectionControl">Show Theme Controls</button>
+                <h1 class="project-intro__heading">Willow Demo Site</h1>
+                <p>This site was built using the
+                    <a href="https://github.com/unumux/willow" target="_blank">Willow library</a> and includes custom components.
+                    <a href="https://github.com/unumux/willow-testing-site"
+                        target="_blank">Fork the Github repo</a> to play with the code.</p>
+                <p>Use the "Theme" buttons to switch between available themes. You can also use the 1, 2, and 3 number keys
+                    for quick theme changing.</p>
             </div>
         </div>
         <!-- END THEME CHANGING COMPONENT -->
@@ -76,8 +83,12 @@
             <div class="container-fluid">
                 <h1 class="willow-breadcrumbs__heading sr-only">You are here:</h1>
                 <ol class="willow-breadcrumbs__list">
-                    <li class="willow-breadcrumbs__item"><a class="willow-breadcrumbs__link" href="/willow-testing-site/" aria-label="">Home</a></li>                            
-                    <li class="willow-breadcrumbs__item"><a class="willow-breadcrumbs__link" href="/willow-testing-site/components.html" aria-label="">Components</a></li>                            
+                    <li class="willow-breadcrumbs__item">
+                        <a class="willow-breadcrumbs__link" href="/willow-testing-site/" aria-label="">Home</a>
+                    </li>
+                    <li class="willow-breadcrumbs__item">
+                        <a class="willow-breadcrumbs__link" href="/willow-testing-site/components.html" aria-label="">Components</a>
+                    </li>
                     <li class="willow-breadcrumbs__item willow-breadcrumbs__item--active">Page Footer</li>
                 </ol>
             </div>
@@ -97,15 +108,24 @@
                     <div class="willow-page-footer__container">
                         <div class="willow-page-footer__branding">
                             <!-- LOGO LINK COMPONENT -->
-                            <a class="willow-logo-link" href="/willow-testing-site/" aria-label="go to home page"><img class="willow-logo-link__image" src="https://via.placeholder.com/150x150" alt=""></a>
+                            <a class="willow-logo-link" href="/willow-testing-site/" aria-label="go to home page">
+                                <img class="willow-logo-link__image" src="https://via.placeholder.com/150x150" alt="">
+                            </a>
                         </div>
                         <div class="willow-page-footer__navigation">
                             <nav class="willow-footer-nav" role="navigation" aria-label="footer">
                                 <h1 class="willow-footer-nav__heading sr-only">Site Footer Menu</h1>
                                 <ul class="willow-footer-nav__list">
-                                    <li class="willow-footer-nav__item"><a class="willow-footer-nav__link" href="/willow-testing-site/">Home</a></li>
-                                    <li class="willow-footer-nav__item"><a class="willow-footer-nav__link" href="/willow-testing-site/components.html">Components</a></li>
-                                    <li class="willow-footer-nav__item"><a class="willow-footer-nav__link" href="https://github.com/unumux/willow" aria-label="Willow Code Repository" target="_blank">Code</a></li>
+                                    <li class="willow-footer-nav__item">
+                                        <a class="willow-footer-nav__link" href="/willow-testing-site/">Home</a>
+                                    </li>
+                                    <li class="willow-footer-nav__item">
+                                        <a class="willow-footer-nav__link" href="/willow-testing-site/components.html">Components</a>
+                                    </li>
+                                    <li class="willow-footer-nav__item">
+                                        <a class="willow-footer-nav__link" href="https://github.com/unumux/willow" aria-label="Willow Code Repository"
+                                            target="_blank">Code</a>
+                                    </li>
                                 </ul>
                             </nav>
                         </div>
@@ -120,7 +140,11 @@
             <footer class="willow-page-footer" role="contentinfo">
                 <div class="container-fluid">
                     <div class="willow-page-footer__container">
-                        <div class="willow-page-footer__branding"><a class="willow-logo-link" href="/willow-testing-site/" aria-label="go to home page"><img class="willow-logo-link__image" src="https://via.placeholder.com/150x150" alt=""></a></div>
+                        <div class="willow-page-footer__branding">
+                            <a class="willow-logo-link" href="/willow-testing-site/" aria-label="go to home page">
+                                <img class="willow-logo-link__image" src="https://via.placeholder.com/150x150" alt="">
+                            </a>
+                        </div>
                         <small class="willow-page-footer__copyright">Copyright lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, exercitationem.</small>
                     </div>
                 </div>
@@ -138,9 +162,16 @@
                             <nav class="willow-footer-nav" role="navigation" aria-label="footer">
                                 <h1 class="willow-footer-nav__heading sr-only">Site Footer Menu</h1>
                                 <ul class="willow-footer-nav__list">
-                                    <li class="willow-footer-nav__item"><a class="willow-footer-nav__link" href="/willow-testing-site/">Home</a></li>
-                                    <li class="willow-footer-nav__item"><a class="willow-footer-nav__link" href="/willow-testing-site/components.html">Components</a></li>
-                                    <li class="willow-footer-nav__item"><a class="willow-footer-nav__link" href="https://github.com/unumux/willow" aria-label="Willow Code Repository" target="_blank">Code</a></li>
+                                    <li class="willow-footer-nav__item">
+                                        <a class="willow-footer-nav__link" href="/willow-testing-site/">Home</a>
+                                    </li>
+                                    <li class="willow-footer-nav__item">
+                                        <a class="willow-footer-nav__link" href="/willow-testing-site/components.html">Components</a>
+                                    </li>
+                                    <li class="willow-footer-nav__item">
+                                        <a class="willow-footer-nav__link" href="https://github.com/unumux/willow" aria-label="Willow Code Repository"
+                                            target="_blank">Code</a>
+                                    </li>
                                 </ul>
                             </nav>
                         </div>
@@ -151,20 +182,31 @@
             <div class="container-fluid">
                 <div class="willow-styling-context">
                     <h2>Without copyright</h2>
-                </div> 
+                </div>
             </div>
             <!-- PAGE FOOTER COMPONENT -->
             <footer class="willow-page-footer" role="contentinfo">
                 <div class="container-fluid">
                     <div class="willow-page-footer__container">
-                        <div class="willow-page-footer__branding"><a class="willow-logo-link" href="/willow-testing-site/" aria-label="go to home page"><img class="willow-logo-link__image" src="https://via.placeholder.com/150x150" alt=""></a></div>
+                        <div class="willow-page-footer__branding">
+                            <a class="willow-logo-link" href="/willow-testing-site/" aria-label="go to home page">
+                                <img class="willow-logo-link__image" src="https://via.placeholder.com/150x150" alt="">
+                            </a>
+                        </div>
                         <div class="willow-page-footer__navigation">
                             <nav class="willow-footer-nav" role="navigation" aria-label="footer">
                                 <h1 class="willow-footer-nav__heading sr-only">Site Footer Menu</h1>
                                 <ul class="willow-footer-nav__list">
-                                    <li class="willow-footer-nav__item"><a class="willow-footer-nav__link" href="/willow-testing-site/">Home</a></li>
-                                    <li class="willow-footer-nav__item"><a class="willow-footer-nav__link" href="/willow-testing-site/components.html">Components</a></li>
-                                    <li class="willow-footer-nav__item"><a class="willow-footer-nav__link" href="https://github.com/unumux/willow" aria-label="Willow Code Repository" target="_blank">Code</a></li>
+                                    <li class="willow-footer-nav__item">
+                                        <a class="willow-footer-nav__link" href="/willow-testing-site/">Home</a>
+                                    </li>
+                                    <li class="willow-footer-nav__item">
+                                        <a class="willow-footer-nav__link" href="/willow-testing-site/components.html">Components</a>
+                                    </li>
+                                    <li class="willow-footer-nav__item">
+                                        <a class="willow-footer-nav__link" href="https://github.com/unumux/willow" aria-label="Willow Code Repository"
+                                            target="_blank">Code</a>
+                                    </li>
                                 </ul>
                             </nav>
                         </div>
@@ -184,9 +226,16 @@
                             <nav class="willow-footer-nav" role="navigation" aria-label="footer">
                                 <h1 class="willow-footer-nav__heading sr-only">Site Footer Menu</h1>
                                 <ul class="willow-footer-nav__list">
-                                    <li class="willow-footer-nav__item"><a class="willow-footer-nav__link" href="/willow-testing-site/">Home</a></li>
-                                    <li class="willow-footer-nav__item"><a class="willow-footer-nav__link" href="/willow-testing-site/components.html">Components</a></li>
-                                    <li class="willow-footer-nav__item"><a class="willow-footer-nav__link" href="https://github.com/unumux/willow" aria-label="Willow Code Repository" target="_blank">Code</a></li>
+                                    <li class="willow-footer-nav__item">
+                                        <a class="willow-footer-nav__link" href="/willow-testing-site/">Home</a>
+                                    </li>
+                                    <li class="willow-footer-nav__item">
+                                        <a class="willow-footer-nav__link" href="/willow-testing-site/components.html">Components</a>
+                                    </li>
+                                    <li class="willow-footer-nav__item">
+                                        <a class="willow-footer-nav__link" href="https://github.com/unumux/willow" aria-label="Willow Code Repository"
+                                            target="_blank">Code</a>
+                                    </li>
                                 </ul>
                             </nav>
                         </div>
@@ -202,7 +251,11 @@
             <footer class="willow-page-footer" role="contentinfo">
                 <div class="container-fluid">
                     <div class="willow-page-footer__container">
-                        <div class="willow-page-footer__branding"><a class="willow-logo-link" href="/willow-testing-site/" aria-label="go to home page"><img class="willow-logo-link__image" src="https://via.placeholder.com/150x150" alt=""></a></div>
+                        <div class="willow-page-footer__branding">
+                            <a class="willow-logo-link" href="/willow-testing-site/" aria-label="go to home page">
+                                <img class="willow-logo-link__image" src="https://via.placeholder.com/150x150" alt="">
+                            </a>
+                        </div>
                     </div>
                 </div>
             </footer>
@@ -223,4 +276,5 @@
     </div>
     <script src="../scripts/site.min.js"></script>
 </body>
+
 </html>

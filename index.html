@@ -11,29 +11,29 @@
 <body data-loading="true">
     <div class="willow-page-container">
         <!-- FOR DEMO SITE : THEME CHANGING COMPONENT -->
-        <div class="project-intro" id="section" data-is-open="false">
-            <div class="container-fluid">
-                <div class="project-intro__container">
-                    <h1 class="project-intro__heading">Demo Site</h1>
-                    <p>This site was built using the <a href="https://github.com/unumux/willow" target="_blank">Willow library</a> and includes custom components. <a href="https://github.com/unumux/willow-testing-site" target="_blank">Fork the Github repo</a> to play with the code.</p>
-                    <form class="project-intro__theme-selector" id="themeSelector">
-                        <fieldset>
-                            <legend>Change the theme</legend>
-                            <label for="greyRadio"><input type="radio" id="greyRadio" name="theme" checked data-stylesheet="styles"/> Greyscale Theme</label>
-                            <label for="unumRadio"><input type="radio" id="unumRadio" name="theme" data-stylesheet="unum"/> Unum Theme</label>
-                            <label for="colonialLifeRadio"><input type="radio" id="colonialLifeRadio" name="theme" data-stylesheet="coloniallife"/> Colonial Life Theme</label>
-                        </fieldset>
-                    </form>
+        <div class="project-demo-controls">
+                <div class="project-demo-controls__container">
+                    <button class="project-demo-controls__control" id="themeOne" data-stylesheet="styles"><span class="project-key-symbol">1</span>Base Theme</button>
+                    <button class="project-demo-controls__control" id="themeTwo" data-stylesheet="unum"><span class="project-key-symbol">2</span>Unum</button>
+                    <button class="project-demo-controls__control" id="themeThree" data-stylesheet="coloniallife"><span class="project-key-symbol">3</span>Colonial Life</button>
+                    <button class="project-demo-controls__control" id="introDisplay"><span class="project-info">?</span></button>
                 </div>
-                <button class="willow-button willow-button--inline project-intro__control" id="sectionControl">Show Theme Controls</button>
+        </div>
+        <div class="project-intro" id="demoIntro" data-is-open="false">
+            <div class="container-fluid">
+                <h1 class="project-intro__heading">Willow Demo Site</h1>
+                <p>This site was built using the <a href="https://github.com/unumux/willow" target="_blank">Willow library</a> and includes custom components. <a href="https://github.com/unumux/willow-testing-site" target="_blank">Fork the Github repo</a> to play with the code.</p>
+                <p>Use the "Theme" buttons to switch between available themes. You can also use the 1, 2, and 3 number keys for quick theme changing.</p>
             </div>
         </div>
         <!-- END THEME CHANGING COMPONENT -->
+        <!-- SKIP NAV COMPONENT -->
         <div class="willow-skip-nav">
             <div class="container-fluid">
                 <a href="#main" class="willow-skip-nav__link" aria-label="skip to main content">Skip to Content</a>
             </div>
         </div>
+        <!-- PAGE HEADER COMPONENT -->
         <header class="willow-page-header" role="banner">
             <div class="container-fluid">
                 <div class="willow-page-header__container">

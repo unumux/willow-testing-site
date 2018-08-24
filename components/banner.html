@@ -2,7 +2,8 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8"> <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
     <title>Demo Website</title>
     <link id="stylesheet" rel="stylesheet" href="../styles/styles.min.css">
 </head>
@@ -10,21 +11,28 @@
 <body>
     <div class="willow-page-container">
         <!-- FOR DEMO SITE : THEME CHANGING COMPONENT -->
-        <div class="project-intro" id="section" data-is-open="false">
+        <div class="project-demo-controls">
+            <div class="project-demo-controls__container">
+                <button class="project-demo-controls__control" id="themeOne" data-stylesheet="styles">
+                    <span class="project-key-symbol">1</span>Base Theme</button>
+                <button class="project-demo-controls__control" id="themeTwo" data-stylesheet="unum">
+                    <span class="project-key-symbol">2</span>Unum</button>
+                <button class="project-demo-controls__control" id="themeThree" data-stylesheet="coloniallife">
+                    <span class="project-key-symbol">3</span>Colonial Life</button>
+                <button class="project-demo-controls__control" id="introDisplay">
+                    <span class="project-info">?</span>
+                </button>
+            </div>
+        </div>
+        <div class="project-intro" id="demoIntro" data-is-open="false">
             <div class="container-fluid">
-                <div class="project-intro__container">
-                    <h1 class="project-intro__heading">Demo Site</h1>
-                    <p>This site was built using the <a href="https://github.com/unumux/willow" target="_blank">Willow library</a> and includes custom components. <a href="https://github.com/unumux/willow-testing-site" target="_blank">Fork the Github repo</a> to play with the code.</p>
-                    <form class="project-intro__theme-selector" id="themeSelector">
-                        <fieldset>
-                            <legend>Change the theme</legend>
-                            <label for="greyRadio"><input type="radio" id="greyRadio" name="theme" checked data-stylesheet="styles"/> Greyscale Theme</label>
-                            <label for="unumRadio"><input type="radio" id="unumRadio" name="theme" data-stylesheet="unum"/> Unum Theme</label>
-                            <label for="colonialLifeRadio"><input type="radio" id="colonialLifeRadio" name="theme" data-stylesheet="coloniallife"/> Colonial Life Theme</label>
-                        </fieldset>
-                    </form>
-                </div>
-                <button class="willow-button willow-button--inline project-intro__control" id="sectionControl">Show Theme Controls</button>
+                <h1 class="project-intro__heading">Willow Demo Site</h1>
+                <p>This site was built using the
+                    <a href="https://github.com/unumux/willow" target="_blank">Willow library</a> and includes custom components.
+                    <a href="https://github.com/unumux/willow-testing-site"
+                        target="_blank">Fork the Github repo</a> to play with the code.</p>
+                <p>Use the "Theme" buttons to switch between available themes. You can also use the 1, 2, and 3 number keys
+                    for quick theme changing.</p>
             </div>
         </div>
         <!-- END THEME CHANGING COMPONENT -->
@@ -163,7 +171,9 @@
                     <h1 class="willow-banner__heading">Heading Text</h1>
                     <div class="willow-banner__content">
                         <div class="willow-styling-context">
-                            <p>Margin is applied to the bottom of this banner by adding a custom class and styling it in the project. Willow banners positioned next to each other would not have space between them unless you add it in this method.</p>
+                            <p>Margin is applied to the bottom of this banner by adding a custom class and styling it in the
+                                project. Willow banners positioned next to each other would not have space between them unless
+                                you add it in this method.</p>
                         </div>
                     </div>
                 </div>

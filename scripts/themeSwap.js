@@ -8,7 +8,8 @@ let stylesheetName,
     stylesheetElement = document.querySelector("#stylesheet"),
     bodyElement = document.querySelector("body"),
     introSection = document.querySelector("#demoIntro"),
-    introDisplayControl = document.querySelector("#introDisplay")
+    introDisplayControl = document.querySelector("#introDisplay"),
+    path = "/willow-testing-site/"
 
 
 // Functions
@@ -40,7 +41,7 @@ themeInputs.forEach(theme => {
     
         setThemeInSession(stylesheetName)
         setThemeButtonState(theme, themeInputs)
-        swapTheme(stylesheetElement, `/styles/${stylesheetName}.min.css`)
+        swapTheme(stylesheetElement, `${path}styles/${stylesheetName}.min.css`)
     })
 })
 
@@ -51,21 +52,21 @@ document.addEventListener("keypress", (e) => {
         let theme = document.querySelector("#themeOne")
         setThemeInSession("styles")
         setThemeButtonState(theme, themeInputs)
-        swapTheme(stylesheetElement, `/styles/styles.min.css`)
+        swapTheme(stylesheetElement, `${path}styles/styles.min.css`)
     }
     
     if(event.keyCode == 50) {
         let theme = document.querySelector("#themeTwo")
         setThemeInSession("unum")
         setThemeButtonState(theme, themeInputs)
-        swapTheme(stylesheetElement, `/styles/unum.min.css`)
+        swapTheme(stylesheetElement, `${path}styles/unum.min.css`)
     }
     
     if(event.keyCode == 51) {
         let theme = document.querySelector("#themeThree")
         setThemeInSession("coloniallife")
         setThemeButtonState(theme, themeInputs)
-        swapTheme(stylesheetElement, `/styles/coloniallife.min.css`)
+        swapTheme(stylesheetElement, `${path}styles/coloniallife.min.css`)
     }
 
 })
@@ -80,7 +81,7 @@ window.onload = () => {
         stylesheetName = sessionStorage.getItem("selectedTheme")
     }
         
-    swapTheme(stylesheetElement, `/styles/${stylesheetName}.min.css`)
+    swapTheme(stylesheetElement, `${path}styles/${stylesheetName}.min.css`)
 
     // set session storage for the theme controls being open or closed
     if(!sessionStorage.getItem("controlIsOpen")) {

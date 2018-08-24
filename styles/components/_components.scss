@@ -170,3 +170,26 @@
     margin: $space-xs;
     padding: 0.1rem $space-xs;
 }
+
+.project-info {
+    border-radius: 50%;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    display: block;
+    height: 2rem;
+    margin: 0;
+    width: 2rem;
+ }
+ 
+ .project-info, .project-key-symbol {
+    background-color: hsla(0, 0%, 100%, 0.2);
+    color: #fff;
+ }
+
+ .project-key-symbol {
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 3px;
+    box-shadow: 1px 1px 1px rgba(0,0,0,.8);
+    display: inline-block;
+    margin: .37765rem .61108rem .61108rem 0;
+    padding: 0 .61108rem;
+ }

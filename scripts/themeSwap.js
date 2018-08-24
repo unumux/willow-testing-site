@@ -21,10 +21,6 @@ const setThemeInSession = stylesheetName => {
     sessionStorage.setItem("selectedTheme", stylesheetName)
 }
 
-const setControlStateInSession = state => {
-    sessionStorage.setItem("controlIsOpen", state)
-}
-
 const setThemeButtonState = (selectedButton, buttons) => {
     buttons.forEach(button => {
         button.dataset.isActive = "false"
@@ -82,21 +78,12 @@ window.onload = () => {
     }
         
     swapTheme(stylesheetElement, `${path}styles/${stylesheetName}.min.css`)
-
-    // set session storage for the theme controls being open or closed
-    if(!sessionStorage.getItem("controlIsOpen")) {
-        setControlStateInSession(false);
-    }
 }
 
 introDisplayControl.addEventListener("click", () => {    
     if(sessionStorage.getItem("controlIsOpen") == "true") {
-        // setControlInnerHTML("Show Theme Controls")
-        setControlStateInSession(false)
         introSection.dataset.isOpen = sessionStorage.getItem("controlIsOpen")
     } else {
-        // setControlInnerHTML("Hide Theme Controls")
-        setControlStateInSession(true)
         introSection.dataset.isOpen = sessionStorage.getItem("controlIsOpen")
     }
 })

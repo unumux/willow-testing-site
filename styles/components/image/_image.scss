@@ -1,0 +1,12 @@
+// an image component
+// example-one.html
+.project-image {
+    margin: $space-stack-l;
+    padding: $space;
+
+    img {
+        border-radius: 5px;
+        width: 100%;
+        height: 100%;
+    }
+}

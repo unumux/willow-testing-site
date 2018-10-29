@@ -1,12 +1,13 @@
 &__close {
     border: none;
     border-radius: 100%;
-    box-shadow: -3px 3px 10px $component-dialog-overlay-background-color;
+    box-shadow: 0 1px 5px $component-dialog-overlay-background-color;
+    cursor: pointer;
     font-weight: 600;
-    padding: $space-s $space;
+    padding: $space-s;
     position: absolute;
-    right: -$space;
-    top: -$space;
+    right: -$space-xs;
+    top: -$space-xs;
 
     .willow-icon & {
         vertical-align: top;

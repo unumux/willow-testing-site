@@ -1,15 +1,15 @@
 // styles for my custom stat component
-$component-project-stat-background-color: $color-dark;
-$component-project-stat-text-color: $color-light;
-$component-project-stat-special-background-color: $color-middle;
-$component-project-stat-special-text-color: $color-light;
+$component-project-stat-background-color: $color-willow-black;
+$component-project-stat-text-color: $color-willow-white;
+$component-project-stat-special-background-color: $color-willow-grey;
+$component-project-stat-special-text-color: $color-willow-white;
 
 .project-stat {
     background-color: $component-project-stat-background-color;
     color: $component-project-stat-text-color;
+    margin-top: $space;
     padding: $space-inset-l;
     text-align: center;
-    margin-top: $space;
 
     &--special {
         background-color: $component-project-stat-special-background-color;

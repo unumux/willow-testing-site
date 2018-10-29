@@ -15,6 +15,7 @@ if(openDialogButton) {
 // declare complex dialog open, close and content
 let openComplexDialogButton = document.querySelector("#openComplexDialogButton")
 let closeComplexDialogButton = document.querySelector("#closeComplexDialogButton")
+let submitComplexDialogForm = document.querySelector("#submitComplexDialogForm")
 let complexDialog = document.querySelector("#complexDialog")
 
 if(openComplexDialogButton) {
@@ -23,4 +24,6 @@ if(openComplexDialogButton) {
     
     // close the dialog content
     closeComplexDialogButton.addEventListener("click", () => complexDialog.setAttribute("data-dialog-close", "true"))
+    
+    submitComplexDialogForm.addEventListener("click", () => complexDialog.setAttribute("data-dialog-close", "true"))
 }

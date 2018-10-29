@@ -2,194 +2,37 @@
 @import "stat/stat";
 @import "callout-banner/callout-banner";
 @import "image-banner/image-banner";
+@import "image/image";
+@import "dialog-form/dialog-form";
+@import "disclaimer/disclaimer";
+@import "table-container/table-container";
+
+@import "demo-site-specific/demo-site-specific";
 
 ///////////// Banner Customizations
-// sets banner icon for banner on any banner with icons (because they all have this class)
-// could clean this up to target .willow-banner__icon instead since they all get the same image for this site
-.project-banner-icon {
-    background-image: url("http://via.placeholder.com/100x100");
-}
-
 // a "unique" icon for a specific page
 // example-pages/example-one.html
 .project-landing-page-icon {
-    background-image: url("http://via.placeholder.com/150x150");
+    background-image: url("../../assets/icons/info.svg");
 }
 
 // adds a margin between two banners that would normally be touching
 // components/banners.html
-.project-banner-divider {
+.project-spacer {
     margin-bottom: $space-l;
 }
 
 // changes the banner color for one banner
 // index.html
-.project-special-banner {
-    background-color: $color-middle;
-    color: $color-light;
+.project-banner-inverse {
+    background-color: $color-willow-grey;
+    color: $color-willow-black;
 }
 ///////////// End Banner Customizations
 
-// container to keep table from breaking page width but allow table scrolling
-.project-table-container {
-    overflow: auto;
-}
-
-// background color for components/icons demo page
-.project-container--contrasted {
-    background-color: $color-middle;
-    display: inline-block;
-    padding: $space-inset;
-    margin: $space-stack-l;
-}
-
-// an image component
-// example-one.html
-.project-image {
-    margin: $space-stack-l;
-    padding: $space;
-
-    img {
-        border-radius: 5px;
-        width: 100%;
-        height: 100%;
-    }
-}
-
 // a class for centering text
+// example-01.html
 .project-centered {
     display: block;
     text-align: center;
 }
-
-// a class for adding space to a 
-.project-disclaimer {
-    margin: $space-stack;
-}
-
-// a container for adding a contrast background behind buttons that would
-// otherwise disappear on a light background
-.project-ghost-button-container {
-    background-color: $color-middle;
-    padding: $space-inset-l;
-
-    &--inline {
-        display: inline;
-        margin: $space-inline-xs;
-    }
-
-    a, 
-    button {
-        margin: 0;
-    }
-}
-
-.project-intro {
-    padding: $space-inset-s;
-    padding-top: $space-xl;
-
-    a {
-        font-weight: 600;
-    }
-
-    &[data-is-open = "false"] {
-        display: none;
-    }
-    
-    &__heading {
-        @include set-text-style($text-style-heading-4);
-
-        margin: 0;
-    }
-}
-
-.project-demo-controls {
-    position: relative;
-    margin: 0 auto;
-    max-width: 1140px;
-    padding-left: $space;
-    padding-right: $space;
-    width: 100%;
-
-    
-    &__container {
-        background-color: rgba(0, 0, 0, 0.5);
-        padding: 0 $space-s 0 $space-s;
-        position: absolute;
-        left: 0;
-        top: 0;
-        right: 0;
-        display: flex;
-        justify-content: space-around;
-        
-        @media screen and (min-width: breakpoint(md, $grid-breakpoints)) {
-            left: 50%;
-            transform: translateX(-50%);
-            right: initial;
-            // left: initial;
-        }
-    }
-
-    &__control {
-        @include set-text-style($text-style-content-3);
-
-        background-color: transparent;
-        border: none;
-        color: #fff;
-        cursor: pointer;
-        font-weight: 600;
-        margin: $space-inline-l;
-        padding: 0;
-
-        &[data-is-active = "true"] {
-            text-decoration: underline;
-        }
-
-        &:last-of-type {
-            margin: 0;
-        }
-    }
-}
-
-.project-key-symbol {
-    background-color: rgba(255, 255, 255, 0.85);
-    border: 1px solid #fff;
-    border-radius: $component-border-radius;
-    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.8), 0 0 5px 1px #cfcfcf inset;
-    color: #000;
-    display: inline-block;
-    margin: $space-xxs $space-xs $space-xs 0;
-    padding: 0 $space-xs;
-}
-
-.project-info {
-    background-color: rgba(255, 255, 255, 0.85);
-    border: 1px solid #fff;
-    border-radius: 50%;
-    color: #000;
-    margin: $space-xs;
-    padding: 0.1rem $space-xs;
-}
-
-.project-info {
-    border-radius: 50%;
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    display: block;
-    height: 2rem;
-    margin: 0;
-    width: 2rem;
- }
- 
- .project-info, .project-key-symbol {
-    background-color: hsla(0, 0%, 100%, 0.2);
-    color: #fff;
- }
-
- .project-key-symbol {
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    border-radius: 3px;
-    box-shadow: 1px 1px 1px rgba(0,0,0,.8);
-    display: inline-block;
-    margin: .37765rem .61108rem .61108rem 0;
-    padding: 0 .61108rem;
- }

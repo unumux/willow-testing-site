@@ -9,7 +9,7 @@ let stylesheetName,
     bodyElement = document.querySelector("body"),
     introSection = document.querySelector("#demoIntro"),
     introDisplayControl = document.querySelector("#introDisplay"),
-    path = "/willow-testing-site/"
+    path = "/"
 
 
 // Functions

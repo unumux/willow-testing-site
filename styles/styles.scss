@@ -2,15 +2,8 @@
 // ****************************************************
 // developers need to copy icons from willow into their project and then update the icon path variable
 // not providing an override of this variable will produce broken icons b/c node modules aren't available on the site
-$icons-folder: "../assets/icons";
+// $icons-folder: "../assets/icons";
 
-// temporary constant/base variables until Willow provides these
-$color-light: #fff;
-$color-middle: #777;
-$color-dark: #222;
-$color-positive: #61a044;
-$color-negative: #e75656;
-$color-warning: #ffaa00;
 // END OVERRIDES **************************************
 
 // OPTIONAL THEMES
@@ -27,10 +20,35 @@ $color-warning: #ffaa00;
 // IMPORT SINGLE COMPONENTS - WILLOW AND BOOTSTRAP
 // Use this technique if you want to import portions of a library
 // ****************************************************
-// ** Bootstrap Grid to constrain content **
+// ** Utility Imports**
+
+// ** Willow classes **
+// @import "./node_modules/@unumux/willow/global/classes/classes";
+// @import "./node_modules/@unumux/willow/global/classes/butter";
+// @import "./node_modules/@unumux/willow/global/classes/flex-grow";
+// @import "./node_modules/@unumux/willow/global/classes/sr-only";
+
+// ** Willow mixins **
+// @import "./node_modules/@unumux/willow/global/mixins/mixins";
+// @import "./node_modules/@unumux/willow/global/mixins/compact";
+// @import "./node_modules/@unumux/willow/global/mixins/set-text-style";
+// @import "./node_modules/@unumux/willow/global/mixins/sr-only";
+
+// ** Willow variables **
+// @import "./node_modules/@unumux/willow/global/constants/constants";
+// @import "./node_modules/@unumux/willow/global/constants/colors";
+// @import "./node_modules/@unumux/willow/global/constants/spacing";
+// @import "./node_modules/@unumux/willow/global/constants/typography";
+
+// ** Vendors **
 // @import "./node_modules/@unumux/willow/global/vendors/bootstrap";
+// @import "./node_modules/@unumux/willow/global/vendors/normalize";
+
+// ** Base and component single imports **
+
 // ** Willow Styling for plain elements **
 // @import "./node_modules/@unumux/willow/global/base-elements/base-elements";
+
 // ** Willow Components**
 // @import "./node_modules/@unumux/willow/components/banner/styles/banner";
 // @import "./node_modules/@unumux/willow/components/breadcrumbs/styles/breadcrumbs";
@@ -53,7 +71,6 @@ $color-warning: #ffaa00;
 // @import "./node_modules/@unumux/willow/components/skip-nav/styles/skip-nav";
 // END SINGLE COMPONENT IMPORTS ************************************************************'
 
-
 // PROJECT STYLES
 // ******************************************************************************************
 // imports project custom components or overrrides
@@ -70,10 +87,5 @@ blockquote > p {
 
 form > h1 {
     margin-top: 0;
-}
-
-.project-banner-inverse {
-    background-color: $color-light;
-    color: $color-dark;
 }
 // End Project Styles **************************************************************************

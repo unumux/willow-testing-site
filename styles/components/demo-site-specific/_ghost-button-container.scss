@@ -1,0 +1,17 @@
+// a container for adding a contrast background behind buttons that would
+// otherwise disappear on a light background
+// button.html
+.project-ghost-button-container {
+    background-color: $color-willow-grey;
+    padding: $space-inset-l;
+
+    &--inline {
+        display: inline;
+        margin: $space-inline-xs;
+    }
+
+    a, 
+    button {
+        margin: 0;
+    }
+}

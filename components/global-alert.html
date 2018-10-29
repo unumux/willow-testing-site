@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
     <title>Demo Website</title>
     <link id="stylesheet" rel="stylesheet" href="../styles/styles.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
 </head>
 
 <body>
@@ -99,142 +100,239 @@
                 <div class="willow-styling-context">
                     <h1>Global Alert</h1>
                     <a href="https://github.com/unumux/willow/tree/master/components/global-alert" target="_blank">Documentation</a>
-                    <h2>With Heading</h2>
+                    <h2>Modifier options</h2>
                 </div>
             </div>
             <!-- GLOBAL ALERT COMPONENT -->
-            <section class="willow-global-alert" role="alert">
-                <div class="container-fluid">
-                    <button class="willow-global-alert__close">dismiss
-                        <span class="willow-icon willow-icon--close-inverse"></span>
-                    </button>
-                    <h1 class="willow-global-alert__heading">Heading Text</h1>
-                    <div class="willow-global-alert__content">
-                        <div class="willow-styling-context">
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facere corporis libero vitae quod ipsam,
-                                officia similique earum facilis impedit debitis sit labore modi nostrum quam quibusdam totam!
-                                Ipsa, repellat magni!</p>
-                        </div>
-                    </div>
+            <div class="container-fluid">
+                <div class="willow-styling-context">
+                    <p>Un-modified</p>
                 </div>
-            </section>
-            <!-- GLOBAL ALERT COMPONENT -->
-            <section class="willow-global-alert willow-global-alert--positive" role="alert">
+            </div>
+            <section class="willow-global-alert" data-global-alert-is-open="true" role="alert">
                 <div class="container-fluid">
-                    <button class="willow-global-alert__close">dismiss
-                        <span class="willow-icon willow-icon--close-inverse"></span>
-                    </button>
-                    <h1 class="willow-global-alert__heading">Heading Text</h1>
-                    <div class="willow-global-alert__content">
-                        <div class="willow-styling-context">
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facere corporis libero vitae quod ipsam,
-                                officia similique earum facilis impedit debitis sit labore modi nostrum quam quibusdam totam!
-                                Ipsa, repellat magni!</p>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <!-- GLOBAL ALERT COMPONENT -->
-            <section class="willow-global-alert willow-global-alert--warning" role="alert">
-                <div class="container-fluid">
-                    <button class="willow-global-alert__close">dismiss
-                        <span class="willow-icon willow-icon--close-inverse"></span>
-                    </button>
-                    <h1 class="willow-global-alert__heading">Heading Text</h1>
-                    <div class="willow-global-alert__content">
-                        <div class="willow-styling-context">
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facere corporis libero vitae quod ipsam,
-                                officia similique earum facilis impedit debitis sit labore modi nostrum quam quibusdam totam!
-                                Ipsa, repellat magni!</p>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <!-- GLOBAL ALERT COMPONENT -->
-            <section class="willow-global-alert willow-global-alert--negative" role="alert">
-                <div class="container-fluid">
-                    <button class="willow-global-alert__close">dismiss
-                        <span class="willow-icon willow-icon--close-inverse"></span>
-                    </button>
-                    <h1 class="willow-global-alert__heading">Heading Text</h1>
-                    <div class="willow-global-alert__content">
-                        <div class="willow-styling-context">
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facere corporis libero vitae quod ipsam,
-                                officia similique earum facilis impedit debitis sit labore modi nostrum quam quibusdam totam!
-                                Ipsa, repellat magni!</p>
+                    <div class="willow-global-alert__container">
+                        <div class="willow-global-alert__icon"><i class="fas fa-exclamation-circle fa-lg"></i></div>
+                        <div class="willow-global-alert__content-container">
+                            <a class="willow-global-alert__close" href="#">Close <i class="fas fa-times"></i></a>
+                            <h1 class="willow-global-alert__heading">Heading text</h1>
+                            <div class="willow-global-alert__content">
+                                <div class="willow-styling-context">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium suscipit saepe, fugit minus ipsam natus cum eaque vero, velit facere amet consequuntur exercitationem repellendus distinctio qui, nemo quaerat quasi aspernatur?</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </section>
             <div class="container-fluid">
                 <div class="willow-styling-context">
-                    <h2>With Heading Hidden (sr-only)</h2>
+                    <p>With <code>--positive</code> modifier</p>
                 </div>
             </div>
-            <!-- GLOBAL ALERT COMPONENT -->
-            <section class="willow-global-alert" role="alert">
+            <section class="willow-global-alert willow-global-alert--positive" data-global-alert-is-open="true" role="alert">
                 <div class="container-fluid">
-                    <button class="willow-global-alert__close">dismiss
-                        <span class="willow-icon willow-icon--close-inverse"></span>
-                    </button>
-                    <h1 class="willow-global-alert__heading sr-only">Heading Text</h1>
-                    <div class="willow-global-alert__content">
-                        <div class="willow-styling-context">
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facere corporis libero vitae quod ipsam,
-                                officia similique earum facilis impedit debitis sit labore modi nostrum quam quibusdam totam!
-                                Ipsa, repellat magni!</p>
+                    <div class="willow-global-alert__container">
+                        <div class="willow-global-alert__icon"><i class="fas fa-check-circle fa-lg"></i></div>
+                        <div class="willow-global-alert__content-container">
+                            <a class="willow-global-alert__close" href="#">Close <i class="fas fa-times"></i></a>
+                            <h1 class="willow-global-alert__heading">Heading text</h1>
+                            <div class="willow-global-alert__content">
+                                <div class="willow-styling-context">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium suscipit saepe, fugit minus ipsam natus cum eaque vero, velit facere amet consequuntur exercitationem repellendus distinctio qui, nemo quaerat quasi aspernatur?</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </section>
-            <!-- GLOBAL ALERT COMPONENT -->
-            <section class="willow-global-alert willow-global-alert--positive" role="alert">
+            <div class="container-fluid">
+                <div class="willow-styling-context">
+                    <p>With <code>--warning</code> modifier</p>
+                </div>
+            </div>
+            <section class="willow-global-alert willow-global-alert--warning" data-global-alert-is-open="true" role="alert">
                 <div class="container-fluid">
-                    <button class="willow-global-alert__close">dismiss
-                        <span class="willow-icon willow-icon--close-inverse"></span>
-                    </button>
-                    <h1 class="willow-global-alert__heading sr-only">Heading Text</h1>
-                    <div class="willow-global-alert__content">
-                        <div class="willow-styling-context">
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facere corporis libero vitae quod ipsam,
-                                officia similique earum facilis impedit debitis sit labore modi nostrum quam quibusdam totam!
-                                Ipsa, repellat magni!</p>
+                    <div class="willow-global-alert__container">
+                        <div class="willow-global-alert__icon"><i class="fas fa-exclamation-triangle fa-lg"></i></div>
+                        <div class="willow-global-alert__content-container">
+                            <a class="willow-global-alert__close" href="#">Close <i class="fas fa-times"></i></a>
+                            <h1 class="willow-global-alert__heading">Heading text</h1>
+                            <div class="willow-global-alert__content">
+                                <div class="willow-styling-context">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium suscipit saepe, fugit minus ipsam natus cum eaque vero, velit facere amet consequuntur exercitationem repellendus distinctio qui, nemo quaerat quasi aspernatur?</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </section>
-            <!-- GLOBAL ALERT COMPONENT -->
-            <section class="willow-global-alert willow-global-alert--warning" role="alert">
+            <div class="container-fluid">
+                <div class="willow-styling-context">
+                    <p>With <code>--negative</code> modifier</p>
+                </div>
+            </div>
+            <section class="willow-global-alert willow-global-alert--negative" data-global-alert-is-open="true" role="alert">
                 <div class="container-fluid">
-                    <button class="willow-global-alert__close">dismiss
-                        <span class="willow-icon willow-icon--close-inverse"></span>
-                    </button>
-                    <h1 class="willow-global-alert__heading sr-only">Heading Text</h1>
-                    <div class="willow-global-alert__content">
-                        <div class="willow-styling-context">
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facere corporis libero vitae quod ipsam,
-                                officia similique earum facilis impedit debitis sit labore modi nostrum quam quibusdam totam!
-                                Ipsa, repellat magni!</p>
+                    <div class="willow-global-alert__container">
+                        <div class="willow-global-alert__icon"><i class="fas fa-exclamation-circle fa-lg"></i></div>
+                        <div class="willow-global-alert__content-container">
+                            <a class="willow-global-alert__close" href="#">Close <i class="fas fa-times"></i></a>
+                            <h1 class="willow-global-alert__heading">Heading text</h1>
+                            <div class="willow-global-alert__content">
+                                <div class="willow-styling-context">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium suscipit saepe, fugit minus ipsam natus cum eaque vero, velit facere amet consequuntur exercitationem repellendus distinctio qui, nemo quaerat quasi aspernatur?</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </section>
-            <!-- GLOBAL ALERT COMPONENT -->
-            <section class="willow-global-alert willow-global-alert--negative" role="alert">
+            <div class="container-fluid">
+                <div class="willow-styling-context">
+                    <h2>With all sub-elements</h2>
+                </div>
+            </div>
+            <section class="willow-global-alert willow-global-alert--positive" data-global-alert-is-open="true" role="alert">
                 <div class="container-fluid">
-                    <button class="willow-global-alert__close">dismiss
-                        <span class="willow-icon willow-icon--close-inverse"></span>
-                    </button>
-                    <h1 class="willow-global-alert__heading sr-only">Heading Text</h1>
-                    <div class="willow-global-alert__content">
-                        <div class="willow-styling-context">
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facere corporis libero vitae quod ipsam,
-                                officia similique earum facilis impedit debitis sit labore modi nostrum quam quibusdam totam!
-                                Ipsa, repellat magni!</p>
+                    <div class="willow-global-alert__container">
+                        <div class="willow-global-alert__icon"><i class="fas fa-check-circle fa-lg"></i></div>
+                        <div class="willow-global-alert__content-container">
+                            <a class="willow-global-alert__close" href="#">Close <i class="fas fa-times"></i></a>
+                            <h1 class="willow-global-alert__heading">Heading text</h1>
+                            <div class="willow-global-alert__content">
+                                <div class="willow-styling-context">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium suscipit saepe, fugit minus ipsam natus cum eaque vero, velit facere amet consequuntur exercitationem repellendus distinctio qui, nemo quaerat quasi aspernatur?</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </section>
+            <div class="container-fluid">
+                <div class="willow-styling-context">
+                    <h2>With hiddent heading (sr-only)</h2>
+                </div>
+            </div>
+            <section class="willow-global-alert willow-global-alert--positive" data-global-alert-is-open="true" role="alert">
+                <div class="container-fluid">
+                    <div class="willow-global-alert__container">
+                        <div class="willow-global-alert__icon"><i class="fas fa-check-circle fa-lg"></i></div>
+                        <div class="willow-global-alert__content-container">
+                            <a class="willow-global-alert__close" href="#">Close <i class="fas fa-times"></i></a>
+                            <h1 class="willow-global-alert__heading sr-only">Heading text</h1>
+                            <div class="willow-global-alert__content">
+                                <div class="willow-styling-context">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium suscipit saepe, fugit minus ipsam natus cum eaque vero, velit facere amet consequuntur exercitationem repellendus distinctio qui, nemo quaerat quasi aspernatur?</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <div class="container-fluid">
+                <div class="willow-styling-context">
+                    <h2>Without icon</h2>
+                </div>
+            </div>
+            <section class="willow-global-alert willow-global-alert--positive" data-global-alert-is-open="true" role="alert">
+                <div class="container-fluid">
+                    <div class="willow-global-alert__container">
+                        <div class="willow-global-alert__content-container">
+                            <a class="willow-global-alert__close" href="#">Close <i class="fas fa-times"></i></a>
+                            <h1 class="willow-global-alert__heading">Heading text</h1>
+                            <div class="willow-global-alert__content">
+                                <div class="willow-styling-context">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium suscipit saepe, fugit minus ipsam natus cum eaque vero, velit facere amet consequuntur exercitationem repellendus distinctio qui, nemo quaerat quasi aspernatur?</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <div class="project-spacer"></div>
+            <section class="willow-global-alert willow-global-alert--positive" data-global-alert-is-open="true" role="alert">
+                <div class="container-fluid">
+                    <div class="willow-global-alert__container">
+                        <div class="willow-global-alert__content-container">
+                            <a class="willow-global-alert__close" href="#">Close <i class="fas fa-times"></i></a>
+                            <h1 class="willow-global-alert__heading sr-only">Heading text</h1>
+                            <div class="willow-global-alert__content">
+                                <div class="willow-styling-context">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium suscipit saepe, fugit minus ipsam natus cum eaque vero, velit facere amet consequuntur exercitationem repellendus distinctio qui, nemo quaerat quasi aspernatur?</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <div class="container-fluid">
+                <div class="willow-styling-context">
+                    <h2>Without close action</h2>
+                </div>
+            </div>
+            <section class="willow-global-alert willow-global-alert--positive" data-global-alert-is-open="true" role="alert">
+                <div class="container-fluid">
+                    <div class="willow-global-alert__container">
+                        <div class="willow-global-alert__icon"><i class="fas fa-check-circle fa-lg"></i></div>
+                        <div class="willow-global-alert__content-container">
+                            <h1 class="willow-global-alert__heading">Heading text</h1>
+                            <div class="willow-global-alert__content">
+                                <div class="willow-styling-context">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium suscipit saepe, fugit minus ipsam natus cum eaque vero, velit facere amet consequuntur exercitationem repellendus distinctio qui, nemo quaerat quasi aspernatur?</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <div class="project-spacer"></div>
+            <section class="willow-global-alert willow-global-alert--positive" data-global-alert-is-open="true" role="alert">
+                <div class="container-fluid">
+                    <div class="willow-global-alert__container">
+                        <div class="willow-global-alert__icon"><i class="fas fa-check-circle fa-lg"></i></div>
+                        <div class="willow-global-alert__content-container">
+                            <h1 class="willow-global-alert__heading sr-only">Heading text</h1>
+                            <div class="willow-global-alert__content">
+                                <div class="willow-styling-context">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium suscipit saepe, fugit minus ipsam natus cum eaque vero, velit facere amet consequuntur exercitationem repellendus distinctio qui, nemo quaerat quasi aspernatur?</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <div class="project-spacer"></div>
+            <section class="willow-global-alert willow-global-alert--positive" data-global-alert-is-open="true" role="alert">
+                <div class="container-fluid">
+                    <div class="willow-global-alert__container">
+                        <div class="willow-global-alert__content-container">
+                            <h1 class="willow-global-alert__heading">Heading text</h1>
+                            <div class="willow-global-alert__content">
+                                <div class="willow-styling-context">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium suscipit saepe, fugit minus ipsam natus cum eaque vero, velit facere amet consequuntur exercitationem repellendus distinctio qui, nemo quaerat quasi aspernatur?</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <div class="project-spacer"></div>
+            <section class="willow-global-alert willow-global-alert--positive" data-global-alert-is-open="true" role="alert">
+                <div class="container-fluid">
+                    <div class="willow-global-alert__container">
+                        <div class="willow-global-alert__content-container">
+                            <h1 class="willow-global-alert__heading sr-only">Heading text</h1>
+                            <div class="willow-global-alert__content">
+                                <div class="willow-styling-context">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium suscipit saepe, fugit minus ipsam natus cum eaque vero, velit facere amet consequuntur exercitationem repellendus distinctio qui, nemo quaerat quasi aspernatur?</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
         </main>
     </div>
     <script src="../scripts/site.min.js"></script>

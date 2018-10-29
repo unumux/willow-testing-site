@@ -1,7 +1,7 @@
 &__actions {
     list-style-type: none;
-    padding: 0;
     margin: $space-stack;
+    padding: 0;
     
     @media screen and (min-width: breakpoint(md, $grid-breakpoints)) {
         flex-basis: 20%;
